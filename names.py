@@ -1,10 +1,10 @@
 import asyncio
 from faker import Faker
 
-fake = Faker('ru_RU')
-
-async def generate_full_name(mode='all', gender='male'):
+async def generate_full_name(mode='all', gender='male', locale='ru_RU'):
     try:
+        fake = Faker(locale)
+
         if gender not in ('male', 'female'):
             raise ValueError("Пол должен быть 'male' или 'female'")
 
@@ -14,15 +14,12 @@ async def generate_full_name(mode='all', gender='male'):
             last_name = fake.last_name_male() if gender == 'male' else fake.last_name_female()
             return f"{last_name} {first_name} {middle_name}"
         
-        # Имя
         elif mode == 'first_name':
             return fake.first_name_male() if gender == 'male' else fake.first_name_female()
         
-        # Фамилия
         elif mode == 'last_name':
             return fake.last_name_male() if gender == 'male' else fake.last_name_female()
         
-        # Отчество
         elif mode == 'middle_name':
             return fake.middle_name_male() if gender == 'male' else fake.middle_name_female()
 
@@ -32,9 +29,9 @@ async def generate_full_name(mode='all', gender='male'):
     except Exception as e:
         return f"Ошибка: {e}"
 
-async def main():
-    print(await generate_full_name(mode='all', gender='male'))
-    print(await generate_full_name(mode='all', gender='female'))
-    print(await generate_full_name(mode='first_name', gender='female'))
+# async def main():
+#     print(await generate_full_name(mode='all', gender='male'))  
+#     print(await generate_full_name(mode='all', gender='female', locale='ru_RU'))
+#     print(await generate_full_name(mode='first_name', gender='female', locale='en_US'))
     
-asyncio.run(main())
+# asyncio.run(main())
