@@ -96,6 +96,43 @@ async def generate_car_license(local='ru_RU'):
     except Exception as e:
         print(f"Произошла ошибка при генерации номера автомобиля: {e}")
 
+async def generate_car_certificate(local='ru_RU'):
+    try:
+        fake = Faker(local)
+        
+        # Генерация двух случайных букв русского алфавита
+        letter_series = fake.bothify(text="??", letters="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯ")
+        
+        number_1 = f"{random.randint(0, 99):02d}"  
+        # Генерация уникального номера из 6 цифр
+        number_2 = f"{random.randint(0, 999999):06d}"  # 6 цифр с ведущими нулями
+        
+        # Формирование полного номера свидетельства о рождении
+        certificate_number = f"{number_1} {letter_series} {number_2}"
+        
+        return certificate_number        
+    except Exception as e:
+        print(f"Произошла ошибка при генерации СТС автомобиля: {e}")
+
+async def generate_car_passport(local='ru_RU'):
+    try:
+        fake = Faker(local)
+        
+        # Генерация двух случайных букв русского алфавита
+        letter_series = fake.bothify(text="??", letters="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯ")
+        
+        number_1 = f"{random.randint(0, 99):02d}"  
+        # Генерация уникального номера из 6 цифр
+        number_2 = f"{random.randint(0, 999999):06d}"  # 6 цифр с ведущими нулями
+        
+        # Формирование полного номера свидетельства о рождении
+        certificate_number = f"{number_1} {letter_series} {number_2}"
+        
+        return certificate_number        
+    except Exception as e:
+        print(f"Произошла ошибка при генерации ПТС автомобиля: {e}")
+
+
 # Пример использования
 async def main():
     passport = await generate_passport_number()
@@ -108,7 +145,10 @@ async def main():
     print(f"Номер свидетельства о рождении: {certificate_number}")
     work_book = await generate_work_book_number()
     print(f"Номер трудовой книги: {work_book}")
-    
+    license = await generate_car_license()
+    print(f"Номер автомобиля: {license}")
+    ctc = await generate_car_certificate()
+    print(f"CTC автомобиля: {ctc}")
 
 # Запуск основной функции
 if __name__ == "__main__":

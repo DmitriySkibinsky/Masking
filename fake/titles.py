@@ -46,6 +46,9 @@ async def generate_address(local='ru_RU', mode='all'):
         elif mode == 'country':
             country = fake.country()
             return country
+        elif mode == 'administrative':
+            unit = fake.administrative_unit
+            return unit
     except Exception as e:
         print(f"Произошла ошибка при генерации адреса: {e}")
 
