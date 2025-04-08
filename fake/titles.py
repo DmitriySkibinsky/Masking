@@ -1,3 +1,5 @@
+from logging import raiseExceptions
+
 from faker import Faker
 import asyncio
 import string
@@ -46,6 +48,35 @@ async def generate_address(local='ru_RU', mode='all'):
             return country
     except Exception as e:
         print(f"Произошла ошибка при генерации адреса: {e}")
+
+async def generate_geografic_coordinates():
+    try:
+        fake = Faker('ru_RU')
+        latitude = fake.latitude()
+        longitude = fake.longitude()
+        return latitude, longitude
+    except Exception as e:
+        print(f"Произошла ошибка при генерации координат: {e}")
+
+async def generate_uri():
+    try:
+        fake = Faker()
+        uri = fake.uri()
+        return uri
+    except Exception as e:
+        print(f"Произошла ошибка при генерации URI: {e}")
+
+async def generate_ip(mode='v4'):
+    try:
+        fake = Faker('ru_RU')
+        if mode == 'v4':
+            ipv4 = fake.ipv4()
+        elif mode == 'v6':
+            ipv6 = fake.ipv6()
+        else:
+            print("Неверный режим для генерации IP")
+    except Exception as e:
+        print(f"Произошла ошибка при генерации IP: {e}")
 
 
 async def main():

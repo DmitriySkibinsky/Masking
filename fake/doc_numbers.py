@@ -88,6 +88,13 @@ async def generate_work_book_number():
     except Exception as e:
         print(f"Произошла ошибка при генерации номера свидетельства о рождении: {e}")
 
+async def generate_car_license(local='ru_RU'):
+    try:
+        fake = Faker(local)
+        license_plate = fake.license_plate()
+        return license_plate
+    except Exception as e:
+        print(f"Произошла ошибка при генерации номера автомобиля: {e}")
 
 # Пример использования
 async def main():
