@@ -92,14 +92,7 @@ def run_and_save_test_cases(artifacts):
         f.write("\n".join(results))
 
     # Вывод в консоль с группировкой
-    print("\nINN Predictions:")
-    print("\n".join(results[:5]))
-    print("\nFirst Name Predictions:")
-    print("\n".join(results[5:10]))
-    print("\nLast Name Predictions:")
-    print("\n".join(results[10:15]))
-    print("\nPhone Predictions:")
-    print("\n".join(results[15:]))
+    print("\n".join(results[:]))
 
 
 if __name__ == "__main__":
