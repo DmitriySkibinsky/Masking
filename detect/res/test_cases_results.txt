@@ -3,21 +3,31 @@ client_inn           -> inn
 inn_number           -> inn
 tax_id               -> first_name
 inn_code             -> inn
+ИНН                  -> inn
+Инн клиента          -> inn
 first_name           -> first_name
 user_name            -> first_name
 name                 -> first_name
 given_name           -> first_name
 clientname           -> first_name
+имя                  -> first_name
+Имя клиента          -> first_name
 lastname             -> last_name
 family_name          -> first_name
 surname              -> first_name
 user_surname         -> first_name
 second_name          -> first_name
+Фамилия              -> last_name
+Фамилия клиента      -> last_name
 phone                -> phone
 mobile               -> first_name
 telephone            -> phone
 contact_number       -> first_name
 phone_num            -> phone
+тел.                 -> phone
+Телефон              -> phone
+Мобильный тел        -> phone
+Моб. тел.            -> phone
 user_phone           -> phone
 client_tel           -> first_name
 cellphone            -> phone

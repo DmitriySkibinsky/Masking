@@ -75,10 +75,10 @@ def save_plot_and_report(artifacts):
 def run_and_save_test_cases(artifacts):
     """Запуск и сохранение тестовых случаев с ASCII-стрелкой"""
     test_cases = [
-        "user_inn", "client_inn", "inn_number", "tax_id", "inn_code",
-        "first_name", "user_name", "name", "given_name", "clientname",
-        "lastname", "family_name", "surname", "user_surname", "second_name",
-        "phone", "mobile", "telephone", "contact_number", "phone_num",
+        "user_inn", "client_inn", "inn_number", "tax_id", "inn_code", "ИНН", "Инн клиента",
+        "first_name", "user_name", "name", "given_name", "clientname", "имя", "Имя клиента",
+        "lastname", "family_name", "surname", "user_surname", "second_name", "Фамилия", "Фамилия клиента",
+        "phone", "mobile", "telephone", "contact_number", "phone_num", "тел.", "Телефон", "Мобильный тел", "Моб. тел.",
         "user_phone", "client_tel", "cellphone", "phone_code", "whatsapp_num"
     ]
 
