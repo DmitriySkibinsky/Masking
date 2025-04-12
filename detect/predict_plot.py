@@ -10,7 +10,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 def load_artifacts():
     """Загрузка всех сохраненных артефактов модели"""
     return {
-        'model': load_model("./res/column_classifier_model.h5"),
+        'model': load_model("./res/best_model.h5"),
         'tokenizer': pd.read_pickle("./res/tokenizer.pkl"),
         'le': pd.read_pickle("./res/label_encoder.pkl"),
         'history': pd.read_pickle("./res/training_history.pkl"),
@@ -19,18 +19,27 @@ def load_artifacts():
     }
 
 
-def predict_column_type(text, artifacts):
-    """Предсказание типа колонки для одного значения"""
+def predict_column_type(text, artifacts, confidence_threshold=0.5):
+    """
+    Предсказание типа колонки с проверкой уверенности
+    Возвращает "не определено" если уверенность < confidence_threshold
+    """
     seq = artifacts['tokenizer'].texts_to_sequences([text])
     pad = pad_sequences(seq, maxlen=20)
-    pred = artifacts['model'].predict(pad, verbose=0)
-    return artifacts['le'].classes_[pred.argmax()]
+    pred_proba = artifacts['model'].predict(pad, verbose=0)[0]
+
+    max_proba = np.max(pred_proba)
+    if max_proba < confidence_threshold:
+        return "не определено", max_proba
+    else:
+        return artifacts['le'].classes_[np.argmax(pred_proba)], max_proba
 
 
 def save_plot_and_report(artifacts):
-    """Сохранение графиков и отчетов с указанием кодировки UTF-8"""
-    y_pred = artifacts['model'].predict(artifacts['X_test'])
-    y_pred_labels = artifacts['le'].inverse_transform(y_pred.argmax(axis=1))
+    """Сохранение графиков и отчетов"""
+    y_pred_proba = artifacts['model'].predict(artifacts['X_test'])
+    y_pred = np.argmax(y_pred_proba, axis=1)
+    y_pred_labels = artifacts['le'].inverse_transform(y_pred)
     y_true_labels = artifacts['le'].inverse_transform(artifacts['y_test'])
 
     # Графики обучения
@@ -65,40 +74,54 @@ def save_plot_and_report(artifacts):
     plt.savefig('./res/confusion_matrix.png')
     plt.close()
 
-    # Отчет о классификации (с явным указанием кодировки UTF-8)
+    # Отчет о классификации
     report = classification_report(y_true_labels, y_pred_labels,
                                    target_names=artifacts['le'].classes_)
     with open('./res/classification_report.txt', 'w', encoding='utf-8') as f:
         f.write(report)
 
 
-def run_and_save_test_cases(artifacts):
-    """Запуск и сохранение тестовых случаев с ASCII-стрелкой"""
+def run_and_save_test_cases(artifacts, confidence_threshold=0.5):
+    """Запуск и сохранение тестовых случаев с проверкой уверенности"""
     test_cases = [
-        "user_inn", "client_inn", "inn_number", "tax_id", "inn_code", "ИНН", "Инн клиента",
-        "first_name", "user_name", "name", "given_name", "clientname", "имя", "Имя клиента",
-        "lastname", "family_name", "surname", "user_surname", "second_name", "Фамилия", "Фамилия клиента",
-        "phone", "mobile", "telephone", "contact_number", "phone_num", "тел.", "Телефон", "Мобильный тел", "Моб. тел.",
-        "user_phone", "client_tel", "cellphone", "phone_code", "whatsapp_num"
+        "user_inn", "client_inn", "inn_number", "tax_id", "inn_code",
+        "first_name", "user_name", "name", "given_name", "clientname",
+        "lastname", "family_name", "surname", "user_surname", "second_name",
+        "phone", "mobile", "telephone", "contact_number", "phone_num",
+        "user_phone", "client_tel", "cellphone", "phone_code", "whatsapp_num",
+        "ненужная информация", "неподходящая  информация", "идентификатор"
     ]
 
-    # Используем ASCII-стрелку '->' вместо Unicode '→'
     results = []
     for case in test_cases:
-        pred = predict_column_type(case, artifacts)
-        results.append(f"{case.ljust(20)} -> {pred}")  # Заменяем → на ->
+        pred, proba = predict_column_type(case, artifacts, confidence_threshold)
+        results.append(f"{case.ljust(20)} -> {pred} (уверенность: {proba:.2f})")
 
     with open('./res/test_cases_results.txt', 'w', encoding='utf-8') as f:
         f.write("\n".join(results))
 
     # Вывод в консоль с группировкой
-    print("\n".join(results[:]))
+    print("\nINN Predictions:")
+    print("\n".join(results[:5]))
+    print("\nFirst Name Predictions:")
+    print("\n".join(results[5:10]))
+    print("\nLast Name Predictions:")
+    print("\n".join(results[10:15]))
+    print("\nPhone Predictions:")
+    print("\n".join(results[15:25]))
+    print("\nOther Predictions:")
+    print("\n".join(results[25:]))
 
 
 if __name__ == "__main__":
     artifacts = load_artifacts()
     save_plot_and_report(artifacts)
-    run_and_save_test_cases(artifacts)
+
+    # Устанавливаем порог уверенности
+    CONFIDENCE_THRESHOLD = 0.5
+    print(f"\nИспользуется порог уверенности: {CONFIDENCE_THRESHOLD}")
+
+    run_and_save_test_cases(artifacts, confidence_threshold=CONFIDENCE_THRESHOLD)
 
     print("\nEvaluation results saved in ./res directory:")
     print("- training_metrics.png")

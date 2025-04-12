@@ -5,6 +5,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from keras.models import Sequential
 from keras.layers import Embedding, Dense, GlobalAveragePooling1D
+from keras.callbacks import EarlyStopping, ModelCheckpoint
 import os
 
 # Создание папки для результатов
@@ -42,11 +43,32 @@ model = Sequential([
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-# Обучение модели с увеличенным числом эпох
-history = model.fit(X_train, y_train, epochs=15, validation_data=(X_test, y_test))
+# Callbacks
+callbacks = [
+    EarlyStopping(
+        monitor='val_loss',  # Мониторим потери на валидации
+        patience=3,         # Количество эпох без улучшения перед остановкой
+        restore_best_weights=True  # Восстанавливаем веса лучшей модели
+    ),
+    ModelCheckpoint(
+        filepath='./res/best_model.h5',  # Путь для сохранения лучшей модели
+        monitor='val_loss',             # Мониторим потери на валидации
+        save_best_only=True,            # Сохраняем только лучшую модель
+        verbose=1                       # Выводим сообщения о сохранении
+    )
+]
+
+# Обучение модели с увеличенным числом эпох и callback'ами
+history = model.fit(
+    X_train,
+    y_train,
+    epochs=15,
+    validation_data=(X_test, y_test),
+    callbacks=callbacks
+)
 
 # Сохранение всех необходимых объектов
-model.save("./res/column_classifier_model.h5")
+model.save("./res/column_classifier_model.h5")  # Сохраняем финальную модель
 pd.to_pickle(tokenizer, "./res/tokenizer.pkl")
 pd.to_pickle(le, "./res/label_encoder.pkl")
 pd.to_pickle(history.history, "./res/training_history.pkl")
@@ -54,3 +76,5 @@ pd.to_pickle(X_test, "./res/X_test.pkl")
 pd.to_pickle(y_test, "./res/y_test.pkl")
 
 print("Модель и вспомогательные файлы сохранены в папке ./res")
+print(f"Обучение остановлено на эпохе {len(history.history['loss'])}")
+print(f"Лучшая модель сохранена как: ./res/best_model.h5")

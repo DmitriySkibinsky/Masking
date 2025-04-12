@@ -1,35 +1,28 @@
-user_inn             -> inn
-client_inn           -> inn
-inn_number           -> inn
-tax_id               -> first_name
-inn_code             -> inn
-ИНН                  -> inn
-Инн клиента          -> inn
-first_name           -> first_name
-user_name            -> first_name
-name                 -> first_name
-given_name           -> first_name
-clientname           -> first_name
-имя                  -> first_name
-Имя клиента          -> first_name
-lastname             -> last_name
-family_name          -> first_name
-surname              -> first_name
-user_surname         -> first_name
-second_name          -> first_name
-Фамилия              -> last_name
-Фамилия клиента      -> last_name
-phone                -> phone
-mobile               -> first_name
-telephone            -> phone
-contact_number       -> first_name
-phone_num            -> phone
-тел.                 -> phone
-Телефон              -> phone
-Мобильный тел        -> phone
-Моб. тел.            -> phone
-user_phone           -> phone
-client_tel           -> first_name
-cellphone            -> phone
-phone_code           -> phone
-whatsapp_num         -> last_name
+user_inn             -> inn (уверенность: 0.85)
+client_inn           -> inn (уверенность: 0.95)
+inn_number           -> inn (уверенность: 0.85)
+tax_id               -> inn (уверенность: 0.99)
+inn_code             -> inn (уверенность: 0.73)
+first_name           -> first_name (уверенность: 0.71)
+user_name            -> first_name (уверенность: 0.64)
+name                 -> first_name (уверенность: 0.73)
+given_name           -> first_name (уверенность: 0.73)
+clientname           -> first_name (уверенность: 0.72)
+lastname             -> last_name (уверенность: 0.68)
+family_name          -> last_name (уверенность: 0.82)
+surname              -> first_name (уверенность: 0.64)
+user_surname         -> first_name (уверенность: 0.51)
+second_name          -> first_name (уверенность: 0.52)
+phone                -> phone (уверенность: 0.97)
+mobile               -> phone (уверенность: 0.81)
+telephone            -> phone (уверенность: 0.97)
+contact_number       -> phone (уверенность: 0.91)
+phone_num            -> phone (уверенность: 0.95)
+user_phone           -> phone (уверенность: 0.96)
+client_tel           -> phone (уверенность: 0.84)
+cellphone            -> phone (уверенность: 0.95)
+phone_code           -> phone (уверенность: 0.98)
+whatsapp_num         -> first_name (уверенность: 0.57)
+ненужная информация  -> last_name (уверенность: 0.56)
+неподходящая  информация -> last_name (уверенность: 0.74)
+идентификатор        -> не определено (уверенность: 0.44)
