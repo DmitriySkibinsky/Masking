@@ -31,7 +31,7 @@ X_pad = pad_sequences(X_seq, maxlen=20)
 
 # Разделение на train/test (увеличена тестовая выборка)
 X_train, X_test, y_train, y_test = train_test_split(
-    X_pad, df['label_enc'], test_size=0.3, random_state=42)  # 30% тестовых данных
+    X_pad, df['label_enc'], test_size=0.5, random_state=42)  # 30% тестовых данных
 
 # Модель
 model = Sequential([

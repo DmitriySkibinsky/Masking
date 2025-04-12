@@ -2,7 +2,7 @@ import pandas as pd
 import random
 
 column_types = {
-    "first_name": ["имя", "firstname", "first name", "имя клиента", "имя_пользователя", "client_firstname", "name", "client_name", "username"*2, "name", "user_name"*2],
+    "first_name": ["имя", "firstname", "first name", "имя клиента", "имя_пользователя", "client_firstname", "name", "client_name", "username"*2, "name", "user_name", "user_name"],
     "last_name": ["фамилия", "lastname", "last name", "фамилия клиента", "user_lastname", "фамилия_пользователя", "surname"*3, "family name", "family", "user_surname", "second_name"],
     "inn": ["инн", "inn", "ИНН", "user_inn", "инн_клиента", "client_inn", "tax", "tax_id", "inn_number"],
     "phone": ["телефон", "phone", "тел.", "номер телефона", "user_phone", "тел_клиента", "mobile_phone", "мобильный тел", "Мобильный телефон", "contact", "number", "num", "client_tel", "tel"]

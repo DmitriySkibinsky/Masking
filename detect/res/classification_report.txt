@@ -1,10 +1,10 @@
               precision    recall  f1-score   support
 
-  first_name       0.75      0.73      0.74        60
-         inn       1.00      1.00      1.00        78
-   last_name       0.82      0.83      0.82        88
-       phone       1.00      1.00      1.00        74
+  first_name       0.80      0.78      0.79       125
+         inn       0.97      1.00      0.98       120
+   last_name       0.80      0.82      0.81       132
+       phone       1.00      0.97      0.98       123
 
-    accuracy                           0.90       300
-   macro avg       0.89      0.89      0.89       300
-weighted avg       0.90      0.90      0.90       300
+    accuracy                           0.89       500
+   macro avg       0.89      0.89      0.89       500
+weighted avg       0.89      0.89      0.89       500
