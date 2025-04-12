@@ -4,80 +4,111 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, classification_report
 
-# Загрузка модели и вспомогательных объектов
-model = load_model("./res/column_classifier_model.h5")
-tokenizer = pd.read_pickle("./res/tokenizer.pkl")
-le = pd.read_pickle("./res/label_encoder.pkl")
-history = pd.read_pickle("./res/training_history.pkl")
 
-# Функция предсказания
-def predict_column_type(column_name):
-    seq = tokenizer.texts_to_sequences([column_name])
+def load_artifacts():
+    """Загрузка всех сохраненных артефактов модели"""
+    return {
+        'model': load_model("./res/column_classifier_model.h5"),
+        'tokenizer': pd.read_pickle("./res/tokenizer.pkl"),
+        'le': pd.read_pickle("./res/label_encoder.pkl"),
+        'history': pd.read_pickle("./res/training_history.pkl"),
+        'X_test': pd.read_pickle("./res/X_test.pkl"),
+        'y_test': pd.read_pickle("./res/y_test.pkl")
+    }
+
+
+def predict_column_type(text, artifacts):
+    """Предсказание типа колонки для одного значения"""
+    seq = artifacts['tokenizer'].texts_to_sequences([text])
     pad = pad_sequences(seq, maxlen=20)
-    pred = model.predict(pad, verbose=0)
-    return le.classes_[pred.argmax()]
+    pred = artifacts['model'].predict(pad, verbose=0)
+    return artifacts['le'].classes_[pred.argmax()]
 
-# Загрузка тестовых данных для оценки
-df = pd.read_csv("./res/synthetic_columns.csv")
-X_seq = tokenizer.texts_to_sequences(df['column_name'])
-X_pad = pad_sequences(X_seq, maxlen=20)
-y_true = le.transform(df['label'])
 
-# Получение предсказаний
-y_pred = model.predict(X_pad)
-y_pred_labels = le.classes_[y_pred.argmax(axis=1)]
+def save_plot_and_report(artifacts):
+    """Сохранение графиков и отчетов с указанием кодировки UTF-8"""
+    y_pred = artifacts['model'].predict(artifacts['X_test'])
+    y_pred_labels = artifacts['le'].inverse_transform(y_pred.argmax(axis=1))
+    y_true_labels = artifacts['le'].inverse_transform(artifacts['y_test'])
 
-# Построение графиков обучения
-plt.figure(figsize=(12, 5))
-plt.subplot(1, 2, 1)
-plt.plot(history['accuracy'], label='Точность на обучении')
-plt.plot(history['val_accuracy'], label='Точность на валидации')
-plt.title('Точность модели')
-plt.ylabel('Точность')
-plt.xlabel('Эпоха')
-plt.legend()
+    # Графики обучения
+    plt.figure(figsize=(14, 6))
+    plt.subplot(1, 2, 1)
+    plt.plot(artifacts['history']['accuracy'], label='Training Accuracy')
+    plt.plot(artifacts['history']['val_accuracy'], label='Validation Accuracy')
+    plt.title('Model Accuracy')
+    plt.ylabel('Accuracy')
+    plt.xlabel('Epoch')
+    plt.legend()
 
-plt.subplot(1, 2, 2)
-plt.plot(history['loss'], label='Ошибка на обучении')
-plt.plot(history['val_loss'], label='Ошибка на валидации')
-plt.title('Ошибка модели')
-plt.ylabel('Ошибка')
-plt.xlabel('Эпоха')
-plt.legend()
+    plt.subplot(1, 2, 2)
+    plt.plot(artifacts['history']['loss'], label='Training Loss')
+    plt.plot(artifacts['history']['val_loss'], label='Validation Loss')
+    plt.title('Model Loss')
+    plt.ylabel('Loss')
+    plt.xlabel('Epoch')
+    plt.legend()
+    plt.savefig('./res/training_metrics.png')
+    plt.close()
 
-plt.tight_layout()
-plt.savefig('./res/training_history.png')
-plt.close()
+    # Матрица ошибок
+    plt.figure(figsize=(10, 8))
+    cm = confusion_matrix(y_true_labels, y_pred_labels)
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+                xticklabels=artifacts['le'].classes_,
+                yticklabels=artifacts['le'].classes_)
+    plt.title('Confusion Matrix')
+    plt.ylabel('True Label')
+    plt.xlabel('Predicted Label')
+    plt.savefig('./res/confusion_matrix.png')
+    plt.close()
 
-# Матрица ошибок
-cm = confusion_matrix(df['label'], y_pred_labels)
-plt.figure(figsize=(8, 6))
-sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
-            xticklabels=le.classes_,
-            yticklabels=le.classes_)
-plt.title('Матрица ошибок')
-plt.ylabel('Истинные значения')
-plt.xlabel('Предсказанные значения')
-plt.tight_layout()
-plt.savefig('./res/confusion_matrix.png')
-plt.close()
+    # Отчет о классификации (с явным указанием кодировки UTF-8)
+    report = classification_report(y_true_labels, y_pred_labels,
+                                   target_names=artifacts['le'].classes_)
+    with open('./res/classification_report.txt', 'w', encoding='utf-8') as f:
+        f.write(report)
 
-print("Графики сохранены в папке ./res:")
-print("- training_history.png")
-print("- confusion_matrix.png")
 
-# Примеры предсказаний
-test_cases = [
-    "user_inn",
-    "client_firstname",
-    "user_lastname",
-    "phone_number",
-    "inn_client"
-]
+def run_and_save_test_cases(artifacts):
+    """Запуск и сохранение тестовых случаев с ASCII-стрелкой"""
+    test_cases = [
+        "user_inn", "client_inn", "inn_number", "tax_id", "inn_code",
+        "first_name", "user_name", "name", "given_name", "clientname",
+        "lastname", "family_name", "surname", "user_surname", "second_name",
+        "phone", "mobile", "telephone", "contact_number", "phone_num",
+        "user_phone", "client_tel", "cellphone", "phone_code", "whatsapp_num"
+    ]
 
-print("\nПримеры предсказаний:")
-for case in test_cases:
-    prediction = predict_column_type(case)
-    print(f"'{case}' → {prediction}")
+    # Используем ASCII-стрелку '->' вместо Unicode '→'
+    results = []
+    for case in test_cases:
+        pred = predict_column_type(case, artifacts)
+        results.append(f"{case.ljust(20)} -> {pred}")  # Заменяем → на ->
+
+    with open('./res/test_cases_results.txt', 'w', encoding='utf-8') as f:
+        f.write("\n".join(results))
+
+    # Вывод в консоль с группировкой
+    print("\nINN Predictions:")
+    print("\n".join(results[:5]))
+    print("\nFirst Name Predictions:")
+    print("\n".join(results[5:10]))
+    print("\nLast Name Predictions:")
+    print("\n".join(results[10:15]))
+    print("\nPhone Predictions:")
+    print("\n".join(results[15:]))
+
+
+if __name__ == "__main__":
+    artifacts = load_artifacts()
+    save_plot_and_report(artifacts)
+    run_and_save_test_cases(artifacts)
+
+    print("\nEvaluation results saved in ./res directory:")
+    print("- training_metrics.png")
+    print("- confusion_matrix.png")
+    print("- classification_report.txt")
+    print("- test_cases_results.txt")
