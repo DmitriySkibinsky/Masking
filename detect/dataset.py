@@ -29,5 +29,5 @@ def generate_dataset(size_per_class=250):
 
 if __name__ == "__main__":
     df = generate_dataset()
-    df.to_csv("synthetic_columns.csv", index=False)
+    df.to_csv("./res/synthetic_columns.csv", index=False)
     print("Сгенерирован и сохранён: synthetic_columns.csv")

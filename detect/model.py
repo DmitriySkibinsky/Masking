@@ -5,13 +5,18 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from keras.models import Sequential
 from keras.layers import Embedding, Dense, GlobalAveragePooling1D
-from tensorflow.keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+import os
 
-# Загрузка данных
-df = pd.read_csv("synthetic_columns.csv")
+# Создание папки для результатов, если её нет
+os.makedirs("./res", exist_ok=True)
+
+# Загрузка или генерация данных
+try:
+    df = pd.read_csv("./res/synthetic_columns.csv")
+except FileNotFoundError:
+    from dataset import generate_dataset
+    df = generate_dataset()
+    df.to_csv("./res/synthetic_columns.csv", index=False)
 
 # Кодирование меток
 le = LabelEncoder()
@@ -35,18 +40,14 @@ model = Sequential([
 ])
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
 
-# Сохранение
-model.save("column_classifier_model.h5")
-print("Модель обучена и сохранена: column_classifier_model.h5")
+# Обучение модели
+history = model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
 
-# Функция предсказания
-def predict_column_type(column_name):
-    seq = tokenizer.texts_to_sequences([column_name])
-    pad = pad_sequences(seq, maxlen=20)
-    pred = model.predict(pad)
-    return le.classes_[pred.argmax()]
+# Сохранение модели и вспомогательных объектов
+model.save("./res/column_classifier_model.h5")
+pd.to_pickle(tokenizer, "./res/tokenizer.pkl")
+pd.to_pickle(le, "./res/label_encoder.pkl")
+pd.to_pickle(history.history, "./res/training_history.pkl")
 
-# Пример
-print("Пример предсказания: 'user_inn' →", predict_column_type("user_inn"))
+print("Модель и вспомогательные файлы сохранены в папке ./res")

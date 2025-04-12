@@ -1,0 +1,1001 @@
+column_name,label
+client_firstname,first_name
+first name,first_name
+phone,phone
+Client_Firstname,first_name
+last-name,last_name
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+FIRSTNAME,first_name
+lastname,last_name
+phone,phone
+client_firstname,first_name
+first-name,first_name
+firstname,first_name
+имя,first_name
+инн_клиента,inn
+имя клиента,first_name
+user_phone,phone
+фамилия_клиента,last_name
+Inn,inn
+firstname,first_name
+lastname,last_name
+phone,phone
+Client_Firstname,first_name
+clientinn,inn
+client_inn,inn
+Фамилия_Пользователя,last_name
+тел_клиента,phone
+Lastname,last_name
+firstname,first_name
+имя,first_name
+номер телефона,phone
+ТЕЛ.,phone
+ИНН,inn
+инн,inn
+Inn,inn
+ФАМИЛИЯ,last_name
+имя,first_name
+phone,phone
+lastname,last_name
+имя_пользователя,first_name
+user_phone,phone
+client_inn,inn
+фамилия клиента,last_name
+инн,inn
+инн_клиента,inn
+тел_клиента,phone
+Last Name,last_name
+last-name,last_name
+user_lastname,last_name
+телефон,phone
+ИНН,inn
+Имя,first_name
+clientfirstname,first_name
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+фамилия клиента,last_name
+фамилия,last_name
+lastname,last_name
+lastname,last_name
+номертелефона,phone
+client_inn,inn
+тел_клиента,phone
+firstname,first_name
+First Name,first_name
+Inn,inn
+имя,first_name
+инн_клиента,inn
+фамилия_пользователя,last_name
+User_Lastname,last_name
+client_firstname,first_name
+firstname,first_name
+ИНН,inn
+firstname,first_name
+USER_INN,inn
+last name,last_name
+client_inn,inn
+фамилия клиента,last_name
+НОМЕР ТЕЛЕФОНА,phone
+user_inn,inn
+user_lastname,last_name
+user_lastname,last_name
+firstname,first_name
+user_phone,phone
+тел_клиента,phone
+phone,phone
+first_name,first_name
+Last Name,last_name
+имя_пользователя,first_name
+ТЕЛ_КЛИЕНТА,phone
+имя_клиента,first_name
+FIRST NAME,first_name
+тел_клиента,phone
+Last Name,last_name
+client_firstname,first_name
+имя,first_name
+тел.,phone
+Инн,inn
+фамилия,last_name
+user_phone,phone
+client_firstname,first_name
+Фамилия Клиента,last_name
+lastname,last_name
+фамилия_клиента,last_name
+имя_пользователя,first_name
+ИНН,inn
+ИНН,inn
+inn,inn
+имя_пользователя,first_name
+фамилия,last_name
+инн,inn
+инн,inn
+user_phone,phone
+имя,first_name
+user_phone,phone
+CLIENT_INN,inn
+FIRST NAME,first_name
+lastname,last_name
+ИНН,inn
+телефон,phone
+тел_клиента,phone
+firstname,first_name
+Фамилия,last_name
+user_phone,phone
+inn,inn
+user_phone,phone
+тел.,phone
+Номер Телефона,phone
+CLIENT_FIRSTNAME,first_name
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+user_phone,phone
+телклиента,phone
+инн_клиента,inn
+firstname,first_name
+имяпользователя,first_name
+имяпользователя,first_name
+инн_клиента,inn
+Инн,inn
+тел_клиента,phone
+фамилия,last_name
+имяклиента,first_name
+телефон,phone
+user_inn,inn
+CLIENT_INN,inn
+имя_пользователя,first_name
+Client_Inn,inn
+clientinn,inn
+last name,last_name
+inn,inn
+last_name,last_name
+тел_клиента,phone
+имя,first_name
+inn,inn
+имя клиента,first_name
+first_name,first_name
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+client_firstname,first_name
+firstname,first_name
+телклиента,phone
+фамилия,last_name
+номер телефона,phone
+телефон,phone
+инн_клиента,inn
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+имя_клиента,first_name
+телефон,phone
+фамилия_пользователя,last_name
+фамилия клиента,last_name
+Firstname,first_name
+first name,first_name
+first-name,first_name
+Инн,inn
+номер-телефона,phone
+USER_LASTNAME,last_name
+user_phone,phone
+инн_клиента,inn
+FIRSTNAME,first_name
+ИМЯ,first_name
+last_name,last_name
+Инн,inn
+номертелефона,phone
+тел_клиента,phone
+Инн,inn
+user_lastname,last_name
+user_phone,phone
+firstname,first_name
+инн,inn
+телефон,phone
+инн_клиента,inn
+тел_клиента,phone
+фамилия_пользователя,last_name
+тел.,phone
+user_inn,inn
+Фамилия Клиента,last_name
+user_phone,phone
+lastname,last_name
+client_firstname,first_name
+PHONE,phone
+тел.,phone
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+User_Inn,inn
+телефон,phone
+тел_клиента,phone
+инн,inn
+НОМЕР ТЕЛЕФОНА,phone
+фамилия,last_name
+Имя_Пользователя,first_name
+Имя,first_name
+clientinn,inn
+ФАМИЛИЯ,last_name
+номер телефона,phone
+first_name,first_name
+ФАМИЛИЯ КЛИЕНТА,last_name
+phone,phone
+ИНН,inn
+first name,first_name
+PHONE,phone
+телклиента,phone
+User_Phone,phone
+имя_пользователя,first_name
+last name,last_name
+Телефон,phone
+имя клиента,first_name
+фамилияклиента,last_name
+ТЕЛ.,phone
+имя_пользователя,first_name
+инн,inn
+ТЕЛ_КЛИЕНТА,phone
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+inn,inn
+имя клиента,first_name
+USER_LASTNAME,last_name
+userinn,inn
+first name,first_name
+инн,inn
+First Name,first_name
+тел.,phone
+Client_Inn,inn
+lastname,last_name
+ИМЯ КЛИЕНТА,first_name
+инн,inn
+имя_клиента,first_name
+first name,first_name
+CLIENT_INN,inn
+first_name,first_name
+ФАМИЛИЯ КЛИЕНТА,last_name
+имя_пользователя,first_name
+user_lastname,last_name
+имя_пользователя,first_name
+FIRSTNAME,first_name
+Имя,first_name
+имяклиента,first_name
+inn,inn
+инн,inn
+user_phone,phone
+инн_клиента,inn
+inn,inn
+user_inn,inn
+last name,last_name
+имя клиента,first_name
+ИНН,inn
+ТЕЛ.,phone
+телефон,phone
+телклиента,phone
+ИНН_КЛИЕНТА,inn
+имя-клиента,first_name
+lastname,last_name
+Телефон,phone
+LASTNAME,last_name
+тел.,phone
+телефон,phone
+user_lastname,last_name
+ТЕЛ_КЛИЕНТА,phone
+userinn,inn
+client_firstname,first_name
+ФАМИЛИЯ,last_name
+инн_клиента,inn
+first name,first_name
+Client_Firstname,first_name
+ИМЯ КЛИЕНТА,first_name
+first_name,first_name
+ФАМИЛИЯ КЛИЕНТА,last_name
+инн_клиента,inn
+фамилия,last_name
+номертелефона,phone
+имя клиента,first_name
+client_inn,inn
+lastname,last_name
+first_name,first_name
+имя-клиента,first_name
+user_inn,inn
+ИНН,inn
+phone,phone
+Lastname,last_name
+инн_клиента,inn
+userinn,inn
+тел_клиента,phone
+Имя_Пользователя,first_name
+Инн_Клиента,inn
+lastname,last_name
+client_inn,inn
+ИНН,inn
+client_firstname,first_name
+номер_телефона,phone
+фамилия_пользователя,last_name
+Client_Inn,inn
+lastname,last_name
+phone,phone
+firstname,first_name
+имя,first_name
+фамилияпользователя,last_name
+Firstname,first_name
+User_Phone,phone
+first-name,first_name
+lastname,last_name
+USER_PHONE,phone
+ФАМИЛИЯ,last_name
+last_name,last_name
+Тел.,phone
+client_firstname,first_name
+инн_клиента,inn
+инн_клиента,inn
+телклиента,phone
+фамилия клиента,last_name
+фамилия клиента,last_name
+фамилияклиента,last_name
+телефон,phone
+фамилия,last_name
+фамилия клиента,last_name
+фамилияпользователя,last_name
+имя_пользователя,first_name
+фамилияпользователя,last_name
+lastname,last_name
+userinn,inn
+USER_LASTNAME,last_name
+фамилия_пользователя,last_name
+телефон,phone
+инн,inn
+фамилия_пользователя,last_name
+тел.,phone
+ТЕЛЕФОН,phone
+userphone,phone
+phone,phone
+user_inn,inn
+user_phone,phone
+телефон,phone
+last name,last_name
+firstname,first_name
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+userinn,inn
+фамилия,last_name
+lastname,last_name
+телефон,phone
+номер_телефона,phone
+Имя_Пользователя,first_name
+client_firstname,first_name
+ФАМИЛИЯ,last_name
+номертелефона,phone
+имя клиента,first_name
+user_inn,inn
+client_firstname,first_name
+FIRST NAME,first_name
+Имя,first_name
+userinn,inn
+last-name,last_name
+ФАМИЛИЯ КЛИЕНТА,last_name
+инн,inn
+НОМЕР ТЕЛЕФОНА,phone
+инн,inn
+user_inn,inn
+USER_INN,inn
+last name,last_name
+фамилия_пользователя,last_name
+userinn,inn
+clientfirstname,first_name
+First Name,first_name
+ИМЯ КЛИЕНТА,first_name
+ТЕЛ.,phone
+тел.,phone
+client_inn,inn
+lastname,last_name
+имя,first_name
+ИМЯ КЛИЕНТА,first_name
+inn,inn
+ИНН,inn
+имя_пользователя,first_name
+inn,inn
+Телефон,phone
+client_inn,inn
+clientfirstname,first_name
+ФАМИЛИЯ,last_name
+LAST NAME,last_name
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+INN,inn
+инн,inn
+телефон,phone
+user_inn,inn
+client_firstname,first_name
+CLIENT_FIRSTNAME,first_name
+PHONE,phone
+firstname,first_name
+firstname,first_name
+last_name,last_name
+инн_клиента,inn
+имя-клиента,first_name
+FIRST NAME,first_name
+имя_пользователя,first_name
+userinn,inn
+Фамилия Клиента,last_name
+имя,first_name
+firstname,first_name
+firstname,first_name
+тел_клиента,phone
+USER_INN,inn
+телефон,phone
+ИНН,inn
+inn,inn
+инн_клиента,inn
+inn,inn
+Lastname,last_name
+firstname,first_name
+FIRSTNAME,first_name
+user_phone,phone
+инн,inn
+Тел_Клиента,phone
+инн,inn
+телефон,phone
+фамилия_пользователя,last_name
+inn,inn
+user_phone,phone
+Имя Клиента,first_name
+CLIENT_INN,inn
+Last Name,last_name
+lastname,last_name
+имя_пользователя,first_name
+имя_пользователя,first_name
+ИНН,inn
+firstname,first_name
+телефон,phone
+имяклиента,first_name
+user_inn,inn
+тел_клиента,phone
+ФАМИЛИЯ КЛИЕНТА,last_name
+иннклиента,inn
+Инн,inn
+user_phone,phone
+Фамилия Клиента,last_name
+userinn,inn
+clientinn,inn
+lastname,last_name
+имя,first_name
+тел.,phone
+client_firstname,first_name
+client_inn,inn
+User_Phone,phone
+Фамилия Клиента,last_name
+инн_клиента,inn
+lastname,last_name
+тел_клиента,phone
+client_inn,inn
+ФАМИЛИЯ,last_name
+user_lastname,last_name
+инн_клиента,inn
+номертелефона,phone
+инн,inn
+User_Inn,inn
+first_name,first_name
+фамилия,last_name
+last name,last_name
+ТЕЛЕФОН,phone
+Firstname,first_name
+last name,last_name
+lastname,last_name
+client_firstname,first_name
+USER_PHONE,phone
+CLIENT_FIRSTNAME,first_name
+Inn,inn
+ТЕЛ_КЛИЕНТА,phone
+фамилия клиента,last_name
+фамилия_пользователя,last_name
+фамилия клиента,last_name
+firstname,first_name
+тел_клиента,phone
+ИМЯ,first_name
+ИНН_КЛИЕНТА,inn
+user_inn,inn
+имяпользователя,first_name
+Phone,phone
+инн,inn
+фамилия,last_name
+clientfirstname,first_name
+clientinn,inn
+firstname,first_name
+Inn,inn
+inn,inn
+фамилия,last_name
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+тел_клиента,phone
+инн,inn
+last name,last_name
+имя_клиента,first_name
+имя,first_name
+Inn,inn
+user_phone,phone
+first_name,first_name
+Inn,inn
+Client_Inn,inn
+телефон,phone
+CLIENT_INN,inn
+client_inn,inn
+FIRSTNAME,first_name
+Phone,phone
+фамилия_пользователя,last_name
+фамилия_пользователя,last_name
+client_inn,inn
+ТЕЛ_КЛИЕНТА,phone
+фамилия клиента,last_name
+фамилия,last_name
+First Name,first_name
+first-name,first_name
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+userphone,phone
+user_lastname,last_name
+фамилия_пользователя,last_name
+FIRST NAME,first_name
+имя,first_name
+инн,inn
+firstname,first_name
+phone,phone
+Фамилия Клиента,last_name
+clientinn,inn
+user_lastname,last_name
+user_phone,phone
+инн,inn
+фамилия_пользователя,last_name
+ИНН,inn
+телефон,phone
+тел_клиента,phone
+User_Phone,phone
+phone,phone
+User_Phone,phone
+фамилия клиента,last_name
+тел.,phone
+ИМЯ,first_name
+user_lastname,last_name
+иннклиента,inn
+фамилияпользователя,last_name
+ФАМИЛИЯ,last_name
+инн,inn
+last-name,last_name
+ИНН,inn
+Фамилия_Пользователя,last_name
+НОМЕР ТЕЛЕФОНА,phone
+имя_пользователя,first_name
+CLIENT_INN,inn
+user_inn,inn
+Тел_Клиента,phone
+Фамилия,last_name
+FIRST NAME,first_name
+Тел.,phone
+фамилия,last_name
+тел.,phone
+тел_клиента,phone
+firstname,first_name
+user_lastname,last_name
+ИНН_КЛИЕНТА,inn
+Номер Телефона,phone
+user_lastname,last_name
+phone,phone
+имя_пользователя,first_name
+INN,inn
+Firstname,first_name
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+имя клиента,first_name
+client_inn,inn
+inn,inn
+Firstname,first_name
+Фамилия Клиента,last_name
+номертелефона,phone
+user_phone,phone
+user_phone,phone
+Имя Клиента,first_name
+номер_телефона,phone
+Тел_Клиента,phone
+lastname,last_name
+LAST NAME,last_name
+тел.,phone
+инн,inn
+Lastname,last_name
+имя_пользователя,first_name
+фамилия,last_name
+ИНН,inn
+ИНН,inn
+Client_Firstname,first_name
+Тел.,phone
+инн,inn
+инн,inn
+телефон,phone
+Phone,phone
+инн_клиента,inn
+фамилия_пользователя,last_name
+ИНН,inn
+ИНН,inn
+CLIENT_FIRSTNAME,first_name
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+инн,inn
+телефон,phone
+имя,first_name
+last name,last_name
+Имя_Пользователя,first_name
+ИНН,inn
+CLIENT_INN,inn
+INN,inn
+firstname,first_name
+фамилияпользователя,last_name
+имя,first_name
+user_phone,phone
+client_inn,inn
+user_phone,phone
+фамилия_клиента,last_name
+имя клиента,first_name
+PHONE,phone
+user_inn,inn
+инн_клиента,inn
+LAST NAME,last_name
+тел.,phone
+user_inn,inn
+номер телефона,phone
+first name,first_name
+фамилия,last_name
+имя,first_name
+phone,phone
+фамилия клиента,last_name
+фамилияклиента,last_name
+телклиента,phone
+phone,phone
+user_inn,inn
+firstname,first_name
+телефон,phone
+имя,first_name
+телефон,phone
+тел.,phone
+phone,phone
+ИМЯ КЛИЕНТА,first_name
+тел_клиента,phone
+имя,first_name
+user_lastname,last_name
+имя,first_name
+user_lastname,last_name
+Тел_Клиента,phone
+client_inn,inn
+инн,inn
+номертелефона,phone
+User_Inn,inn
+user_lastname,last_name
+userlastname,last_name
+INN,inn
+Last Name,last_name
+user_lastname,last_name
+user_inn,inn
+имя-клиента,first_name
+inn,inn
+Инн_Клиента,inn
+фамилия_клиента,last_name
+userinn,inn
+client_firstname,first_name
+иннклиента,inn
+тел.,phone
+first-name,first_name
+userlastname,last_name
+инн_клиента,inn
+имя,first_name
+phone,phone
+userinn,inn
+user_inn,inn
+Lastname,last_name
+clientfirstname,first_name
+инн_клиента,inn
+номер-телефона,phone
+inn,inn
+last name,last_name
+ФАМИЛИЯ КЛИЕНТА,last_name
+User_Phone,phone
+inn,inn
+фамилия,last_name
+фамилияклиента,last_name
+first-name,first_name
+user_lastname,last_name
+user_lastname,last_name
+client_firstname,first_name
+user_inn,inn
+инн,inn
+inn,inn
+номер-телефона,phone
+имя_пользователя,first_name
+phone,phone
+имя_пользователя,first_name
+user_phone,phone
+Инн_Клиента,inn
+USER_LASTNAME,last_name
+телефон,phone
+имя,first_name
+тел_клиента,phone
+ТЕЛЕФОН,phone
+имя_пользователя,first_name
+user_phone,phone
+фамилия_пользователя,last_name
+User_Phone,phone
+user_inn,inn
+user_phone,phone
+номер_телефона,phone
+инн_клиента,inn
+тел_клиента,phone
+инн,inn
+Номер Телефона,phone
+имяпользователя,first_name
+phone,phone
+Инн,inn
+Last Name,last_name
+last-name,last_name
+инн_клиента,inn
+clientfirstname,first_name
+last name,last_name
+имя_клиента,first_name
+номер телефона,phone
+Client_Firstname,first_name
+Номер Телефона,phone
+client_firstname,first_name
+инн_клиента,inn
+user_phone,phone
+user_lastname,last_name
+фамилия,last_name
+phone,phone
+Firstname,first_name
+firstname,first_name
+имя,first_name
+фамилия,last_name
+телклиента,phone
+LASTNAME,last_name
+user_phone,phone
+first-name,first_name
+user_inn,inn
+phone,phone
+телклиента,phone
+Inn,inn
+client_inn,inn
+client_inn,inn
+инн_клиента,inn
+тел_клиента,phone
+номертелефона,phone
+имя клиента,first_name
+имя_пользователя,first_name
+иннклиента,inn
+имя,first_name
+фамилия,last_name
+тел_клиента,phone
+имя клиента,first_name
+phone,phone
+тел_клиента,phone
+фамилия_пользователя,last_name
+User_Lastname,last_name
+last name,last_name
+Client_Firstname,first_name
+тел.,phone
+Phone,phone
+имя,first_name
+LASTNAME,last_name
+тел_клиента,phone
+Имя Клиента,first_name
+ИНН,inn
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+lastname,last_name
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+INN,inn
+phone,phone
+Last Name,last_name
+фамилия,last_name
+НОМЕР ТЕЛЕФОНА,phone
+ИНН,inn
+Инн,inn
+фамилия,last_name
+Фамилия Клиента,last_name
+тел_клиента,phone
+client_inn,inn
+CLIENT_INN,inn
+имя_пользователя,first_name
+User_Phone,phone
+first name,first_name
+userinn,inn
+номер_телефона,phone
+фамилия_клиента,last_name
+Имя Клиента,first_name
+ИНН_КЛИЕНТА,inn
+иннклиента,inn
+last name,last_name
+CLIENT_FIRSTNAME,first_name
+инн_клиента,inn
+ФАМИЛИЯ КЛИЕНТА,last_name
+инн,inn
+тел_клиента,phone
+lastname,last_name
+lastname,last_name
+User_Lastname,last_name
+фамилия_пользователя,last_name
+PHONE,phone
+номер телефона,phone
+last name,last_name
+User_Phone,phone
+LAST NAME,last_name
+Инн,inn
+user_phone,phone
+lastname,last_name
+Last Name,last_name
+FIRST NAME,first_name
+Client_Inn,inn
+User_Inn,inn
+phone,phone
+lastname,last_name
+ТЕЛ.,phone
+инн,inn
+userphone,phone
+имя,first_name
+User_Inn,inn
+имя_пользователя,first_name
+телефон,phone
+last name,last_name
+фамилия_пользователя,last_name
+фамилия,last_name
+PHONE,phone
+ИМЯ,first_name
+Client_Inn,inn
+Имя_Пользователя,first_name
+Тел.,phone
+фамилия,last_name
+фамилия_пользователя,last_name
+имя клиента,first_name
+ИНН,inn
+ФАМИЛИЯ,last_name
+Телефон,phone
+НОМЕР ТЕЛЕФОНА,phone
+фамилия,last_name
+номер-телефона,phone
+user_inn,inn
+PHONE,phone
+Firstname,first_name
+first-name,first_name
+Inn,inn
+Тел.,phone
+phone,phone
+CLIENT_INN,inn
+инн_клиента,inn
+фамилияпользователя,last_name
+номер телефона,phone
+инн,inn
+inn,inn
+LASTNAME,last_name
+НОМЕР ТЕЛЕФОНА,phone
+фамилия_пользователя,last_name
+имя клиента,first_name
+client_inn,inn
+inn,inn
+FIRST NAME,first_name
+Инн,inn
+фамилия_пользователя,last_name
+USER_LASTNAME,last_name
+телефон,phone
+client_inn,inn
+тел_клиента,phone
+User_Lastname,last_name
+user_phone,phone
+имя_пользователя,first_name
+lastname,last_name
+тел.,phone
+телклиента,phone
+номер-телефона,phone
+firstname,first_name
+имя клиента,first_name
+user_lastname,last_name
+фамилияклиента,last_name
+фамилия,last_name
+фамилия,last_name
+client_inn,inn
+инн_клиента,inn
+firstname,first_name
+last name,last_name
+фамилия,last_name
+фамилия_клиента,last_name
+Last Name,last_name
+USER_LASTNAME,last_name
+user_inn,inn
+inn,inn
+имяклиента,first_name
+User_Lastname,last_name
+first name,first_name
+ТЕЛЕФОН,phone
+имя клиента,first_name
+first name,first_name
+ИНН,inn
+номер_телефона,phone
+Телефон,phone
+clientinn,inn
+firstname,first_name
+имя,first_name
+фамилия,last_name
+имя,first_name
+имя_пользователя,first_name
+тел.,phone
+last name,last_name
+имя_пользователя,first_name
+ФАМИЛИЯ,last_name
+lastname,last_name
+clientinn,inn
+имяпользователя,first_name
+INN,inn
+ТЕЛЕФОН,phone
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+user_lastname,last_name
+client_inn,inn
+first name,first_name
+lastname,last_name
+Имя,first_name
+Фамилия,last_name
+user_inn,inn
+FIRSTNAME,first_name
+фамилияклиента,last_name
+ТЕЛЕФОН,phone
+имя,first_name
+phone,phone
+Фамилия Клиента,last_name
+FIRSTNAME,first_name
+ФАМИЛИЯ КЛИЕНТА,last_name
+тел.,phone
+Inn,inn
+Client_Inn,inn
+Инн,inn
+user_inn,inn
+телклиента,phone
+Номер Телефона,phone
+phone,phone
+имя клиента,first_name
+Номер Телефона,phone
+user_lastname,last_name
+client_inn,inn
+firstname,first_name
+Inn,inn
+first name,first_name
+имя клиента,first_name
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+User_Inn,inn
+телефон,phone
+фамилия_пользователя,last_name
+номер телефона,phone
+last_name,last_name
+last name,last_name
+ИНН,inn
+firstname,first_name
+user_inn,inn
+Инн,inn
+инн,inn
+user_phone,phone
+телклиента,phone
+LASTNAME,last_name
+Инн,inn
+inn,inn
+номертелефона,phone
+INN,inn
+Last Name,last_name
+Last Name,last_name
+phone,phone
+тел.,phone
+фамилия,last_name
+user_phone,phone
+ТЕЛ_КЛИЕНТА,phone
+lastname,last_name
+инн,inn
+имя_пользователя,first_name
+фамилия клиента,last_name
+user_phone,phone
+ТЕЛ.,phone
+client_firstname,first_name
+firstname,first_name
+ИНН,inn
+Lastname,last_name
+фамилияклиента,last_name
+тел.,phone
+Имя_Пользователя,first_name
+тел_клиента,phone
+номер_телефона,phone
+last-name,last_name
+inn,inn
+lastname,last_name
+фамилия клиента,last_name
+фамилия,last_name
+userphone,phone
+FIRSTNAME,first_name
+имя,first_name
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+имя,first_name
+inn,inn
+инн,inn
+first_name,first_name
+номер телефона,phone
+фамилия,last_name
