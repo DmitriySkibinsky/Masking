@@ -5,7 +5,9 @@ column_types = {
     "first_name": ["имя", "firstname", "first name", "имя клиента", "имя_пользователя", "client_firstname", "name", "client_name", "username"*2, "name", "user_name", "user_name"],
     "last_name": ["фамилия", "lastname", "last name", "фамилия клиента", "user_lastname", "фамилия_пользователя", "surname"*3, "family name", "family", "user_surname", "second_name"],
     "inn": ["инн", "inn", "ИНН", "user_inn", "инн_клиента", "client_inn", "tax", "tax_id", "inn_number"],
-    "phone": ["телефон", "phone", "тел.", "номер телефона", "user_phone", "тел_клиента", "mobile_phone", "мобильный тел", "Мобильный телефон", "contact", "number", "num", "client_tel", "tel"]
+    "phone": ["телефон", "phone", "тел.", "номер телефона", "user_phone", "тел_клиента", "mobile_phone", "мобильный тел", "Мобильный телефон", "contact", "number", "num", "client_tel", "tel"],
+    "middle_name" : ["middle_name", "отчество", "Отчество клиента", "Отч.", "middle", "user_middle", "user_middlename", "миддлнейм", "отчество покупателя", "fathers_name"],
+    "full_name": ["full", "client", "клиент", "пользователь", "fio", "ФИО", "Фамилия Имя Отчество"]
 }
 
 def generate_dataset(size_per_class=250):
