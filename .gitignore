@@ -1,5 +1,5 @@
 /.venv
 /.idea
-/serv/*.sql
-/serv/*.csv
-/serv/*.txt
+serv/*.sql
+serv/*.csv
+serv/*.txt
