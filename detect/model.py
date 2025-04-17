@@ -16,7 +16,7 @@ try:
     df = pd.read_csv("./res/synthetic_columns.csv")
 except FileNotFoundError:
     from dataset import generate_dataset
-    df = generate_dataset(size_per_class=500)  # Увеличен размер датасета
+    df = generate_dataset(size_per_class=1000)  # Увеличен размер датасета
     df.to_csv("./res/synthetic_columns.csv", index=False)
 
 # Кодирование меток
