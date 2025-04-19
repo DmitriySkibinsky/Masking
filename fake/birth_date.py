@@ -15,10 +15,10 @@ async def generate_birth_date(locale='ru_RU', min_age=18, max_age=60, as_string=
     except Exception as e:
         return f"Ошибка: {e}"
 
-
-async def main():
-    print(await generate_birth_date())  
-    print(await generate_birth_date(min_age=25, max_age=30))  
-    print(await generate_birth_date(locale='en_US', as_string=False)) 
-
-asyncio.run(main())
+#
+# async def main():
+#     print(await generate_birth_date())
+#     print(await generate_birth_date(min_age=25, max_age=30))
+#     print(await generate_birth_date(locale='en_US', as_string=False))
+#
+# asyncio.run(main())

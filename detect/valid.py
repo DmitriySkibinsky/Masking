@@ -1,37 +1,61 @@
-# valid.py
 import re
 from pandas.api.types import is_numeric_dtype
 
+from natasha import (
+    NamesExtractor,
+    MorphVocab,
+    DatesExtractor,
+    Doc
+)
+
+morph_vocab = MorphVocab()
+names_extractor = NamesExtractor(morph_vocab)
+dates_extractor = DatesExtractor(morph_vocab)
+
+
+def validate_with_natasha(text, field_type):
+    doc = Doc(text)
+
+    if field_type in ['first_name', 'last_name', 'middle_name', 'full_name']:
+        doc.segment(names_extractor)
+        if not doc.spans:
+            return False
+
+        span = doc.spans[0]
+        if field_type == 'full_name':
+            # Проверяем, что извлечено полное имя (хотя бы имя и фамилия)
+            return hasattr(span, 'first') and hasattr(span, 'last')
+        elif field_type == 'first_name':
+            return hasattr(span, 'first')
+        elif field_type == 'last_name':
+            return hasattr(span, 'last')
+        elif field_type == 'middle_name':
+            return hasattr(span, 'middle')
+
+    elif field_type == 'birth_date':
+        doc.segment(dates_extractor)
+        return len(doc.spans) > 0  # Дата успешно распознана
+
+    return False
 
 def validate_column_data(column_data, column_type):
-    """
-    Улучшенная валидация данных столбца с учетом различных форматов
-
-    Параметры:
-    - column_data: pandas Series с данными столбца
-    - column_type: предполагаемый тип данных (year, birth_date и т.д.)
-
-    Возвращает:
-    - Словарь с результатами проверки
-    """
-    # Берем первые 5 непустых значений, преобразуем в строки
     samples = column_data.head(5).dropna().astype(str).tolist()
 
-    # Правила валидации для каждого типа
     validation_rules = {
         'year': {
             'check': lambda x: re.fullmatch(r'^\d{4}$', x.strip()) is not None,
             'description': '4 цифры (например: 2023)'
         },
         'birth_date': {
-            'check': lambda x: any(re.fullmatch(p, x.strip()) for p in [
-                r'^\d{4}-\d{2}-\d{2}$',  # YYYY-MM-DD
-                r'^\d{2}\.\d{2}\.\d{4}$',  # DD.MM.YYYY
-                r'^\d{4}/\d{2}/\d{2}$',  # YYYY/MM/DD
-                r'^\d{8}$',  # YYYYMMDD
-                r'^\d{4} год$'  # 1990 год
-            ]),
-            'description': 'дата в формате ГГГГ-ММ-ДД, ДД.ММ.ГГГГ или YYYYMMDD'
+            'check': lambda x: (
+                re.fullmatch(r'^\d{4}-\d{2}-\d{2}$', x.strip()) or
+                re.fullmatch(r'^\d{2}\.\d{2}\.\d{4}$', x.strip()) or
+                re.fullmatch(r'^\d{4}/\d{2}/\d{2}$', x.strip()) or
+                re.fullmatch(r'^\d{8}$', x.strip()) or
+                re.fullmatch(r'^\d{4} год$', x.strip()) or
+                validate_with_natasha(x, 'birth_date')
+            ),
+            'description': 'дата в формате ГГГГ-ММ-ДД, ДД.ММ.ГГГГ, YYYYMMDD или текст (например, "12 мая 1990")'
         },
         'inn': {
             'check': lambda x: re.fullmatch(r'^\d{10,12}$', x.strip()) is not None,
@@ -42,28 +66,20 @@ def validate_column_data(column_data, column_type):
             'description': '7-20 цифр с возможными +, (), -'
         },
         'first_name': {
-            'check': lambda x: (x.strip().isalpha() and
-                                len(x.strip()) >= 2 and
-                                x == x.capitalize()),
-            'description': 'только буквы, минимум 2 символа, первая заглавная'
+            'check': lambda x: validate_with_natasha(x, 'first_name'),
+            'description': 'корректное имя (например, "Иван")'
         },
         'last_name': {
-            'check': lambda x: (x.strip().isalpha() and
-                                len(x.strip()) >= 2 and
-                                x == x.capitalize()),
-            'description': 'только буквы, минимум 2 символа, первая заглавная'
+            'check': lambda x: validate_with_natasha(x, 'last_name'),
+            'description': 'корректная фамилия (например, "Иванов")'
         },
         'middle_name': {
-            'check': lambda x: (x.strip().isalpha() and
-                                len(x.strip()) >= 2 and
-                                x == x.capitalize()),
-            'description': 'только буквы, минимум 2 символа, первая заглавная'
+            'check': lambda x: validate_with_natasha(x, 'middle_name'),
+            'description': 'корректное отчество (например, "Иванович")'
         },
         'full_name': {
-            'check': lambda x: (all(part.isalpha() for part in x.strip().split()) and
-                                len(x.strip().split()) >= 2 and
-                                x == x.title()),
-            'description': 'минимум 2 слова из букв, каждое с заглавной буквы'
+            'check': lambda x: validate_with_natasha(x, 'full_name'),
+            'description': 'полное ФИО (например, "Иванов Иван Иванович")'
         }
     }
 

@@ -5,14 +5,14 @@ import datetime
 
 fake = Faker()
 
-def validate_agreement_type(agreement_type):
+async def validate_agreement_type(agreement_type):
     """Проверка типа договора"""
     if agreement_type not in ['ФЛ', 'ЮЛ']:
         raise ValueError("Тип договора должен быть 'ФЛ' или 'ЮЛ'")
 
-def generate_contract_number(prefix, agreement_type):
+async def generate_contract_number(prefix, agreement_type):
     """Общая логика генерации номера договора"""
-    validate_agreement_type(agreement_type)
+    await validate_agreement_type(agreement_type)
 
     unique_number = fake.random_number(digits=6)  # 6 цифр для уникальности
     current_year = datetime.datetime.now().year

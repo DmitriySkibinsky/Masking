@@ -28,29 +28,52 @@ async def generate_legal_entity(local='ru_RU', opfs=None):
     except Exception as e:
         print(f"Произошла ошибка при генерации имя ЮЛ: {e}")
 
+
 async def generate_address(local='ru_RU', mode='all'):
+    """
+    Генерирует фейковые адресные данные с поддержкой регионов и населенных пунктов
+
+    Параметры:
+    - local: локаль (по умолчанию 'ru_RU')
+    - mode: тип данных:
+      'all' - полный адрес
+      'city' - город
+      'state' - регион/область
+      'postcode' - почтовый индекс
+      'country' - страна
+      'administrative' - административная единица
+      'street' - улица с номером дома
+      'region' - регион (область, край, республика)
+      'settlement' - населенный пункт (посёлок, деревня, село)
+    """
     try:
         fake = Faker(local)
+
         if mode == 'all':
-            address = fake.address()
-            return address
+            return fake.address()
         elif mode == 'city':
-            city = fake.city()
-            return city
+            return fake.city()
         elif mode == 'state':
-            state = fake.state()
-            return state
-        elif mode == 'zip':
-            zip = fake.zip()
-            return zip
+            return fake.state()
+        elif mode == 'postcode':
+            return fake.postcode()
         elif mode == 'country':
-            country = fake.country()
-            return country
+            return fake.country()
         elif mode == 'administrative':
-            unit = fake.administrative_unit
-            return unit
+            return fake.administrative_unit()
+        elif mode == 'street':
+            return fake.street_address()
+        elif mode == 'region':
+            # Для России возвращает области/края/республики
+            return fake.region() if hasattr(fake, 'region') else fake.administrative_unit()
+        elif mode == 'settlement':
+            # Для населенных пунктов (не городов)
+            if local == 'ru_RU':
+                return fake.military_ship() if hasattr(fake, 'military_ship') else fake.small_community()
+            return fake.city()  # Для других локалей просто город
     except Exception as e:
         print(f"Произошла ошибка при генерации адреса: {e}")
+        return None
 
 async def generate_geografic_coordinates():
     try:
@@ -82,13 +105,13 @@ async def generate_ip(mode='v4'):
         print(f"Произошла ошибка при генерации IP: {e}")
 
 
-async def main():
-    print(await generate_login())
-    print(await generate_legal_entity())
-    print(await generate_legal_entity(local='ru_RU', opfs=['OOO', 'ОА']))
-    print(await generate_address())
-    print(await generate_address(mode='city'))
-
-asyncio.run(main())
+# async def main():
+#     print(await generate_login())
+#     print(await generate_legal_entity())
+#     print(await generate_legal_entity(local='ru_RU', opfs=['OOO', 'ОА']))
+#     print(await generate_address())
+#     print(await generate_address(mode='administrative'))
+#
+# asyncio.run(main())
 
 
