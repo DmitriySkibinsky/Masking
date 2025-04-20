@@ -13,6 +13,43 @@ names_extractor = NamesExtractor(morph_vocab)
 dates_extractor = DatesExtractor(morph_vocab)
 
 
+def validate_inn(inn_str):
+    """Проверка ИНН по контрольным суммам согласно правилам РФ"""
+    inn = inn_str.strip()
+
+    # Проверка длины и цифрового содержания
+    if not re.fullmatch(r'^\d{10,12}$', inn):
+        return False
+
+    # Преобразуем строку в список цифр
+    try:
+        digits = [int(c) for c in inn]
+    except ValueError:
+        return False
+
+    # Проверка 10-значного ИНН (для юридических лиц)
+    if len(digits) == 10:
+        # Коэффициенты для проверки контрольной цифры (10-й цифры)
+        coefficients = [2, 4, 10, 3, 5, 9, 4, 6, 8]
+        # Вычисляем контрольную сумму
+        control_sum = sum([a * b for a, b in zip(digits[:-1], coefficients)]) % 11 % 10
+        return control_sum == digits[-1]
+
+    # Проверка 12-значного ИНН (для физических лиц и ИП)
+    elif len(digits) == 12:
+        # Коэффициенты для проверки первой контрольной цифры (11-й цифры)
+        coefficients_11 = [7, 2, 4, 10, 3, 5, 9, 4, 6, 8]
+        control_sum_11 = sum([a * b for a, b in zip(digits[:-2], coefficients_11)]) % 11 % 10
+
+        # Коэффициенты для проверки второй контрольной цифры (12-й цифры)
+        coefficients_12 = [3, 7, 2, 4, 10, 3, 5, 9, 4, 6, 8]
+        control_sum_12 = sum([a * b for a, b in zip(digits[:-1], coefficients_12)]) % 11 % 10
+
+        return control_sum_11 == digits[-2] and control_sum_12 == digits[-1]
+
+    return False
+
+
 def validate_with_natasha(text, field_type):
     doc = Doc(text)
 
@@ -38,6 +75,7 @@ def validate_with_natasha(text, field_type):
 
     return False
 
+
 def validate_column_data(column_data, column_type):
     samples = column_data.head(5).dropna().astype(str).tolist()
 
@@ -48,18 +86,18 @@ def validate_column_data(column_data, column_type):
         },
         'birth_date': {
             'check': lambda x: (
-                re.fullmatch(r'^\d{4}-\d{2}-\d{2}$', x.strip()) or
-                re.fullmatch(r'^\d{2}\.\d{2}\.\d{4}$', x.strip()) or
-                re.fullmatch(r'^\d{4}/\d{2}/\d{2}$', x.strip()) or
-                re.fullmatch(r'^\d{8}$', x.strip()) or
-                re.fullmatch(r'^\d{4} год$', x.strip()) or
-                validate_with_natasha(x, 'birth_date')
+                    re.fullmatch(r'^\d{4}-\d{2}-\d{2}$', x.strip()) or
+                    re.fullmatch(r'^\d{2}\.\d{2}\.\d{4}$', x.strip()) or
+                    re.fullmatch(r'^\d{4}/\d{2}/\d{2}$', x.strip()) or
+                    re.fullmatch(r'^\d{8}$', x.strip()) or
+                    re.fullmatch(r'^\d{4} год$', x.strip()) or
+                    validate_with_natasha(x, 'birth_date')
             ),
             'description': 'дата в формате ГГГГ-ММ-ДД, ДД.ММ.ГГГГ, YYYYMMDD или текст (например, "12 мая 1990")'
         },
         'inn': {
-            'check': lambda x: re.fullmatch(r'^\d{10,12}$', x.strip()) is not None,
-            'description': '10 или 12 цифр'
+            'check': lambda x: validate_inn(x),
+            'description': '10 или 12 цифр с корректными контрольными суммами'
         },
         'phone': {
             'check': lambda x: re.fullmatch(r'^[\d\+\(\)\s\-]{7,20}$', x.strip()) is not None,
