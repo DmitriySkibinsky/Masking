@@ -50,6 +50,46 @@ def validate_inn(inn_str):
     return False
 
 
+def validate_snils(snils_str):
+    """
+    Проверка СНИЛС по контрольной сумме согласно правилам РФ.
+    Правила:
+    1. Должно быть 11 цифр (формат: XXX-XXX-XXX YY, но проверяем только цифры)
+    2. Контрольное число (2 последние цифры) вычисляется по специальному алгоритму:
+       - Первые 9 цифр умножаются на коэффициенты от 9 до 1 соответственно
+       - Сумма произведений вычисляется
+       - Если сумма < 100, контрольное число должно равняться этой сумме
+       - Если сумма == 100 или 101, контрольное число должно быть 00
+       - Если сумма > 101, вычисляется остаток от деления на 101
+         (если остаток < 100, он становится контрольным числом, иначе 00)
+    """
+    snils = re.sub(r'[^\d]', '', snils_str)
+
+    if len(snils) != 11 or not snils.isdigit():
+        return False
+
+    digits = [int(c) for c in snils]
+    base = digits[:9]
+    control = digits[-2] * 10 + digits[-1]
+
+    # Проверка на все одинаковые цифры (недопустимо)
+    if len(set(base)) == 1:
+        return False
+
+    # Вычисление контрольной суммы
+    coefficients = list(range(9, 0, -1))
+    weighted_sum = sum(a * b for a, b in zip(base, coefficients))
+
+    if weighted_sum < 100:
+        computed_control = weighted_sum
+    elif weighted_sum in (100, 101):
+        computed_control = 0
+    else:
+        remainder = weighted_sum % 101
+        computed_control = remainder if remainder < 100 else 0
+
+    return computed_control == control
+
 def validate_with_natasha(text, field_type):
     doc = Doc(text)
 
@@ -98,6 +138,10 @@ def validate_column_data(column_data, column_type):
         'inn': {
             'check': lambda x: validate_inn(x),
             'description': '10 или 12 цифр с корректными контрольными суммами'
+        },
+        'snils': {
+            'check': lambda x: validate_snils(x),
+            'description': '11 цифр (формат XXX-XXX-XXX YY) с корректной контрольной суммой'
         },
         'phone': {
             'check': lambda x: re.fullmatch(r'^[\d\+\(\)\s\-]{7,20}$', x.strip()) is not None,
