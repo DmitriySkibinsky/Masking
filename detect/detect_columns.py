@@ -2,13 +2,13 @@ import pandas as pd
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-from correlation import analyze_correlations
-from valid import validate_column_data  # Импорт новой функции
+from detect.correlation import analyze_correlations
+from detect.valid import validate_column_data  # Импорт новой функции
 
 
-def load_model_artifacts(model_path='./res/best_model.h5',
-                         tokenizer_path='./res/tokenizer.pkl',
-                         encoder_path='./res/label_encoder.pkl'):
+def load_model_artifacts(model_path='../detect/res/best_model.h5',
+                         tokenizer_path='../detect/res/tokenizer.pkl',
+                         encoder_path='../detect/res/label_encoder.pkl'):
     """Загрузка артефактов модели"""
     return {
         'model': load_model(model_path),
@@ -107,7 +107,14 @@ def analyze_data(csv_path):
             'non_confidential_columns': non_conf_indices
         }
     except Exception as e:
-        print(e)
+        print(f"Error in analyze_data: {str(e)}")
+        # Return an empty structure instead of None
+        return {
+            'confidential_data_map': {},
+            'columns_info': pd.DataFrame(),
+            'correlation_analysis': None,
+            'non_confidential_columns': []
+        }
 
 
 THRESHOLD = 0.6
@@ -117,18 +124,19 @@ def get_list_result(csv_path):
     analysis_results = analyze_data(csv_path)
     result_list = []
 
-    for col_idx, info in analysis_results['confidential_data_map'].items():
-        pass_rate_str = info['validation'].get('pass_rate', '0%')
-        try:
-            pass_rate = float(pass_rate_str.strip('%')) / 100
-        except:
-            pass_rate = 0.0
+    if analysis_results and analysis_results['confidential_data_map']:
+        for col_idx, info in analysis_results['confidential_data_map'].items():
+            pass_rate_str = info['validation'].get('pass_rate', '0%')
+            try:
+                pass_rate = float(pass_rate_str.strip('%')) / 100
+            except:
+                pass_rate = 0.0
 
-        prob = (info['confidence'] + pass_rate) / 2
-        if prob > THRESHOLD:
-            result_list.append([info['type'], col_idx, round(prob, 4)])
+            prob = (info['confidence'] + pass_rate) / 2
+            if prob > THRESHOLD:
+                result_list.append([info['type'], col_idx, round(prob, 4)])
 
-    return result_list, analysis_results['correlation_analysis']
+    return result_list, analysis_results.get('correlation_analysis', None)
 
 
 if __name__ == "__main__":

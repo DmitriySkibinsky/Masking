@@ -1,4 +1,5 @@
 from fake import *
+import asyncio
 
 # Словарь генераторов, где каждый генератор - это функция
 consistency = {
@@ -6,10 +7,10 @@ consistency = {
     "last_name": lambda: generate_full_name(mode="last_name"),
     "middle_name": lambda: generate_full_name(mode="middle_name"),
     "full_name": lambda: generate_full_name(mode="all"),
-    "inn": generate_inn,
-    "phone": generate_phone_number,
+    "inn": lambda: generate_inn(),  # Make this a lambda to defer execution
+    "phone": lambda: generate_phone_number(),  # Make this a lambda
     "birth_date": generate_birth_date,
-    "year": lambda: str(generate_birth_date().year)
+    "year": generate_birth_date
 }
 
 def get_generator(data_type):

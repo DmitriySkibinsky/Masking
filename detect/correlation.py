@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-def analyze_correlations(df, column_indices, save_path='./res/correlation_heatmap.png'):
+def analyze_correlations(df, column_indices, save_path='../detect/res/correlation_heatmap.png'):
     """
     Анализ корреляций и сохранение тепловой карты
 
