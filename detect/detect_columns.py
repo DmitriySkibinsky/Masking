@@ -140,6 +140,7 @@ if __name__ == "__main__":
 
     csv_path = 'Global_AI_Content_Impact_Dataset.csv'
     results, corr = get_list_result(csv_path)
+    print(results)
 
     for item in results:
         print(*item)  # Распечатает тип, индекс, значение

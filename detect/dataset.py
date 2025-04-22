@@ -33,12 +33,12 @@ column_types = {
         "Фамилия Имя Отчество", "fullname", "full_name", "person",
         "contact_person", "customer_name", "complete_name"
     ],
-    "year": [
-        "year", "год", "г.", "year_number", "годовой", "reporting_year",
-        "current_year", "fiscal_year", "financial_year", "yyyy", "yy",
-        "год выпуска", "год создания", "creation_year", "год отчетности",
-        "год регистрации", "регистрационный год"
-    ],
+    # "year": [
+    #     "year", "год", "г.", "year_number", "годовой", "reporting_year",
+    #     "current_year", "fiscal_year", "financial_year", "yyyy", "yy",
+    #     "год выпуска", "год создания", "creation_year", "год отчетности",
+    #     "год регистрации", "регистрационный год"
+    # ],
     "birth_date": [
         "дата рождения", "birthdate", "birth_date", "date of birth", "др",
         "дата роджения", "birth day", "день рождения", "birthdate",

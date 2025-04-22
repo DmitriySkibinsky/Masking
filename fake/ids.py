@@ -20,7 +20,7 @@ def generate_snils():
             snils_num = ''.join(map(str, digits))
             return f"{snils_num[:3]}-{snils_num[3:6]}-{snils_num[6:9]} {control:02d}"
 
-def generate_inn(is_legal_entity):
+def generate_inn(is_legal_entity=None):
     if is_legal_entity:
         digits = [random.randint(0, 9) for _ in range(9)]
         control = (sum([v * k for v, k in zip(digits, [2, 4, 10, 3, 5, 9, 4, 6, 8])]) % 11) % 10
