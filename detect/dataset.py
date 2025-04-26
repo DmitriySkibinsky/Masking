@@ -3,9 +3,9 @@ import random
 
 column_types = {
     "first_name": [
-        "имя", "firstname", "first name", "имя клиента", "имя_пользователя",
+        "имя","имена", "firstname", "first name", "имя клиента", "имя_пользователя",
         "client_firstname", "name", "client_name", "username", "user_name",
-        "given_name", "person_name", "contact_name"
+        "given_name", "person_name", "contact_name", "имена"
     ],
     "last_name": [
         "фамилия", "lastname", "last name", "фамилия клиента", "user_lastname",
@@ -33,17 +33,36 @@ column_types = {
         "Фамилия Имя Отчество", "fullname", "full_name", "person",
         "contact_person", "customer_name", "complete_name"
     ],
-    # "year": [
-    #     "year", "год", "г.", "year_number", "годовой", "reporting_year",
-    #     "current_year", "fiscal_year", "financial_year", "yyyy", "yy",
-    #     "год выпуска", "год создания", "creation_year", "год отчетности",
-    #     "год регистрации", "регистрационный год"
-    # ],
     "birth_date": [
         "дата рождения", "birthdate", "birth_date", "date of birth", "др",
         "дата роджения", "birth day", "день рождения", "birthdate",
         "birth date", "dob", "дата_рождения", "birthdata", "bdate",
         "день роджения", "датарождения", "birth", "dateofbirth"
+    ],
+    "snils": [
+        "снилс", "snils", "СНИЛС", "номер снилс", "snils_number", "страховой номер",
+        "пенсионное страхование", "пфр номер", "pfr", "пфр", "страховое свидетельство",
+        "insurance_number", "pension_number", "лицевой счет пфр", "номер пфр"
+    ],
+    "ogrn": [
+        "огрн", "ogrn", "ОГРН", "основной гос номер", "ogrn_number", "регистрационный номер",
+        "номер огрн", "гос номер юрлица", "ogrn_code", "номер записи в егрюл", "егрюл номер",
+        "единый госреестр", "госрегистрация", "номер регистрации", "ogrn_id"
+    ],
+    "kpp": [
+        "кпп", "kpp", "КПП", "код причины постановки", "kpp_code", "налоговый кпп",
+        "код постановки на учет", "кпп организации", "kpp_number", "кпп юрлица",
+        "причина постановки", "кпп компании", "кпп фирмы", "kpp_id"
+    ],
+    "okpo": [
+        "окпо", "okpo", "ОКПО", "общероссийский классификатор", "okpo_code", "номер окпо",
+        "код окпо", "okpo_number", "классификатор предприятий", "okpo_id",
+        "код организации в окпо", "okpo_org", "okpo_company"
+    ],
+    "ogrnip": [
+        "огрнип", "ogrnip", "ОГРНИП", "огрн ип", "ogrnip_number", "огрн индивидуального предпринимателя",
+        "номер огрнип", "реестр ип", "огрнип код", "ogrnip_code", "номер записи в егрип",
+        "егрип номер", "огрнип ип", "ogrnip_id", "регистрационный номер ип"
     ]
 }
 

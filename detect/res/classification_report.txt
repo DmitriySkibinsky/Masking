@@ -1,14 +1,18 @@
               precision    recall  f1-score   support
 
-  birth_date       1.00      1.00      1.00       109
-  first_name       0.88      0.75      0.81       146
-   full_name       0.83      0.68      0.75       137
-         inn       0.98      0.99      0.99       121
-   last_name       0.71      0.88      0.78       128
- middle_name       1.00      0.82      0.90       118
-       phone       0.77      0.98      0.86       120
-        year       0.99      1.00      1.00       121
+  birth_date       0.95      1.00      0.98       120
+  first_name       0.71      0.76      0.73       109
+   full_name       0.92      0.80      0.85       123
+         inn       0.86      0.88      0.87       119
+         kpp       0.89      0.98      0.93       128
+   last_name       0.80      1.00      0.89       129
+ middle_name       0.88      0.89      0.89       135
+        ogrn       0.93      1.00      0.96       128
+      ogrnip       1.00      0.95      0.98       124
+        okpo       0.99      0.99      0.99       135
+       phone       0.83      0.56      0.67       124
+       snils       0.86      0.79      0.82       126
 
-    accuracy                           0.88      1000
-   macro avg       0.89      0.89      0.89      1000
-weighted avg       0.89      0.88      0.88      1000
+    accuracy                           0.89      1500
+   macro avg       0.88      0.88      0.88      1500
+weighted avg       0.89      0.89      0.88      1500

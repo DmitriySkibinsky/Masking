@@ -1,2001 +1,3001 @@
 column_name,label
-отч,middle_name
-inn_number,inn
-Год Регистрации,year
-customer_name,full_name
-дата-рождения,birth_date
-User_Surname,last_name
-User_Lastname,last_name
-tax_code,inn
-birthdate,birth_date
-family_name,last_name
-creation_year,year
-person_name,first_name
-birth_date,birth_date
-ГОД РЕГИСТРАЦИИ,year
-clientname,first_name
-client,full_name
-contact,phone
-year_number,year
-телефон,phone
-client_inn,inn
-birthdate,birth_date
-lastname,last_name
-фамилия_клиента,last_name
-годовой,year
-clienttel,phone
-ГОД,year
-mobile,phone
-family,last_name
-отч.,middle_name
-год-регистрации,year
-second_name,last_name
-dateofbirth,birth_date
-mobile,phone
-CONTACT_NUMBER,phone
-birthdate,birth_date
-имя_пользователя,first_name
-YY,year
-birth day,birth_date
-Г.,year
-dateofbirth,birth_date
-number,phone
-tax_code,inn
-отчество,middle_name
-инн_клиента,inn
-миддлнейм,middle_name
-userinn,inn
-user_surname,last_name
-отч,middle_name
-current_year,year
-yy,year
-contactname,first_name
-фамилияклиента,last_name
-Birthdata,birth_date
-год-отчетности,year
-Tax_Code,inn
-tel,phone
-регистрационный_год,year
-birthdate,birth_date
-birthdate,birth_date
-Фамилия_Пользователя,last_name
-client_name,first_name
-фамилия-клиента,last_name
-ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
-given_name,first_name
-family-name,last_name
-Годовой,year
-фамилия,last_name
-client_firstname,first_name
-имя,first_name
-день_роджения,birth_date
-lastname,last_name
-birth_date,birth_date
-full_name,full_name
-middle,middle_name
-INN_NUMBER,inn
-inn_number,inn
-clientinn,inn
-inn_code,inn
-Дата_Рождения,birth_date
-SURNAME,last_name
-middle_name,middle_name
-user_inn,inn
-birthdata,birth_date
-Taxpayer_Id,inn
-клиент,full_name
-фамилияпользователя,last_name
-complete_name,full_name
-Surname,last_name
-Dateofbirth,birth_date
-Year,year
-user_inn,inn
-ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
-Birth,birth_date
-Firstname,first_name
-Пользователь,full_name
-birthdate,birth_date
-CLIENT,full_name
-client_name,first_name
-yy,year
-др,birth_date
-отчество,middle_name
-телефон,phone
-reporting_year,year
-ГОД,year
-user_inn,inn
-Identification_Number,inn
-Phone,phone
-inn_number,inn
-год создания,year
-Дата_Рождения,birth_date
-user_inn,inn
-inn,inn
-др,birth_date
-givenname,first_name
-tax_id,inn
-lastname,last_name
-taxpayer_id,inn
-IDENTIFICATION_NUMBER,inn
-Second_Name,last_name
-Year,year
-customer_name,full_name
-тел.,phone
-user_inn,inn
-Отч.,middle_name
-Birth Date,birth_date
-Inn_Code,inn
-client_firstname,first_name
-full_name,full_name
-ИНН,inn
-миддлнейм,middle_name
-complete_name,full_name
-NUMBER,phone
-birth-date,birth_date
-дата рождения,birth_date
-Тел.,phone
-инн_клиента,inn
-second_name,last_name
-дата_рождения,birth_date
-иннклиента,inn
-client,full_name
-отчество клиента,middle_name
-identification_number,inn
-Др,birth_date
-фио,full_name
-FULL,full_name
-surname,last_name
-Dateofbirth,birth_date
-Отч.,middle_name
-username,first_name
-financial_year,year
-Family Name,last_name
-client_tel,phone
-дата_рождения,birth_date
-отчество-покупателя,middle_name
-Г.,year
-number,phone
-current_year,year
-contact_number,phone
-dateofbirth,birth_date
-инн,inn
-given_name,first_name
-client_tel,phone
-Дата_Рождения,birth_date
-фамилияклиента,last_name
-fiscal_year,year
-Отч.,middle_name
-имя-клиента,first_name
-person_name,first_name
-NUM,phone
-surname,last_name
-fio,full_name
-отчество,middle_name
-birthdate,birth_date
-BIRTH,birth_date
-customername,full_name
-г.,year
-client_inn,inn
-имя_пользователя,first_name
-firstname,first_name
-год регистрации,year
-dateofbirth,birth_date
-mobile,phone
-family_name,last_name
-contact_person,full_name
-user_name,first_name
-clienttel,phone
-Full,full_name
-userphone,phone
-Tax_Id,inn
-phone_num,phone
-отчество_покупателя,middle_name
-Tax,inn
-person_name,first_name
-User_Phone,phone
-birth,birth_date
-birthdate,birth_date
-User_Inn,inn
-client_name,first_name
-user_inn,inn
-family,last_name
-CELLPHONE,phone
-user_name,first_name
-contact_name,first_name
-Client_Tel,phone
-bdate,birth_date
-Годовой,year
-МОБИЛЬНЫЙ ТЕЛ,phone
-First Name,first_name
-ИМЯ КЛИЕНТА,first_name
-миддлнейм,middle_name
-ГОД ОТЧЕТНОСТИ,year
-миддлнейм,middle_name
-contact_name,first_name
-num,phone
-second_name,last_name
-customer_name,full_name
-dob,birth_date
-годовой,year
-full_name,full_name
-FULLNAME,full_name
-usermiddlename,middle_name
-middle,middle_name
-Client_Tel,phone
-ГОД РЕГИСТРАЦИИ,year
-lastname,last_name
-пользователь,full_name
-ФАМИЛИЯ КЛИЕНТА,last_name
-surname,last_name
-financial_year,year
-client_name,first_name
-whatsapp,phone
-Отчество Клиента,middle_name
-CUSTOMER_NAME,full_name
-год выпуска,year
-first-name,first_name
-first-name,first_name
-миддлнейм,middle_name
-фамилия клиента,last_name
-person_name,first_name
-full,full_name
-taxid,inn
-год_выпуска,year
-Tax_Number,inn
-Name,first_name
-contact,phone
-НОМЕР ТЕЛЕФОНА,phone
-BIRTHDATA,birth_date
-Date Of Birth,birth_date
-family name,last_name
-день-рождения,birth_date
-mobile,phone
-contactname,first_name
-fio,full_name
-Фамилия,last_name
-тел_клиента,phone
-middlename,middle_name
-number,phone
-CONTACT_PERSON,full_name
-phone_number,phone
-ГОД,year
-инн_клиента,inn
-first name,first_name
-фамилияимяотчество,full_name
-Client_Inn,inn
-год,year
-currentyear,year
-patronymic,middle_name
-Фамилия Клиента,last_name
-lastname,last_name
-ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
-creation_year,year
-YYYY,year
-family_name,last_name
-МИДДЛНЕЙМ,middle_name
-год,year
-family,last_name
-second_name,last_name
-firstname,first_name
-миддлнейм,middle_name
-дата-роджения,birth_date
-User_Name,first_name
-inn_code,inn
-family,last_name
-birthdate,birth_date
-BIRTH DATE,birth_date
-tax,inn
-годвыпуска,year
-taxpayer_id,inn
-tax_id,inn
-Год Выпуска,year
-userphone,phone
-birthdate,birth_date
-ДР,birth_date
-creation_year,year
-num,phone
-yyyy,year
-год регистрации,year
-дата_рождения,birth_date
-годсоздания,year
-family_name,last_name
-USERNAME,first_name
-фамилияимяотчество,full_name
-Person_Name,first_name
-имя_пользователя,first_name
-Фио,full_name
-фамилия-клиента,last_name
-Birthdate,birth_date
-taxpayer_id,inn
-Имя Клиента,first_name
-family,last_name
-birth,birth_date
-User_Inn,inn
-firstname,first_name
-user_middle,middle_name
-contact_person,full_name
-Num,phone
-mobilephone,phone
-отчество-покупателя,middle_name
-имя,first_name
-USER_MIDDLE,middle_name
-Inn,inn
-год,year
-username,first_name
-dob,birth_date
-birthdata,birth_date
-PERSON,full_name
-fullname,full_name
-NUM,phone
-MIDDLE_NAME,middle_name
-FIRST NAME,first_name
-ИНН,inn
-financialyear,year
-yyyy,year
-financialyear,year
-др,birth_date
-tax_code,inn
-patronymic,middle_name
-family_name,last_name
-MIDDLE,middle_name
-мобильный тел,phone
-дата рождения,birth_date
-last_name,last_name
-contact_name,first_name
-fullname,full_name
-MIDDLE NAME,middle_name
-client_tel,phone
-день роджения,birth_date
-fio,full_name
-Lastname,last_name
-ТЕЛ_КЛИЕНТА,phone
-Фио,full_name
-contact_name,first_name
-Mobile,phone
-Date Of Birth,birth_date
-МИДДЛНЕЙМ,middle_name
-number,phone
-год выпуска,year
-Year_Number,year
-family_name,last_name
-Фамилия Имя Отчество,full_name
-имя_пользователя,first_name
-Пользователь,full_name
-Cellphone,phone
-inn_code,inn
-num,phone
-отч.,middle_name
-mobile_phone,phone
-fullname,full_name
-IDENTIFICATION_NUMBER,inn
-middle name,middle_name
-birth date,birth_date
-FULL,full_name
-ФИО,full_name
-family_name,last_name
-user_middlename,middle_name
-Датарождения,birth_date
-fullname,full_name
-имя_пользователя,first_name
-FULLNAME,full_name
-ГОД ВЫПУСКА,year
-family,last_name
-Username,first_name
-CONTACT_NAME,first_name
-Tax_Code,inn
-family,last_name
-clienttel,phone
-tel,phone
-дата-рождения,birth_date
-Client_Inn,inn
-identification_number,inn
-customer_name,full_name
-client_inn,inn
-мобильный_тел,phone
-день рождения,birth_date
-person,full_name
-Current_Year,year
-user_surname,last_name
-год создания,year
-РЕГИСТРАЦИОННЫЙ ГОД,year
-completename,full_name
-tax,inn
 датарождения,birth_date
-г.,year
-др,birth_date
-birthdate,birth_date
-Тел.,phone
-fiscal_year,year
-last_name,last_name
-миддлнейм,middle_name
-фамилия_пользователя,last_name
-FULL_NAME,full_name
-г.,year
-num,phone
+Birthdate,birth_date
 Last Name,last_name
-Фио,full_name
-тел_клиента,phone
-User_Lastname,last_name
-current_year,year
-Фамилия_Имя_Отчество,full_name
-инн_клиента,inn
-client_firstname,first_name
-отч,middle_name
-last name,last_name
+inn,inn
+Fullname,full_name
+birthdate,birth_date
+Middle Name,middle_name
+ogrn_code,ogrn
+FAMILY,last_name
+фамилия,last_name
+Лицевой Счет Пфр,snils
+ogrnip_code,ogrnip
+surname,last_name
+миддлнейм,middle_name
+Okpo_Company,okpo
+username,first_name
+номер_огрн,ogrn
+дата_рождения,birth_date
+KPP_CODE,kpp
+страховое свидетельство,snils
+Фамилия Имя Отчество,full_name
+миддлнейм,middle_name
+ПРИЧИНА ПОСТАНОВКИ,kpp
+tel,phone
+ogrn,ogrn
+middle_name,middle_name
+kpp_code,kpp
+inn,inn
+ИМЕНА,first_name
+кпп,kpp
+имя_клиента,first_name
+insurancenumber,snils
+SNILS_NUMBER,snils
+Kpp_Id,kpp
+единый госреестр,ogrn
+complete_name,full_name
+КПП,kpp
+фамилия-клиента,last_name
+Surname,last_name
+KPP,kpp
+FAMILY_NAME,last_name
+иннклиента,inn
+inn_number,inn
+tel,phone
+first-name,first_name
+okponumber,okpo
+кппфирмы,kpp
+кпп,kpp
 Patronymic,middle_name
-tel,phone
-middle,middle_name
-Фио,full_name
-MIDDLE_NAME,middle_name
-номер_телефона,phone
-phone,phone
-инн_клиента,inn
-FAMILY NAME,last_name
-Middle,middle_name
-отчествопокупателя,middle_name
-phone_num,phone
-surname,last_name
-fullname,full_name
-ОТЧЕСТВО,middle_name
-yyyy,year
-yyyy,year
-Person_Name,first_name
-yyyy,year
-Bdate,birth_date
-DATE OF BIRTH,birth_date
-family_name,last_name
-second_name,last_name
-birthdate,birth_date
-second_name,last_name
-reporting_year,year
-dateofbirth,birth_date
-inn_code,inn
-fiscal_year,year
-USER_LASTNAME,last_name
-NAME,first_name
-Год Создания,year
-PHONE,phone
-SECOND_NAME,last_name
-г.,year
-user_middle,middle_name
-user_lastname,last_name
-full,full_name
-user_lastname,last_name
-CONTACT,phone
-Мобильный Тел,phone
-username,first_name
-num,phone
-телефон,phone
-FAMILY_NAME,last_name
-отчество,middle_name
-фамилия,last_name
-ДАТА РОЖДЕНИЯ,birth_date
-г.,year
-ИНН,inn
-birth_date,birth_date
-Current_Year,year
-Имя,first_name
-client_inn,inn
-birthdate,birth_date
-user_name,first_name
-person_name,first_name
-contact_number,phone
-ИМЯ КЛИЕНТА,first_name
-пользователь,full_name
-inn_code,inn
-иннклиента,inn
-Person_Name,first_name
-ГОДОВОЙ,year
-client,full_name
-деньроджения,birth_date
-user_surname,last_name
-full,full_name
-пользователь,full_name
-имя-клиента,first_name
-имя_пользователя,first_name
-Миддлнейм,middle_name
-first name,first_name
-Second_Name,last_name
-отч.,middle_name
-PERSON_NAME,first_name
-FAMILY,last_name
-фамилия_клиента,last_name
-тел.,phone
-тел_клиента,phone
-fathers_name,middle_name
-fullname,full_name
-пользователь,full_name
-Имя_Пользователя,first_name
-Телефон,phone
-name,first_name
-creation_year,year
-user_lastname,last_name
-whatsapp,phone
-tel,phone
-user_middlename,middle_name
-phone,phone
-День Рождения,birth_date
-dateofbirth,birth_date
-отчествоклиента,middle_name
-МОБИЛЬНЫЙ ТЕЛЕФОН,phone
-client,full_name
-Date Of Birth,birth_date
-GIVEN_NAME,first_name
-тел.,phone
-отч,middle_name
-lastname,last_name
-family_name,last_name
-Fullname,full_name
-год регистрации,year
-birth,birth_date
-surname,last_name
-client_firstname,first_name
-middle_name,middle_name
-client_firstname,first_name
-dateofbirth,birth_date
-full,full_name
-датарождения,birth_date
-телефон,phone
-client_tel,phone
-fiscalyear,year
-FAMILY NAME,last_name
-FAMILY_NAME,last_name
-year,year
-Num,phone
-ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
-ФИО,full_name
-др,birth_date
-middle_name,middle_name
-reporting_year,year
-USER_INN,inn
-birthdata,birth_date
-contact_name,first_name
-PHONE,phone
-cellphone,phone
-фамилияимяотчество,full_name
-user_middlename,middle_name
-Годовой,year
-middle_name,middle_name
-birth,birth_date
-FIRSTNAME,first_name
-регистрационный_год,year
-тел_клиента,phone
-first name,first_name
-миддлнейм,middle_name
-username,first_name
-tax_id,inn
-reporting_year,year
-user_surname,last_name
-инн_клиента,inn
-Tax_Id,inn
-tax_id,inn
-фамилия,last_name
-регистрационный_год,year
-family-name,last_name
-фамилия,last_name
-person,full_name
-BIRTHDATA,birth_date
-годовой,year
-yyyy,year
-birthdata,birth_date
-Birth_Date,birth_date
-USER_SURNAME,last_name
-Fiscal_Year,year
-birthdata,birth_date
-Num,phone
-creation_year,year
-client_inn,inn
-middle name,middle_name
-др,birth_date
-BIRTHDATA,birth_date
-username,first_name
-phone,phone
-username,first_name
-г.,year
-year,year
-num,phone
-ОТЧ.,middle_name
-second_name,last_name
-lastname,last_name
-Complete_Name,full_name
-firstname,first_name
-отч,middle_name
-tax,inn
-contact_name,first_name
-Отчество клиента,middle_name
-Phone_Number,phone
-phone_number,phone
-отчество,middle_name
-ФИО,full_name
-отч,middle_name
-second_name,last_name
-Фамилия_Пользователя,last_name
-TAX,inn
-FIO,full_name
-год,year
-фио,full_name
-Фамилия Имя Отчество,full_name
-дата-роджения,birth_date
-COMPLETE_NAME,full_name
-Инн,inn
-family,last_name
-birth_date,birth_date
-full_name,full_name
-датарождения,birth_date
-BIRTH DATE,birth_date
-тел.,phone
-tax_id,inn
-yyyy,year
-user_lastname,last_name
-cellphone,phone
-Whatsapp,phone
-дата-рождения,birth_date
-inn_code,inn
-year,year
-username,first_name
-Фамилия_Пользователя,last_name
-lastname,last_name
-ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
-инн,inn
-Фамилия_Имя_Отчество,full_name
-tax_number,inn
-yy,year
-Phone_Number,phone
-identification_number,inn
-Date Of Birth,birth_date
-creation_year,year
-dateofbirth,birth_date
-Middle_Name,middle_name
-отчествопокупателя,middle_name
-first_name,first_name
-mobile,phone
-identification_number,inn
-taxpayer_id,inn
-patronymic,middle_name
-год отчетности,year
-Inn_Number,inn
-FAMILY_NAME,last_name
-ДАТА_РОЖДЕНИЯ,birth_date
-fiscal_year,year
+ogrn,ogrn
+гос номер юрлица,ogrn
+Tax_Code,inn
+страховое свидетельство,snils
+имена,first_name
+фамилияклиента,last_name
+НОМЕР СНИЛС,snils
+snils,snils
+имена,first_name
 NUM,phone
-MIDDLE_NAME,middle_name
-фамилия имя отчество,full_name
-фамилияпользователя,last_name
-client,full_name
-person,full_name
-CONTACT,phone
-дата-рождения,birth_date
-регистрационный год,year
-Инн_Клиента,inn
-family,last_name
-username,first_name
-LAST NAME,last_name
-number,phone
-Yyyy,year
-year_number,year
-фамилияклиента,last_name
-middle,middle_name
-dateofbirth,birth_date
-firstname,first_name
-фамилия имя отчество,full_name
-др,birth_date
-ИНН,inn
-имя,first_name
-фио,full_name
-инн_клиента,inn
-birthdata,birth_date
-full,full_name
-number,phone
-birthdate,birth_date
-имя,first_name
-customer_name,full_name
-taxpayer_id,inn
-Inn,inn
-middle,middle_name
-CELLPHONE,phone
-person_name,first_name
-tax_code,inn
-ОТЧЕСТВО,middle_name
-creation_year,year
-год регистрации,year
-ГОД ОТЧЕТНОСТИ,year
-годовой,year
-инн,inn
-full,full_name
-Отчество-клиента,middle_name
-имя,first_name
-CLIENT,full_name
-innnumber,inn
-фамилияклиента,last_name
-yy,year
-миддлнейм,middle_name
-full_name,full_name
-LASTNAME,last_name
-Миддлнейм,middle_name
-year_number,year
-TAX,inn
-givenname,first_name
-BDATE,birth_date
-MIDDLE NAME,middle_name
-FAMILY,last_name
-fathers_name,middle_name
-contact_name,first_name
-yyyy,year
-имя,first_name
-fathers_name,middle_name
-patronymic,middle_name
-first name,first_name
-FAMILY,last_name
-family,last_name
-Year,year
-др,birth_date
-Taxpayer_Id,inn
-Тел_Клиента,phone
-dateofbirth,birth_date
-FIRSTNAME,first_name
-identification_number,inn
-tax_number,inn
-год выпуска,year
-Number,phone
-birthdate,birth_date
-dateofbirth,birth_date
-inn_number,inn
-фамилия-клиента,last_name
-inncode,inn
-client,full_name
-клиент,full_name
-фио,full_name
-yy,year
-Мобильный Телефон,phone
-MIDDLE,middle_name
-год регистрации,year
-complete_name,full_name
-Fiscal_Year,year
-username,first_name
-MIDDLE_NAME,middle_name
-middle,middle_name
-INN,inn
-Телефон,phone
-User_Surname,last_name
-Full_Name,full_name
-CONTACT_NAME,first_name
-Birthdate,birth_date
-tel,phone
-TEL,phone
-клиент,full_name
-lastname,last_name
-fathersname,middle_name
-First Name,first_name
-givenname,first_name
-current_year,year
-фамилия,last_name
-миддлнейм,middle_name
-Tax_Number,inn
-TEL,phone
-tax_code,inn
-CONTACT,phone
-family-name,last_name
-contact_number,phone
-пользователь,full_name
-fio,full_name
-mobile,phone
-ПОЛЬЗОВАТЕЛЬ,full_name
-USER_INN,inn
-lastname,last_name
-dateofbirth,birth_date
-last-name,last_name
-lastname,last_name
-tel,phone
-User_Middlename,middle_name
-имя-клиента,first_name
-год-выпуска,year
-SURNAME,last_name
-Customer_Name,full_name
-full,full_name
-last-name,last_name
-last name,last_name
-Отч.,middle_name
-inn_number,inn
-USER_LASTNAME,last_name
-ФИО,full_name
-person_name,first_name
-fio,full_name
-тел.,phone
-family name,last_name
-dob,birth_date
-DATEOFBIRTH,birth_date
-user_middle,middle_name
-имя_пользователя,first_name
 date of birth,birth_date
-patronymic,middle_name
-client,full_name
-тел_клиента,phone
+Тел.,phone
 инн,inn
-reporting_year,year
-Lastname,last_name
-birth,birth_date
-mobile,phone
-user_name,first_name
-middle-name,middle_name
-year,year
-PERSON_NAME,first_name
-ФИО,full_name
-year,year
-current_year,year
-secondname,last_name
-ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
-ДАТА РОЖДЕНИЯ,birth_date
-givenname,first_name
-clientinn,inn
-lastname,last_name
-пользователь,full_name
-регистрационныйгод,year
-middle,middle_name
-Family,last_name
-имя,first_name
-Second_Name,last_name
-contact_number,phone
-CONTACT_PERSON,full_name
-Мобильный Телефон,phone
-person_name,first_name
-reportingyear,year
-фио,full_name
-ОТЧЕСТВО КЛИЕНТА,middle_name
-full,full_name
-patronymic,middle_name
-fiscal_year,year
-клиент,full_name
-ОТЧЕСТВО,middle_name
-tax_code,inn
-телефон,phone
-имя_пользователя,first_name
-отчествопокупателя,middle_name
+kpp_id,kpp
+др,birth_date
+Клиент,full_name
+fullname,full_name
+код окпо,okpo
+PHONE_NUMBER,phone
+пенсионное страхование,snils
 ДР,birth_date
-мобильный тел,phone
-birthdate,birth_date
-fullname,full_name
-tax_code,inn
-телефон,phone
-Пользователь,full_name
-др,birth_date
-Birthdata,birth_date
-birthdata,birth_date
-TAX_CODE,inn
-last name,last_name
-имяпользователя,first_name
-reporting_year,year
-Датарождения,birth_date
-birthdate,birth_date
-dateofbirth,birth_date
-Отчество клиента,middle_name
-клиент,full_name
-family,last_name
-secondname,last_name
-birthdata,birth_date
-user_lastname,last_name
-Год Создания,year
-birth-date,birth_date
-dob,birth_date
-user_surname,last_name
-Reporting_Year,year
-клиент,full_name
-Отч.,middle_name
-Complete_Name,full_name
-ИМЯ КЛИЕНТА,first_name
-inn_code,inn
-USER_PHONE,phone
-ИНН,inn
-person_name,first_name
-год_регистрации,year
-Отчество,middle_name
-tel,phone
-телефон,phone
-customer_name,full_name
-инн_клиента,inn
-Mobile,phone
-CLIENT_NAME,first_name
-ГОД РЕГИСТРАЦИИ,year
-bdate,birth_date
-ДАТАРОЖДЕНИЯ,birth_date
-person_name,first_name
-completename,full_name
-День Рождения,birth_date
-middle,middle_name
-Отчество клиента,middle_name
-номертелефона,phone
-FIRST NAME,first_name
-Bdate,birth_date
-Фамилия Клиента,last_name
-INN,inn
-bdate,birth_date
-фамилия_пользователя,last_name
-годовой,year
-фамилия,last_name
-firstname,first_name
-год_создания,year
-date of birth,birth_date
-tax_number,inn
-tax_number,inn
-CLIENT_FIRSTNAME,first_name
-Contact_Name,first_name
-birth_date,birth_date
-Отчество клиента,middle_name
-ДАТА_РОЖДЕНИЯ,birth_date
-reporting_year,year
-Client_Name,first_name
-дата-роджения,birth_date
-MOBILE_PHONE,phone
-Creation_Year,year
-Фамилия Клиента,last_name
-миддлнейм,middle_name
-имя-клиента,first_name
-Инн_Клиента,inn
-familyname,last_name
-дата-рождения,birth_date
-fullname,full_name
-тел_клиента,phone
-PHONE_NUM,phone
-USER_NAME,first_name
-second_name,last_name
-INN_NUMBER,inn
-годовой,year
-first_name,first_name
-person,full_name
-fathers_name,middle_name
-Username,first_name
-user_inn,inn
-фамилия_пользователя,last_name
-Contact,phone
-user_middle,middle_name
-USER_MIDDLE,middle_name
-mobile,phone
-CONTACT_NAME,first_name
-отчество,middle_name
-birthday,birth_date
-Годовой,year
-person_name,first_name
-person_name,first_name
-yy,year
-ГОД ОТЧЕТНОСТИ,year
-Фамилия_Пользователя,last_name
-год_регистрации,year
-mobilephone,phone
-clienttel,phone
-firstname,first_name
-mobile_phone,phone
-FULLNAME,full_name
-FAMILY,last_name
-first-name,first_name
-user_middlename,middle_name
-username,first_name
-phone_number,phone
-день роджения,birth_date
-фамилияпользователя,last_name
-FINANCIAL_YEAR,year
-name,first_name
-фамилия клиента,last_name
-name,first_name
-годсоздания,year
-ТЕЛЕФОН,phone
-имяклиента,first_name
-MIDDLE NAME,middle_name
-client_firstname,first_name
-family,last_name
-инн_клиента,inn
-Client_Tel,phone
-user_middlename,middle_name
-username,first_name
-birthdate,birth_date
-ФИО,full_name
-middle,middle_name
-client_inn,inn
-инн,inn
-Family Name,last_name
-др,birth_date
-complete_name,full_name
-taxpayerid,inn
-birth day,birth_date
-yy,year
-taxpayer_id,inn
-fullname,full_name
-CLIENT_NAME,first_name
-middlename,middle_name
-family_name,last_name
-birthdata,birth_date
-year_number,year
-Отчество_клиента,middle_name
-GIVEN_NAME,first_name
-full,full_name
-MIDDLE_NAME,middle_name
-ОТЧ,middle_name
-телефон,phone
-dob,birth_date
-birthdata,birth_date
-mobilephone,phone
-mobile,phone
-contact_person,full_name
-cellphone,phone
-customer_name,full_name
-dob,birth_date
-phone_number,phone
-fio,full_name
-username,first_name
-фамилия,last_name
-Отч.,middle_name
-birthdate,birth_date
-birth date,birth_date
-USER_MIDDLE,middle_name
-mobile,phone
-Person_Name,first_name
-Taxpayer_Id,inn
-num,phone
-Firstname,first_name
-Tel,phone
-дата_роджения,birth_date
-фамилияклиента,last_name
-Отчество Покупателя,middle_name
-tax_id,inn
-given_name,first_name
-год отчетности,year
-bdate,birth_date
-ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
-инн,inn
-financialyear,year
-mobile_phone,phone
-ГОД СОЗДАНИЯ,year
-MOBILE_PHONE,phone
-surname,last_name
-user_lastname,last_name
-User_Name,first_name
-middlename,middle_name
-Name,first_name
-год регистрации,year
-Full,full_name
-familyname,last_name
-отчество-покупателя,middle_name
-user_middlename,middle_name
-birth_date,birth_date
-Отчество Покупателя,middle_name
-мобильный телефон,phone
-family,last_name
-current_year,year
-userlastname,last_name
-Мобильный телефон,phone
-Family_Name,last_name
-patronymic,middle_name
-last name,last_name
-inn_code,inn
-Inn_Number,inn
-Fathers_Name,middle_name
-full_name,full_name
-миддлнейм,middle_name
-username,first_name
-Tax_Code,inn
-год отчетности,year
-Имя Клиента,first_name
-username,first_name
-fullname,full_name
-birth,birth_date
-person,full_name
-middle_name,middle_name
-FIO,full_name
-taxid,inn
-clientinn,inn
-clienttel,phone
-фамилия,last_name
-tax,inn
-ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
-фио,full_name
-user_inn,inn
-отчество_покупателя,middle_name
-годовой,year
-регистрационный год,year
-ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
-Phone_Number,phone
-complete_name,full_name
-family_name,last_name
-middlename,middle_name
-имя_клиента,first_name
-датарождения,birth_date
-client_tel,phone
-тел_клиента,phone
-person_name,first_name
-Мобильный_телефон,phone
-пользователь,full_name
-Dateofbirth,birth_date
-username,first_name
-Фамилия_Пользователя,last_name
-тел.,phone
-first name,first_name
-client_inn,inn
-dob,birth_date
-Inn_Number,inn
-year_number,year
-тел_клиента,phone
-User_Surname,last_name
-inn_number,inn
-person,full_name
-username,first_name
-MIDDLE NAME,middle_name
-ГОД СОЗДАНИЯ,year
-Person_Name,first_name
-мобильный телефон,phone
-год отчетности,year
-ГОД РЕГИСТРАЦИИ,year
-user_name,first_name
-тел.,phone
-clientinn,inn
-birth date,birth_date
-Dateofbirth,birth_date
-firstname,first_name
-Full_Name,full_name
-firstname,first_name
-family name,last_name
-contact_person,full_name
-client_inn,inn
-FINANCIAL_YEAR,year
-user_middlename,middle_name
-USER_LASTNAME,last_name
-family_name,last_name
-РЕГИСТРАЦИОННЫЙ ГОД,year
-Миддлнейм,middle_name
-client_name,first_name
-отчество,middle_name
-отчество,middle_name
-tax_number,inn
-tax,inn
-fathersname,middle_name
-дата_рождения,birth_date
-FISCAL_YEAR,year
-year,year
-фио,full_name
-fiscalyear,year
-MOBILE_PHONE,phone
-год,year
-customername,full_name
-inn_code,inn
-creation_year,year
-usermiddlename,middle_name
-financial_year,year
-tax,inn
-reportingyear,year
-client,full_name
-Отчество_клиента,middle_name
-клиент,full_name
-Taxpayer_Id,inn
-contact_number,phone
-patronymic,middle_name
-пользователь,full_name
-Surname,last_name
-dob,birth_date
-tel,phone
-birthday,birth_date
-Фио,full_name
-first name,first_name
-middle,middle_name
-customer_name,full_name
-FISCAL_YEAR,year
-фамилия клиента,last_name
-tel,phone
-отчество покупателя,middle_name
-CURRENT_YEAR,year
-mobile,phone
-ИНН,inn
-fullname,full_name
-телефон,phone
-taxid,inn
-num,phone
-USER_NAME,first_name
-миддлнейм,middle_name
-mobile,phone
-fullname,full_name
-user_inn,inn
-инн_клиента,inn
-Person,full_name
-full,full_name
-имя клиента,first_name
-ДАТА РОДЖЕНИЯ,birth_date
-ФАМИЛИЯ,last_name
-clientname,first_name
-userlastname,last_name
-number,phone
-регистрационный-год,year
-Пользователь,full_name
-отч,middle_name
-completename,full_name
-inn_number,inn
-тел.,phone
-INN,inn
-фио,full_name
-ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
-Отч.,middle_name
-год создания,year
-год,year
-Dateofbirth,birth_date
-dob,birth_date
-USER_LASTNAME,last_name
-birth date,birth_date
-first_name,first_name
-TAXPAYER_ID,inn
-inn,inn
-patronymic,middle_name
-person,full_name
-user_name,first_name
-Пользователь,full_name
-фамилия клиента,last_name
-birthdate,birth_date
-YY,year
-person,full_name
-creation_year,year
-датарождения,birth_date
-отчество,middle_name
-отчество покупателя,middle_name
-family-name,last_name
-телефон,phone
-инн,inn
-surname,last_name
-фамилияклиента,last_name
-Surname,last_name
-TEL,phone
-user_middle,middle_name
-fio,full_name
-yy,year
-год_создания,year
-birthdate,birth_date
-ГОД ОТЧЕТНОСТИ,year
-тел.,phone
-dateofbirth,birth_date
-FIO,full_name
-birthdata,birth_date
-lastname,last_name
-inn_number,inn
-телефон,phone
-имяпользователя,first_name
-family name,last_name
-identification_number,inn
-middlename,middle_name
-inn_code,inn
-client,full_name
-user_name,first_name
-complete_name,full_name
-ФАМИЛИЯ КЛИЕНТА,last_name
-num,phone
-фамилия_пользователя,last_name
-Год,year
-creation_year,year
-Имя_Пользователя,first_name
-number,phone
-год-отчетности,year
-Complete_Name,full_name
-client,full_name
-patronymic,middle_name
-Дата_Рождения,birth_date
-NAME,first_name
-отчество,middle_name
-Current_Year,year
-num,phone
-Last Name,last_name
-Fullname,full_name
-датарождения,birth_date
-PATRONYMIC,middle_name
-birth,birth_date
-пользователь,full_name
-tax,inn
-INN_CODE,inn
-тел_клиента,phone
-family_name,last_name
-reporting_year,year
-clientname,first_name
-User_Phone,phone
-family,last_name
-middle_name,middle_name
-фамилия-клиента,last_name
-клиент,full_name
-пользователь,full_name
-cellphone,phone
-given_name,first_name
-inn_code,inn
-fullname,full_name
-Отчество-клиента,middle_name
-INN,inn
-birthdate,birth_date
-Отчество клиента,middle_name
-USER_MIDDLE,middle_name
-г.,year
-Отч,middle_name
-INN_CODE,inn
-дата_рождения,birth_date
-LASTNAME,last_name
-фамилия,last_name
-год_отчетности,year
-Мобильный Телефон,phone
-Inn_Code,inn
-Отчество Клиента,middle_name
-NUMBER,phone
-tax,inn
-ТЕЛ_КЛИЕНТА,phone
-year_number,year
-год выпуска,year
-user_middlename,middle_name
-Full_Name,full_name
-contact_name,first_name
-phone_num,phone
-КЛИЕНТ,full_name
-middle,middle_name
-ФИО,full_name
-фамилия,last_name
-CLIENT_FIRSTNAME,first_name
-ФИО,full_name
-Год,year
-Birth Date,birth_date
-tax_number,inn
-number,phone
-birth_date,birth_date
-client_inn,inn
-second_name,last_name
-USERNAME,first_name
-dateofbirth,birth_date
-contact_person,full_name
-Год Отчетности,year
-first-name,first_name
-Client,full_name
-ТЕЛ.,phone
-фамилияклиента,last_name
-Contact_Name,first_name
-complete_name,full_name
-identificationnumber,inn
-Birth Date,birth_date
-ГОД СОЗДАНИЯ,year
-Dob,birth_date
-tax,inn
-birthdate,birth_date
-Middle_Name,middle_name
-contact_number,phone
-taxpayer_id,inn
-number,phone
-tax,inn
-Отчество Покупателя,middle_name
-Family Name,last_name
-BIRTH DATE,birth_date
-тел.,phone
-taxpayer_id,inn
-регистрационный год,year
-reportingyear,year
-birth,birth_date
-Fio,full_name
-completename,full_name
-contact_number,phone
-given_name,first_name
-cellphone,phone
-cellphone,phone
-Fio,full_name
-client,full_name
-surname,last_name
-PERSON_NAME,first_name
-yyyy,year
-middle,middle_name
-имя клиента,first_name
-fio,full_name
-День Роджения,birth_date
-fathers_name,middle_name
-день рождения,birth_date
-patronymic,middle_name
-Мобильный Телефон,phone
-patronymic,middle_name
-middle_name,middle_name
-год_регистрации,year
-инн,inn
-Middle Name,middle_name
-Full_Name,full_name
-usermiddlename,middle_name
-birthdate,birth_date
-birthdata,birth_date
-ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
-Full,full_name
-Имя,first_name
-phone_num,phone
-ФИО,full_name
-lastname,last_name
-миддлнейм,middle_name
-user_middlename,middle_name
-Фамилия Имя Отчество,full_name
-full,full_name
-Full_Name,full_name
-middle,middle_name
-Family Name,last_name
-Мобильный Тел,phone
-phone,phone
-client,full_name
-Client,full_name
-user_lastname,last_name
-FAMILY,last_name
-surname,last_name
-patronymic,middle_name
-Дата_Рождения,birth_date
-фамилияпользователя,last_name
-дата_роджения,birth_date
-name,first_name
-Phone_Num,phone
-user_inn,inn
-user_phone,phone
-client,full_name
-client_tel,phone
-full_name,full_name
-FIRST NAME,first_name
-fullname,full_name
-username,first_name
-year,year
-DATE OF BIRTH,birth_date
-г.,year
-NUMBER,phone
-др,birth_date
-Отчество клиента,middle_name
-Отч.,middle_name
-год_выпуска,year
-фамилияклиента,last_name
-FULLNAME,full_name
-годовой,year
-имяклиента,first_name
-ИМЯ,first_name
-user_middlename,middle_name
-currentyear,year
-current_year,year
-Taxpayer_Id,inn
-отч,middle_name
-ДЕНЬ РОЖДЕНИЯ,birth_date
-name,first_name
-Client,full_name
-first name,first_name
-Дата Роджения,birth_date
-Год Создания,year
-Год Выпуска,year
-year,year
-г.,year
-Дата Роджения,birth_date
-full_name,full_name
-identificationnumber,inn
-inn_code,inn
-person_name,first_name
-tel,phone
-second_name,last_name
-инн_клиента,inn
-Yyyy,year
-CONTACT_NAME,first_name
-ОТЧ.,middle_name
-тел.,phone
-Creation_Year,year
-USER_MIDDLE,middle_name
-mobilephone,phone
-tax_id,inn
-birthdate,birth_date
-FAMILY NAME,last_name
-user_phone,phone
-firstname,first_name
-день роджения,birth_date
-family name,last_name
-client_firstname,first_name
-fathers_name,middle_name
-фио,full_name
-номер телефона,phone
-patronymic,middle_name
-tax_code,inn
-имя клиента,first_name
-user_lastname,last_name
-пользователь,full_name
-Whatsapp,phone
-Surname,last_name
-middle_name,middle_name
-user_surname,last_name
-ГОДОВОЙ,year
-birth day,birth_date
-middle,middle_name
-ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
-Person,full_name
-имя,first_name
-user_inn,inn
-Mobile,phone
-ИНН,inn
-given_name,first_name
-name,first_name
-fullname,full_name
-patronymic,middle_name
-tax_number,inn
-inn_code,inn
-CURRENT_YEAR,year
-fathers_name,middle_name
-fullname,full_name
-fio,full_name
-TAX_ID,inn
-Отчество Покупателя,middle_name
-phone,phone
-Year,year
-ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
-number,phone
-имя,first_name
-Inn_Code,inn
-family,last_name
-фамилия клиента,last_name
-tax,inn
-отчество покупателя,middle_name
-день роджения,birth_date
-tax_code,inn
-middle name,middle_name
-inn_code,inn
-contact_name,first_name
-Фио,full_name
-Reporting_Year,year
-мобильный-тел,phone
-tel,phone
-last-name,last_name
-FULL_NAME,full_name
-клиент,full_name
-USER_NAME,first_name
-family_name,last_name
-user_middle,middle_name
-ДАТА РОЖДЕНИЯ,birth_date
-customername,full_name
-tax_code,inn
-имяклиента,first_name
-birthdate,birth_date
-tel,phone
-user_phone,phone
-IDENTIFICATION_NUMBER,inn
-ИНН,inn
-person_name,first_name
-DATEOFBIRTH,birth_date
-Person_Name,first_name
-Client,full_name
-middle,middle_name
-middle,middle_name
-financial_year,year
-имя,first_name
-день_рождения,birth_date
-person,full_name
-Username,first_name
-Client_Tel,phone
-фио,full_name
-contact,phone
-birth_date,birth_date
-имяклиента,first_name
-Фамилия_Имя_Отчество,full_name
-телефон,phone
-User_Lastname,last_name
-yy,year
-inn_number,inn
-Год Регистрации,year
-tel,phone
-FAMILY_NAME,last_name
-person,full_name
-User_Name,first_name
-Отчество_клиента,middle_name
-User_Middlename,middle_name
-innnumber,inn
-client_inn,inn
-день_рождения,birth_date
-full_name,full_name
-tax_id,inn
-Номер Телефона,phone
-фамилияклиента,last_name
-full,full_name
-userlastname,last_name
-ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
-tax_id,inn
-middle name,middle_name
-fathersname,middle_name
-инн,inn
-Tax,inn
-отчество-покупателя,middle_name
-username,first_name
-user_lastname,last_name
-Инн,inn
-user_name,first_name
-middle,middle_name
-clientfirstname,first_name
-CUSTOMER_NAME,full_name
-user_middle,middle_name
-full_name,full_name
-отчество покупателя,middle_name
-Фамилия_Пользователя,last_name
-currentyear,year
-client,full_name
-Фамилия Имя Отчество,full_name
-SECOND_NAME,last_name
-Family Name,last_name
-current_year,year
-username,first_name
-mobile,phone
-ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
-CLIENT_NAME,first_name
-taxpayer_id,inn
-др,birth_date
-completename,full_name
-birthdata,birth_date
-creation_year,year
-МОБИЛЬНЫЙ ТЕЛЕФОН,phone
-BIRTH,birth_date
-годотчетности,year
-contactname,first_name
-Client,full_name
-отч,middle_name
-ОТЧ.,middle_name
-Creation_Year,year
-годовой,year
-fio,full_name
-user_lastname,last_name
-patronymic,middle_name
-yyyy,year
-ИНН,inn
-Family,last_name
-username,first_name
-contact_name,first_name
-contact_person,full_name
-user_name,first_name
-LASTNAME,last_name
-birth-date,birth_date
-Инн,inn
-MIDDLE NAME,middle_name
-отчество покупателя,middle_name
-отчество,middle_name
-fio,full_name
-user_lastname,last_name
-DATEOFBIRTH,birth_date
-дата_рождения,birth_date
-taxcode,inn
-last-name,last_name
-middle,middle_name
-tax_number,inn
-current_year,year
-День Роджения,birth_date
-innnumber,inn
-Год,year
-FULL,full_name
-client_inn,inn
-first name,first_name
-Мобильный-телефон,phone
-дата_рождения,birth_date
-lastname,last_name
-ФАМИЛИЯ ИМЯ ОТЧЕСТВО,full_name
-taxcode,inn
-tax_code,inn
-tel,phone
-contact,phone
-COMPLETE_NAME,full_name
-phone_number,phone
-FULL,full_name
-дата_рождения,birth_date
-taxcode,inn
-First Name,first_name
-TAX_NUMBER,inn
-inn,inn
-tax_id,inn
-client_tel,phone
-отчество клиента,middle_name
-whatsapp,phone
-телефон,phone
-user_middlename,middle_name
-fathers_name,middle_name
-client_inn,inn
-МИДДЛНЕЙМ,middle_name
-ДР,birth_date
-номер телефона,phone
-name,first_name
-fathers_name,middle_name
-INN_NUMBER,inn
-Person,full_name
-имя,first_name
-Имя,first_name
-отч.,middle_name
-last name,last_name
-num,phone
-contactperson,full_name
-tax,inn
-отч,middle_name
-Creation_Year,year
-регистрационный_год,year
-PATRONYMIC,middle_name
-датарождения,birth_date
-SURNAME,last_name
-день_роджения,birth_date
-yyyy,year
-middle,middle_name
-Отчество-клиента,middle_name
-birthdate,birth_date
-givenname,first_name
-День Рождения,birth_date
-Middle,middle_name
-TAX_CODE,inn
-годовой,year
-tax_number,inn
-тел.,phone
-user_middle,middle_name
-Reporting_Year,year
-birthdate,birth_date
-client_tel,phone
-USERNAME,first_name
-Bdate,birth_date
-middle_name,middle_name
-client,full_name
-ИНН,inn
-client_inn,inn
-Инн,inn
-FATHERS_NAME,middle_name
-family,last_name
-Customer_Name,full_name
-birth_date,birth_date
-годовой,year
-dateofbirth,birth_date
-датароджения,birth_date
-пользователь,full_name
-User_Inn,inn
-birthdata,birth_date
-миддлнейм,middle_name
-birth-day,birth_date
-last name,last_name
-CLIENT_TEL,phone
-birthdate,birth_date
-yy,year
-Фио,full_name
-firstname,first_name
-surname,last_name
-YEAR_NUMBER,year
-YY,year
-день-роджения,birth_date
-First Name,first_name
-mobile,phone
-person_name,first_name
-годрегистрации,year
-Фамилия-Имя-Отчество,full_name
-FAMILY_NAME,last_name
-personname,first_name
-номер_телефона,phone
-yyyy,year
-year,year
-birthdate,birth_date
-INN_CODE,inn
-birth,birth_date
-Given_Name,first_name
-Телефон,phone
-financial_year,year
-отчество покупателя,middle_name
-Client,full_name
-surname,last_name
-имяпользователя,first_name
-Миддлнейм,middle_name
-YY,year
-Person_Name,first_name
-family_name,last_name
-др,birth_date
-fio,full_name
-username,first_name
-ИНН,inn
-year_number,year
-Customer_Name,full_name
-name,first_name
-TAX_CODE,inn
-Number,phone
-num,phone
-Tax,inn
-Family,last_name
-Client,full_name
-день_роджения,birth_date
-год отчетности,year
-регистрационный_год,year
-yyyy,year
-год выпуска,year
-last name,last_name
-BIRTH DAY,birth_date
-person,full_name
-patronymic,middle_name
-fio,full_name
-fullname,full_name
-client_firstname,first_name
-full,full_name
-patronymic,middle_name
-иннклиента,inn
-birthdata,birth_date
-CLIENT_INN,inn
-identification_number,inn
-Birthdate,birth_date
-User_Lastname,last_name
-фамилияклиента,last_name
-CLIENT_FIRSTNAME,first_name
-financial_year,year
-fullname,full_name
-whatsapp,phone
-patronymic,middle_name
-num,phone
-Год Выпуска,year
-YEAR_NUMBER,year
-middle_name,middle_name
-инн,inn
-Fathers_Name,middle_name
-creation_year,year
-user_lastname,last_name
-телефон,phone
-номер_телефона,phone
-First Name,first_name
-Дата_Рождения,birth_date
-client_firstname,first_name
-family,last_name
-Yyyy,year
-client_firstname,first_name
-birthdate,birth_date
-ФИО,full_name
-name,first_name
-taxpayer_id,inn
-contact_name,first_name
-Last Name,last_name
-dateofbirth,birth_date
-identificationnumber,inn
-contactperson,full_name
-user_phone,phone
-client_name,first_name
-Отчество-клиента,middle_name
-год_отчетности,year
-phone_num,phone
-фамилияимяотчество,full_name
-Мобильный-телефон,phone
-FAMILY,last_name
-отчество_покупателя,middle_name
-инн,inn
-дата роджения,birth_date
-год-регистрации,year
-firstname,first_name
-миддлнейм,middle_name
-Tax_Code,inn
-family,last_name
-creationyear,year
-currentyear,year
-ИНН,inn
-тел_клиента,phone
-имя_клиента,first_name
-user_middle,middle_name
-клиент,full_name
-отчество,middle_name
-clientinn,inn
-Inn_Code,inn
-ИМЯ КЛИЕНТА,first_name
-firstname,first_name
-DATE OF BIRTH,birth_date
-GIVEN_NAME,first_name
-Дата Рождения,birth_date
-Complete_Name,full_name
-USER_LASTNAME,last_name
-user_surname,last_name
-num,phone
-Full,full_name
-client_inn,inn
-дата роджения,birth_date
-клиент,full_name
-ОТЧ.,middle_name
-customer_name,full_name
-Given_Name,first_name
-tax_number,inn
-user_surname,last_name
-миддлнейм,middle_name
-Fiscal_Year,year
-contact_person,full_name
-Num,phone
-firstname,first_name
-USER_MIDDLE,middle_name
-датарождения,birth_date
-current_year,year
-tax,inn
-fiscal_year,year
-ИНН,inn
-тел.,phone
-Identification_Number,inn
-username,first_name
-birth date,birth_date
-dateofbirth,birth_date
-MIDDLE NAME,middle_name
-Person_Name,first_name
-Fiscal_Year,year
-Family,last_name
-фамилия_пользователя,last_name
-день_роджения,birth_date
-inn,inn
-PHONE_NUM,phone
-DOB,birth_date
-ИНН,inn
-Год Создания,year
-регистрационный год,year
-год_выпуска,year
-Lastname,last_name
-middle_name,middle_name
-client_inn,inn
-mobile,phone
-contact,phone
-phone,phone
-отч,middle_name
-full_name,full_name
-др,birth_date
-NAME,first_name
-деньроджения,birth_date
-датароджения,birth_date
-tax_number,inn
-имяклиента,first_name
-client_tel,phone
-LAST NAME,last_name
-year_number,year
-Num,phone
-Имя,first_name
-contact_person,full_name
-дата-рождения,birth_date
-имя_пользователя,first_name
-firstname,first_name
-lastname,last_name
-IDENTIFICATION_NUMBER,inn
-fathers_name,middle_name
-год,year
-TAX_NUMBER,inn
-г.,year
-тел.,phone
-middle,middle_name
-Имя Клиента,first_name
-фамилия-клиента,last_name
-birthdate,birth_date
-день роджения,birth_date
-Client_Inn,inn
-bdate,birth_date
-Пользователь,full_name
-second_name,last_name
-фамилия_пользователя,last_name
-tax,inn
-Surname,last_name
-patronymic,middle_name
-inn,inn
-FIRSTNAME,first_name
-пользователь,full_name
-датарождения,birth_date
-Inn_Code,inn
-client_firstname,first_name
-Middle Name,middle_name
-num,phone
-tax_number,inn
-инн,inn
-день роджения,birth_date
-год_отчетности,year
-user_inn,inn
-отч,middle_name
-fio,full_name
-отчество клиента,middle_name
-INN_NUMBER,inn
-lastname,last_name
-fullname,full_name
-bdate,birth_date
-Full,full_name
-phone,phone
-FATHERS_NAME,middle_name
-fullname,full_name
-Yyyy,year
-ИМЯ,first_name
-mobile_phone,phone
-FAMILY_NAME,last_name
-инн,inn
-number,phone
-CUSTOMER_NAME,full_name
-user_middlename,middle_name
-mobile_phone,phone
-Person,full_name
-client_inn,inn
-middle_name,middle_name
-last-name,last_name
-отч,middle_name
-фамилияимяотчество,full_name
-Датарождения,birth_date
+okpo_org,okpo
 номер-телефона,phone
-фамилия_пользователя,last_name
+first name,first_name
+инн,inn
+Snils,snils
+огрн-индивидуального-предпринимателя,ogrnip
+номер телефона,phone
+middle name,middle_name
+ПРИЧИНА ПОСТАНОВКИ,kpp
+огрн,ogrn
+user_name,first_name
+фамилия,last_name
+dateofbirth,birth_date
+User_Middlename,middle_name
+okpo_id,okpo
+Номер Окпо,okpo
+firstname,first_name
+огрн,ogrn
+PFR,snils
+snils,snils
+Full,full_name
+user_surname,last_name
+taxpayer_id,inn
+код окпо,okpo
+inn,inn
+ogrn_id,ogrn
+OGRN,ogrn
+INSURANCE_NUMBER,snils
+kpp_id,kpp
+client_inn,inn
+userphone,phone
+Отч,middle_name
+кпп организации,kpp
+имена,first_name
+день_роджения,birth_date
+реестрип,ogrnip
+fathers_name,middle_name
+BIRTH DAY,birth_date
+пользователь,full_name
+client_name,first_name
+person,full_name
+ФИО,full_name
+Клиент,full_name
+BIRTHDATA,birth_date
+Kpp_Id,kpp
+номер записи в егрип,ogrnip
+ogrn_number,ogrn
+номер-записи-в-егрип,ogrnip
+ogrn_id,ogrn
+USER_PHONE,phone
+snils,snils
+lastname,last_name
+снилс,snils
+user_lastname,last_name
+ogrn_code,ogrn
+госрегистрация,ogrn
+деньрождения,birth_date
+НОМЕР ЗАПИСИ В ЕГРИП,ogrnip
+Снилс,snils
+userinn,inn
+middle,middle_name
+фамилия,last_name
+огрнип ип,ogrnip
+taxid,inn
+СНИЛС,snils
+tax,inn
+основной гос номер,ogrn
+причина-постановки,kpp
+User_Middle,middle_name
+классификатор-предприятий,okpo
+client_name,first_name
+номер_регистрации,ogrn
+др,birth_date
+Person,full_name
+пфр,snils
+given_name,first_name
+РЕГИСТРАЦИОННЫЙ НОМЕР ИП,ogrnip
+код причины постановки,kpp
+Кпп,kpp
+МИДДЛНЕЙМ,middle_name
+birth date,birth_date
+birth,birth_date
+клиент,full_name
+Отчество клиента,middle_name
+snils,snils
+ЕГРИП НОМЕР,ogrnip
+Surname,last_name
+номерокпо,okpo
+датарождения,birth_date
+номерогрн,ogrn
+snils_number,snils
+bdate,birth_date
+пенсионноестрахование,snils
+огрнип код,ogrnip
+num,phone
+фамилияимяотчество,full_name
+Ogrn,ogrn
+классификатор предприятий,okpo
+Okpo_Company,okpo
+tax_id,inn
+тел.,phone
+FATHERS_NAME,middle_name
+пенсионное-страхование,snils
+ДАТА РОДЖЕНИЯ,birth_date
+номер_регистрации,ogrn
+номер пфр,snils
+client_name,first_name
+номерснилс,snils
+complete_name,full_name
+taxid,inn
+номер-пфр,snils
+инн,inn
+name,first_name
+contact,phone
+НОМЕР ЗАПИСИ В ЕГРИП,ogrnip
+pfr,snils
+Pfr,snils
+contact,phone
+Birthdate,birth_date
 client,full_name
+гос-номер-юрлица,ogrn
+Bdate,birth_date
+миддлнейм,middle_name
+НОМЕР ОКПО,okpo
+регистрационный-номер,ogrn
+огрн,ogrn
+огрн,ogrn
+dateofbirth,birth_date
+user_inn,inn
+ОГРНИП ИП,ogrnip
+kpp_code,kpp
+ОБЩЕРОССИЙСКИЙ КЛАССИФИКАТОР,okpo
+birth_date,birth_date
+Мобильный Телефон,phone
+кпп-фирмы,kpp
+family_name,last_name
+Отчество,middle_name
+middle name,middle_name
+гос-номер-юрлица,ogrn
+егрип номер,ogrnip
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+Name,first_name
+мобильный-тел,phone
+kpp_code,kpp
+номерогрн,ogrn
+номерогрнип,ogrnip
+реестр_ип,ogrnip
+Okpo_Code,okpo
+GIVEN_NAME,first_name
+okpo_company,okpo
+customer_name,full_name
+Фамилия,last_name
+ogrnip_code,ogrnip
+last_name,last_name
+User_Surname,last_name
+единыйгосреестр,ogrn
+tax,inn
+основной_гос_номер,ogrn
+num,phone
+СНИЛС,snils
+Окпо,okpo
+snils_number,snils
+fio,full_name
+taxpayer_id,inn
+Tax_Code,inn
+user_middlename,middle_name
+familyname,last_name
+client,full_name
+full_name,full_name
+реестр ип,ogrnip
+код постановки на учет,kpp
+огрнип,ogrnip
+User_Surname,last_name
+Номер Окпо,okpo
+пенсионное страхование,snils
+КПП,kpp
+tax_id,inn
+kpp_number,kpp
+ИНН_КЛИЕНТА,inn
+family_name,last_name
+Full,full_name
+огрнип_ип,ogrnip
+SURNAME,last_name
+кппорганизации,kpp
+Регистрационный Номер,ogrn
+огрн,ogrn
+Dateofbirth,birth_date
+USER_SURNAME,last_name
+fathers_name,middle_name
+middle_name,middle_name
+госрегистрация,ogrn
+общероссийскийклассификатор,okpo
 family,last_name
+кодпричиныпостановки,kpp
+ogrnip_id,ogrnip
+Fio,full_name
+отч,middle_name
+дата_рождения,birth_date
+PHONE_NUMBER,phone
+КОД ПОСТАНОВКИ НА УЧЕТ,kpp
+страховое свидетельство,snils
+кпп,kpp
+дата_рождения,birth_date
+ogrn,ogrn
+клиент,full_name
+причина_постановки,kpp
+family,last_name
+Страховой Номер,snils
+номер_огрн,ogrn
+complete_name,full_name
+user_name,first_name
+страховое-свидетельство,snils
+CONTACT_PERSON,full_name
+имя_пользователя,first_name
+номерснилс,snils
+fio,full_name
+окпо,okpo
+Ogrnip_Code,ogrnip
+госрегистрация,ogrn
+номерснилс,snils
+kpp_id,kpp
+okpo_code,okpo
+номер телефона,phone
+okpoorg,okpo
+second_name,last_name
+Contact_Number,phone
+USER_LASTNAME,last_name
+кпп,kpp
+Whatsapp,phone
+full,full_name
+user_phone,phone
+family name,last_name
+last name,last_name
+User_Inn,inn
+огрн_ип,ogrnip
+снилс,snils
+ogrnid,ogrn
+ОГРНИП,ogrnip
+bdate,birth_date
+Отч.,middle_name
+огрнип ип,ogrnip
+TAX,inn
+contact_person,full_name
+Код Организации В Окпо,okpo
+Пфр Номер,snils
+номерокпо,okpo
+снилс,snils
+Телефон,phone
+Кпп Юрлица,kpp
+лицевойсчетпфр,snils
+user_surname,last_name
+номер_пфр,snils
+пфр-номер,snils
+Phone_Num,phone
+Okpo_Id,okpo
+день рождения,birth_date
+огрнип код,ogrnip
+общероссийский_классификатор,okpo
+middle_name,middle_name
+client,full_name
+pension_number,snils
+OGRN_NUMBER,ogrn
+ogrnip,ogrnip
+INN,inn
+complete_name,full_name
+INN,inn
+tax_code,inn
+Kpp_Number,kpp
+okpoorg,okpo
+first-name,first_name
+birth,birth_date
+birthdata,birth_date
+код организации в окпо,okpo
+иннклиента,inn
+страховое_свидетельство,snils
+имя_пользователя,first_name
+Дата Роджения,birth_date
+номерпфр,snils
+PHONE,phone
+okpo_id,okpo
+ЕГРИП НОМЕР,ogrnip
+client,full_name
+миддлнейм,middle_name
+contact_name,first_name
+отчество,middle_name
+Огрнип Код,ogrnip
+snils_number,snils
+patronymic,middle_name
+кпп-фирмы,kpp
+Имена,first_name
+number,phone
+fio,full_name
+phone,phone
+FULLNAME,full_name
+Реестр Ип,ogrnip
+fathers_name,middle_name
+Огрнип,ogrnip
+номер телефона,phone
+ФАМИЛИЯ,last_name
+Отчество,middle_name
+dob,birth_date
+contactperson,full_name
+user_inn,inn
+USER_NAME,first_name
+тел.,phone
+client,full_name
+фамилия,last_name
+Tel,phone
+огрн,ogrn
+userinn,inn
+user_phone,phone
+middle-name,middle_name
+датарождения,birth_date
+family_name,last_name
+Contact_Person,full_name
+код причины постановки,kpp
+ФИО,full_name
+last-name,last_name
+Whatsapp,phone
+client_name,first_name
+identification_number,inn
+identificationnumber,inn
+Birth Date,birth_date
+мобильный телефон,phone
+Основной Гос Номер,ogrn
+Given_Name,first_name
+num,phone
+PHONE_NUMBER,phone
+middle,middle_name
+ЛИЦЕВОЙ СЧЕТ ПФР,snils
+SNILS,snils
+user_inn,inn
+кппюрлица,kpp
+KPP_NUMBER,kpp
+причина постановки,kpp
+user_surname,last_name
+Кпп Компании,kpp
+ОГРНИП ИП,ogrnip
+usermiddlename,middle_name
+Общероссийский Классификатор,okpo
+клиент,full_name
+огрн-ип,ogrnip
+middle name,middle_name
+tel,phone
+отч,middle_name
+имя,first_name
+НОМЕР ПФР,snils
+Огрнип,ogrnip
+CONTACT,phone
+миддлнейм,middle_name
+complete_name,full_name
+кпп,kpp
+номер окпо,okpo
+birth,birth_date
+пользователь,full_name
+Lastname,last_name
+customer_name,full_name
+Код Постановки На Учет,kpp
+номер окпо,okpo
+snils,snils
+код окпо,okpo
+mobile,phone
+Мобильный-телефон,phone
+кппфирмы,kpp
+лицевой счет пфр,snils
+др,birth_date
+Okpo_Number,okpo
+PERSON,full_name
+кпп,kpp
+MIDDLE,middle_name
+огрн,ogrn
+день_роджения,birth_date
+Fathers_Name,middle_name
+first name,first_name
+общероссийский-классификатор,okpo
+complete_name,full_name
+bdate,birth_date
+TAX_NUMBER,inn
+миддлнейм,middle_name
+USERNAME,first_name
+Client_Firstname,first_name
+НОМЕР ЗАПИСИ В ЕГРЮЛ,ogrn
+givenname,first_name
+огрн-ип,ogrnip
+Complete_Name,full_name
+имя клиента,first_name
+KPP_ID,kpp
+Фамилия_Пользователя,last_name
+Дата_Рождения,birth_date
+код организации в окпо,okpo
+CLIENT_FIRSTNAME,first_name
+фамилияпользователя,last_name
+DATEOFBIRTH,birth_date
+регистрационныйномер,ogrn
+middle name,middle_name
+Inn,inn
+пфрномер,snils
+кпп юрлица,kpp
+TEL,phone
+Дата_Рождения,birth_date
+kppid,kpp
+окпо,okpo
+Birth Day,birth_date
+кпп фирмы,kpp
+номерогрнип,ogrnip
+Фамилия_Имя_Отчество,full_name
+Мобильный Тел,phone
+общероссийскийклассификатор,okpo
+фамилия,last_name
+ГОСРЕГИСТРАЦИЯ,ogrn
+инн_клиента,inn
+фамилия,last_name
+Регистрационный Номер,ogrn
+Client,full_name
+общероссийский классификатор,okpo
+user_lastname,last_name
+ogrnip,ogrnip
+пользователь,full_name
+Кпп,kpp
+кодпричиныпостановки,kpp
+фамилия-клиента,last_name
+ogrncode,ogrn
+огрнип,ogrnip
+fathers_name,middle_name
+ogrnip_id,ogrnip
+общероссийский-классификатор,okpo
+fullname,full_name
+Ogrn_Id,ogrn
+num,phone
+Fio,full_name
+kppcode,kpp
+client,full_name
+КЛИЕНТ,full_name
+pensionnumber,snils
+family,last_name
+phone_num,phone
+Okpo_Org,okpo
+inncode,inn
+имя_пользователя,first_name
+ПОЛЬЗОВАТЕЛЬ,full_name
+миддлнейм,middle_name
+family name,last_name
+Отч,middle_name
+family name,last_name
+мобильный тел,phone
+user_phone,phone
+mobile,phone
+огрн ип,ogrnip
+огрн-индивидуального-предпринимателя,ogrnip
+основной-гос-номер,ogrn
+username,first_name
+client_inn,inn
+дата роджения,birth_date
+отчество,middle_name
+Огрнип Код,ogrnip
+pension_number,snils
+страховой номер,snils
+Фамилия Имя Отчество,full_name
+страховое-свидетельство,snils
+PHONE_NUM,phone
+Отч.,middle_name
+Номер Записи В Егрюл,ogrn
+причина-постановки,kpp
+complete_name,full_name
+егрюлномер,ogrn
+taxpayer_id,inn
+kppnumber,kpp
+ТЕЛ.,phone
+KPP_CODE,kpp
+инн,inn
+миддлнейм,middle_name
+insurance_number,snils
+personname,first_name
+CLIENT_INN,inn
+surname,last_name
+Кпп Организации,kpp
+Mobile,phone
+отчество,middle_name
+ИНН_КЛИЕНТА,inn
+user_lastname,last_name
+tax,inn
+user_surname,last_name
+фамилия_пользователя,last_name
+ФАМИЛИЯ КЛИЕНТА,last_name
+ogrn_code,ogrn
+lastname,last_name
+пфр,snils
+отчество-покупателя,middle_name
+okpocode,okpo
+tax_code,inn
+имена,first_name
+username,first_name
+датарождения,birth_date
+ogrnip,ogrnip
+Номер Огрнип,ogrnip
+СНИЛС,snils
+tax_id,inn
+LAST NAME,last_name
+кппорганизации,kpp
+full,full_name
+family-name,last_name
+имя,first_name
+Birth_Date,birth_date
+contact_person,full_name
+миддлнейм,middle_name
+user_inn,inn
+причинапостановки,kpp
+fullname,full_name
+ФАМИЛИЯ ИМЯ ОТЧЕСТВО,full_name
+phone,phone
+Егрюл Номер,ogrn
+причина-постановки,kpp
+инн,inn
+Имена,first_name
+Complete_Name,full_name
+cellphone,phone
+номеррегистрации,ogrn
+номер огрн,ogrn
+tax_number,inn
+person_name,first_name
+FAMILY_NAME,last_name
+отчество клиента,middle_name
+миддлнейм,middle_name
+окпо,okpo
+birthdate,birth_date
+FIO,full_name
+егрипномер,ogrnip
+Инн,inn
+phone_number,phone
+full_name,full_name
+whatsapp,phone
+okpo_code,okpo
+mobile,phone
+FAMILY NAME,last_name
+user_inn,inn
+tax_code,inn
+tax,inn
+номер-записи-в-егрип,ogrnip
+СНИЛС,snils
+фамилия_пользователя,last_name
+tax_code,inn
+ogrnip_code,ogrnip
+огрн ип,ogrnip
+Мобильный Телефон,phone
+дата_рождения,birth_date
+patronymic,middle_name
+код причины постановки,kpp
+страховое свидетельство,snils
+фамилия_пользователя,last_name
+номерогрн,ogrn
+Фамилия,last_name
+пфр_номер,snils
+фио,full_name
+family,last_name
+причина_постановки,kpp
+регистрационный_номер,ogrn
+фио,full_name
+mobile,phone
+ogrnip,ogrnip
+страховой номер,snils
+номер_окпо,okpo
+пользователь,full_name
+Дата_Рождения,birth_date
+insurance_number,snils
+КПП,kpp
+огрниндивидуальногопредпринимателя,ogrnip
+ОКПО,okpo
+КПП,kpp
+customer_name,full_name
+mobile,phone
+USER_NAME,first_name
+телклиента,phone
+имена,first_name
+BIRTHDATE,birth_date
+классификатор предприятий,okpo
+Единый Госреестр,ogrn
+first-name,first_name
+пенсионное страхование,snils
+Фамилия Имя Отчество,full_name
+номертелефона,phone
+mobile,phone
+ОКПО,okpo
+username,first_name
+inncode,inn
+егрюлномер,ogrn
+дата роджения,birth_date
+деньроджения,birth_date
+middle_name,middle_name
+kpp_id,kpp
+NAME,first_name
+OKPO,okpo
+tel,phone
+Инн,inn
+др,birth_date
+clientinn,inn
+ПОЛЬЗОВАТЕЛЬ,full_name
+датарождения,birth_date
+лицевойсчетпфр,snils
+кпп организации,kpp
+Ogrnip_Id,ogrnip
+тел.,phone
+Кпп Компании,kpp
+номер записи в егрюл,ogrn
+tax,inn
+middle,middle_name
+family_name,last_name
+КОД ОКПО,okpo
+firstname,first_name
+классификаторпредприятий,okpo
+tax_number,inn
+user_middle,middle_name
+Lastname,last_name
+client_name,first_name
+ГОСРЕГИСТРАЦИЯ,ogrn
+pensionnumber,snils
+TAXPAYER_ID,inn
+миддлнейм,middle_name
+contact_person,full_name
+secondname,last_name
+ОГРНИП,ogrnip
+snils_number,snils
+имяклиента,first_name
+Реестр Ип,ogrnip
+номертелефона,phone
+ИМЯ КЛИЕНТА,first_name
+имена,first_name
+ИМЕНА,first_name
+кпп организации,kpp
+СНИЛС,snils
+окпо,okpo
+birthdate,birth_date
+егрюл номер,ogrn
+егрюл номер,ogrn
+страховой номер,snils
+MOBILE_PHONE,phone
+страховое свидетельство,snils
+OGRNIP_NUMBER,ogrnip
+инн,inn
+client,full_name
+фамилия,last_name
+Dob,birth_date
+fio,full_name
+taxid,inn
+кпп компании,kpp
+Инн,inn
+mobile,phone
+код окпо,okpo
+КПП,kpp
+кпп_юрлица,kpp
+Customer_Name,full_name
+ОКПО,okpo
+ПФР,snils
+full,full_name
+миддлнейм,middle_name
+окпо,okpo
+middlename,middle_name
+first_name,first_name
+Contact,phone
+код_организации_в_окпо,okpo
+okponumber,okpo
+mobile,phone
+ogrnipnumber,ogrnip
+user_middlename,middle_name
+family,last_name
+датароджения,birth_date
+birth_day,birth_date
+Pension_Number,snils
+пфр,snils
+contact_person,full_name
+Налоговый Кпп,kpp
+User_Surname,last_name
+fio,full_name
+КПП ОРГАНИЗАЦИИ,kpp
+огрн_индивидуального_предпринимателя,ogrnip
+Family,last_name
+код окпо,okpo
+patronymic,middle_name
+tax,inn
+user_inn,inn
+Birthdate,birth_date
+Фамилия-Имя-Отчество,full_name
+user_name,first_name
+contact_person,full_name
+отч,middle_name
+окпо,okpo
+date_of_birth,birth_date
+отчествопокупателя,middle_name
+user_lastname,last_name
+surname,last_name
+person,full_name
+identification_number,inn
+lastname,last_name
+Номер Снилс,snils
+contact_person,full_name
+номертелефона,phone
+кодпричиныпостановки,kpp
+OKPO_ORG,okpo
+Огрн,ogrn
+тел.,phone
+whatsapp,phone
+bdate,birth_date
+дата_роджения,birth_date
+Okpo_Number,okpo
+contact_person,full_name
+user_inn,inn
+код_окпо,okpo
+Отч.,middle_name
+CLIENT_FIRSTNAME,first_name
+family,last_name
+ogrn_number,ogrn
+классификатор_предприятий,okpo
+Страховое Свидетельство,snils
+страховое_свидетельство,snils
+fullname,full_name
+number,phone
+имена,first_name
+family,last_name
+ogrnip_id,ogrnip
+clientinn,inn
+датарождения,birth_date
+Client_Name,first_name
+snils_number,snils
+фамилия,last_name
+full,full_name
+кпп организации,kpp
+dateofbirth,birth_date
+Страховой Номер,snils
+bdate,birth_date
+mobile,phone
+okpo_code,okpo
+огрнипип,ogrnip
+Birthdate,birth_date
+username,first_name
+contact_person,full_name
+Кпп,kpp
+second_name,last_name
+Пенсионное Страхование,snils
+Phone_Num,phone
+номер_окпо,okpo
+clientinn,inn
+userinn,inn
+огрн индивидуального предпринимателя,ogrnip
+taxnumber,inn
+Pfr,snils
+телефон,phone
+phonenum,phone
+DATE OF BIRTH,birth_date
+okpo_company,okpo
+номер окпо,okpo
+Мобильный телефон,phone
+день роджения,birth_date
+огрнип,ogrnip
+cellphone,phone
+ogrnip,ogrnip
+surname,last_name
+ogrnip_number,ogrnip
+ogrnip_id,ogrnip
+егрип_номер,ogrnip
+date of birth,birth_date
+налоговый_кпп,kpp
+ИНН,inn
+phone_num,phone
+СНИЛС,snils
+okponumber,okpo
+INN_NUMBER,inn
+User_Name,first_name
+страховое свидетельство,snils
+Bdate,birth_date
+patronymic,middle_name
+СТРАХОВОЕ СВИДЕТЕЛЬСТВО,snils
+огрн,ogrn
+birthday,birth_date
+Номер Окпо,okpo
+fullname,full_name
+СНИЛС,snils
+огрн_ип,ogrnip
+фамилияклиента,last_name
+Кпп Юрлица,kpp
+pension_number,snils
+пфрномер,snils
+номер_телефона,phone
+Имя_Пользователя,first_name
+kpp_id,kpp
+инн_клиента,inn
+okpo_company,okpo
+given_name,first_name
+tax,inn
+Fathers_Name,middle_name
+окпо,okpo
+инн,inn
+birthdata,birth_date
+ogrn_code,ogrn
+okpo_code,okpo
+first name,first_name
+phone,phone
+okpo_org,okpo
+ФИО,full_name
+kpp_code,kpp
+username,first_name
+кппюрлица,kpp
+ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
+ТЕЛ_КЛИЕНТА,phone
+КОД ПРИЧИНЫ ПОСТАНОВКИ,kpp
+Огрнип,ogrnip
+имена,first_name
+kpp_code,kpp
+middle_name,middle_name
+кпп,kpp
+pfr,snils
+Инн,inn
+date of birth,birth_date
+OGRNIP_NUMBER,ogrnip
+number,phone
+основной_гос_номер,ogrn
+СНИЛС,snils
+КОД ОРГАНИЗАЦИИ В ОКПО,okpo
+номер_записи_в_егрюл,ogrn
+Cellphone,phone
+код окпо,okpo
+tax_id,inn
+егрип номер,ogrnip
+причина-постановки,kpp
+ogrn,ogrn
+full_name,full_name
+номер телефона,phone
+огрн-ип,ogrnip
+отчество покупателя,middle_name
+кпп фирмы,kpp
+contact_name,first_name
+код_причины_постановки,kpp
+kpp_code,kpp
+Др,birth_date
+User_Surname,last_name
+Отч.,middle_name
+гос_номер_юрлица,ogrn
+налоговыйкпп,kpp
+КПП,kpp
+birth_date,birth_date
+middle,middle_name
+НОМЕР ОГРНИП,ogrnip
+middle_name,middle_name
+Номер Регистрации,ogrn
+customername,full_name
+inn_code,inn
+surname,last_name
+contact_name,first_name
+Phone_Number,phone
+егрипномер,ogrnip
+ИНН,inn
+единый госреестр,ogrn
+family_name,last_name
+Основной Гос Номер,ogrn
+inn_code,inn
+pfr,snils
+user_surname,last_name
+фамилия,last_name
+dateofbirth,birth_date
+lastname,last_name
+User_Lastname,last_name
+birthday,birth_date
+дата рождения,birth_date
+имяпользователя,first_name
+OKPO_COMPANY,okpo
+КПП,kpp
+Мобильный Телефон,phone
+отчество покупателя,middle_name
+Kpp_Id,kpp
+phone_num,phone
+номер огрнип,ogrnip
+okpo_number,okpo
+okpo_number,okpo
+okpocode,okpo
+User_Name,first_name
+классификатор_предприятий,okpo
+др,birth_date
+Страховой Номер,snils
+МОБИЛЬНЫЙ ТЕЛЕФОН,phone
+TAX_ID,inn
+регистрационный номер,ogrn
+tax_id,inn
+username,first_name
+ОСНОВНОЙ ГОС НОМЕР,ogrn
+WHATSAPP,phone
+МИДДЛНЕЙМ,middle_name
+КПП,kpp
+kpp_id,kpp
+дата-рождения,birth_date
+имена,first_name
+страховое_свидетельство,snils
+middle,middle_name
+Tax_Number,inn
+second_name,last_name
+классификатор предприятий,okpo
+FULL_NAME,full_name
+Client_Name,first_name
+OGRNIP,ogrnip
+insurancenumber,snils
+mobile_phone,phone
+snils,snils
+Dob,birth_date
+код_причины_постановки,kpp
+FAMILY_NAME,last_name
+Регистрационный Номер,ogrn
+TEL,phone
+taxnumber,inn
+ОГРНИП,ogrnip
+имена,first_name
+Inn_Code,inn
+Inn,inn
+Фио,full_name
+full,full_name
+имяклиента,first_name
+снилс,snils
+ФАМИЛИЯ ИМЯ ОТЧЕСТВО,full_name
+Birth_Date,birth_date
+день_рождения,birth_date
+Dob,birth_date
+налоговый-кпп,kpp
+USER_LASTNAME,last_name
+surname,last_name
+ogrn,ogrn
+PERSON,full_name
+innnumber,inn
+ОГРНИП,ogrnip
+contact_name,first_name
+username,first_name
+код постановки на учет,kpp
+SURNAME,last_name
+kpp,kpp
+егрип номер,ogrnip
+okpo_org,okpo
+familyname,last_name
+ogrn_code,ogrn
+insurance_number,snils
+Given_Name,first_name
+Телефон,phone
+cellphone,phone
+full_name,full_name
+family_name,last_name
+имена,first_name
+Ogrnip_Number,ogrnip
+ИМЕНА,first_name
+СТРАХОВОЙ НОМЕР,snils
+givenname,first_name
+patronymic,middle_name
+Имя Клиента,first_name
+пфр-номер,snils
+CLIENT,full_name
+Отч.,middle_name
+номер регистрации,ogrn
+birthdata,birth_date
+client,full_name
+tax_number,inn
+Full,full_name
+mobile,phone
+дата роджения,birth_date
+SECOND_NAME,last_name
+номер огрн,ogrn
+Мобильный_телефон,phone
+Ogrnip,ogrnip
+innnumber,inn
+ogrnip_number,ogrnip
+ogrn_number,ogrn
+отчество,middle_name
+fathers_name,middle_name
+client_inn,inn
+номер-пфр,snils
+имена,first_name
+OKPO_ORG,okpo
+patronymic,middle_name
+NAME,first_name
+OKPO_NUMBER,okpo
+Middle,middle_name
+код организации в окпо,okpo
+FAMILY_NAME,last_name
+отч,middle_name
+mobile_phone,phone
+мобильный-тел,phone
+tax,inn
+единый-госреестр,ogrn
+ПФР НОМЕР,snils
+ИМЯ_ПОЛЬЗОВАТЕЛЯ,first_name
+taxid,inn
+Person_Name,first_name
+okpo_number,okpo
+ogrn_id,ogrn
+номер окпо,okpo
+пользователь,full_name
+family_name,last_name
+ТЕЛЕФОН,phone
+классификатор предприятий,okpo
+given_name,first_name
+Гос Номер Юрлица,ogrn
+kpp_id,kpp
+имена,first_name
+причина постановки,kpp
+Кпп Фирмы,kpp
+снилс,snils
+USER_LASTNAME,last_name
+mobile,phone
+Код Окпо,okpo
+реестр-ип,ogrnip
+номер снилс,snils
+okpo_id,okpo
+отчествопокупателя,middle_name
+date of birth,birth_date
+taxid,inn
+Пфр Номер,snils
+Kpp_Code,kpp
+егрюлномер,ogrn
+Ogrnip_Code,ogrnip
+KPP_NUMBER,kpp
+ОГРНИП ИП,ogrnip
+LASTNAME,last_name
+tax_code,inn
+identification_number,inn
+отчество,middle_name
+Фамилия Имя Отчество,full_name
+код_организации_в_окпо,okpo
+snils,snils
+отч,middle_name
+Fio,full_name
+tel,phone
+tax,inn
+taxpayer_id,inn
+инн_клиента,inn
+ОТЧЕСТВО КЛИЕНТА,middle_name
+пфр_номер,snils
+kpp_code,kpp
+Отчество клиента,middle_name
+егрип номер,ogrnip
+ФАМИЛИЯ КЛИЕНТА,last_name
+пфр-номер,snils
+USER_SURNAME,last_name
+тел_клиента,phone
+date_of_birth,birth_date
+иннклиента,inn
+Okpo_Id,okpo
+телефон,phone
+kppnumber,kpp
+Second_Name,last_name
+номерзаписивегрюл,ogrn
+user_name,first_name
+snils,snils
+инн_клиента,inn
+birthday,birth_date
+ogrnip_id,ogrnip
+phone,phone
+Код Постановки На Учет,kpp
+НОМЕР РЕГИСТРАЦИИ,ogrn
+огрн ип,ogrnip
+fio,full_name
+РЕГИСТРАЦИОННЫЙ НОМЕР,ogrn
+lastname,last_name
+ОГРН,ogrn
+contact_number,phone
+DOB,birth_date
+username,first_name
+фамилияклиента,last_name
+дата_рождения,birth_date
+family name,last_name
+кпп,kpp
+okpo_company,okpo
+contact_person,full_name
+СНИЛС,snils
+СНИЛС,snils
+имя клиента,first_name
+client_firstname,first_name
+номер_огрн,ogrn
+LASTNAME,last_name
+ИНН_КЛИЕНТА,inn
+имя,first_name
+birth_date,birth_date
+taxnumber,inn
+COMPLETE_NAME,full_name
+Отч.,middle_name
+first_name,first_name
+ogrncode,ogrn
+given_name,first_name
+отчество,middle_name
+ogrn_id,ogrn
+fullname,full_name
+номер_окпо,okpo
+complete_name,full_name
+username,first_name
+full,full_name
+номер окпо,okpo
+User_Middle,middle_name
+имена,first_name
+ИМЕНА,first_name
+Fio,full_name
+пенсионное_страхование,snils
+Complete_Name,full_name
+family,last_name
+family,last_name
+middle_name,middle_name
+middle_name,middle_name
+причина-постановки,kpp
+егрип-номер,ogrnip
+номер записи в егрюл,ogrn
+отчество покупателя,middle_name
+номер-пфр,snils
+Full_Name,full_name
+Birth Date,birth_date
+CONTACT,phone
+first name,first_name
+номерпфр,snils
+код_окпо,okpo
+клиент,full_name
+LAST NAME,last_name
+код причины постановки,kpp
+clientname,first_name
+др,birth_date
+фио,full_name
+BIRTH DATE,birth_date
+patronymic,middle_name
+окпо,okpo
+OKPO_ORG,okpo
+огрн,ogrn
+ИНН_КЛИЕНТА,inn
+имя,first_name
+клиент,full_name
+contact_name,first_name
+kpp_code,kpp
+кппфирмы,kpp
+tax,inn
+день-роджения,birth_date
+пользователь,full_name
+кпп организации,kpp
+bdate,birth_date
+ИМЯ,first_name
+пользователь,full_name
+код окпо,okpo
+given_name,first_name
+CUSTOMER_NAME,full_name
+contact_name,first_name
+Мобильный телефон,phone
+kppid,kpp
+tel,phone
+secondname,last_name
+TAX_ID,inn
+фамилия,last_name
+cellphone,phone
+ОКПО,okpo
+kppnumber,kpp
+ogrnip,ogrnip
+ogrnipid,ogrnip
+отч.,middle_name
+ogrn,ogrn
+Мобильный Тел,phone
+Okpo_Org,okpo
+family_name,last_name
+КПП,kpp
+First Name,first_name
+birthdata,birth_date
+inn,inn
+CONTACT_NAME,first_name
+given_name,first_name
+birth_date,birth_date
+Регистрационный Номер Ип,ogrnip
+PATRONYMIC,middle_name
+okpo,okpo
+insurance_number,snils
+whatsapp,phone
+отчество,middle_name
+КОД ОРГАНИЗАЦИИ В ОКПО,okpo
+whatsapp,phone
+Огрнип Ип,ogrnip
+pfr,snils
+номерзаписивегрюл,ogrn
+KPP_NUMBER,kpp
+surname,last_name
+пфрномер,snils
+OKPO,okpo
+customer_name,full_name
+СНИЛС,snils
+okpo_id,okpo
+ogrn,ogrn
+CELLPHONE,phone
+okpo,okpo
+кпп-фирмы,kpp
+user_inn,inn
+егрюл номер,ogrn
+отчество_покупателя,middle_name
+BIRTHDATE,birth_date
+кпп организации,kpp
+Фамилия Клиента,last_name
+MIDDLE,middle_name
+номер-окпо,okpo
+okpo_number,okpo
+kpp_number,kpp
+КПП,kpp
+госрегистрация,ogrn
+contact_number,phone
+birth day,birth_date
+страховой номер,snils
+имена,first_name
+taxnumber,inn
+inn_code,inn
+Dob,birth_date
+Клиент,full_name
+taxpayer_id,inn
+inn,inn
+Пфр Номер,snils
+кпп,kpp
+регистрационный номер,ogrn
+contact_person,full_name
+dateofbirth,birth_date
+имя,first_name
+clienttel,phone
+okpo,okpo
+ogrn_code,ogrn
+Tax,inn
+Complete_Name,full_name
+okpo_number,okpo
+ogrnip,ogrnip
+имена,first_name
+user_phone,phone
+clientname,first_name
+okpo_id,okpo
+имя_пользователя,first_name
+birth_date,birth_date
+имена,first_name
+ДЕНЬ РОЖДЕНИЯ,birth_date
+lastname,last_name
+Fio,full_name
+person_name,first_name
+номер огрнип,ogrnip
+огрн,ogrn
+ogrnip_id,ogrnip
+огрнип-код,ogrnip
+ОГРНИП КОД,ogrnip
+снилс,snils
+ИНН_КЛИЕНТА,inn
+name,first_name
+гос номер юрлица,ogrn
+ОГРН,ogrn
+ogrnnumber,ogrn
+full,full_name
+КЛИЕНТ,full_name
+номер-снилс,snils
+общероссийский классификатор,okpo
+OGRNIP,ogrnip
+last name,last_name
+Номер Окпо,okpo
+Last Name,last_name
+full,full_name
+код постановки на учет,kpp
+USER_SURNAME,last_name
+номер_записи_в_егрюл,ogrn
+surname,last_name
+номерзаписивегрип,ogrnip
+классификатор предприятий,okpo
+LASTNAME,last_name
+username,first_name
+okpo,okpo
+full,full_name
+okpo,okpo
+OGRN_ID,ogrn
+кпп организации,kpp
+фамилия_пользователя,last_name
+snilsnumber,snils
+Отчество Покупателя,middle_name
+кпп фирмы,kpp
+ogrn_code,ogrn
+surname,last_name
+customer_name,full_name
+Имя,first_name
+фамилияимяотчество,full_name
+егрип номер,ogrnip
+clientfirstname,first_name
+огрн,ogrn
+Кпп Организации,kpp
+lastname,last_name
+kpp_number,kpp
 inn_number,inn
+код постановки на учет,kpp
+НОМЕР ЗАПИСИ В ЕГРЮЛ,ogrn
+bdate,birth_date
+огрнип,ogrnip
+MIDDLE,middle_name
+USER_SURNAME,last_name
+Kpp_Number,kpp
+mobile_phone,phone
+фамилия_пользователя,last_name
+birthdate,birth_date
+Кпп Организации,kpp
+госрегистрация,ogrn
+госрегистрация,ogrn
+ИНН,inn
+Birthdata,birth_date
+отч,middle_name
+огрн-ип,ogrnip
+Birthdata,birth_date
+inn_number,inn
+person_name,first_name
+Номер Огрнип,ogrnip
+мобильный телефон,phone
+НАЛОГОВЫЙ КПП,kpp
+mobile,phone
+огрн,ogrn
+страховое свидетельство,snils
+Ogrnip_Code,ogrnip
+Окпо,okpo
+fathersname,middle_name
+tax,inn
+Номер Огрн,ogrn
+кпп-организации,kpp
+тел_клиента,phone
+клиент,full_name
+user_inn,inn
+номер записи в егрюл,ogrn
+отчество покупателя,middle_name
+кпп-компании,kpp
+middlename,middle_name
+отч,middle_name
+отчество клиента,middle_name
+Клиент,full_name
+fathers_name,middle_name
+ФАМИЛИЯ ИМЯ ОТЧЕСТВО,full_name
+ogrnip_number,ogrnip
+инн,inn
+WHATSAPP,phone
+Номер Регистрации,ogrn
+огрнип код,ogrnip
+MOBILE,phone
+Username,first_name
+usersurname,last_name
+имя_пользователя,first_name
+username,first_name
+fullname,full_name
+contact_person,full_name
+client,full_name
+ОГРН,ogrn
+customer_name,full_name
+taxpayer_id,inn
+номер записи в егрип,ogrnip
+номер записи в егрип,ogrnip
+contact_person,full_name
+phonenum,phone
+inn_number,inn
+отчествоклиента,middle_name
+Snils,snils
+OKPO,okpo
+okpocode,okpo
+birth,birth_date
+Okpo_Code,okpo
+ЕГРИП НОМЕР,ogrnip
+DOB,birth_date
+реестр_ип,ogrnip
+person_name,first_name
+Номер Телефона,phone
+middle name,middle_name
+тел_клиента,phone
+clientfirstname,first_name
+пфр,snils
+кпп компании,kpp
+Okpo_Id,okpo
+okpo_id,okpo
+family_name,last_name
+person,full_name
+дата-рождения,birth_date
+mobile_phone,phone
+okpo,okpo
+patronymic,middle_name
+firstname,first_name
+tax,inn
+КПП ЮРЛИЦА,kpp
+middlename,middle_name
+Client_Tel,phone
+ogrnip_code,ogrnip
+ogrnip_id,ogrnip
+ФИО,full_name
+огрн,ogrn
+фамилия клиента,last_name
+FULL_NAME,full_name
+taxpayer_id,inn
+user_inn,inn
+ogrnipid,ogrnip
+датарождения,birth_date
+ЕГРИП НОМЕР,ogrnip
+ОГРН,ogrn
+основнойгосномер,ogrn
+tax,inn
+Fathers_Name,middle_name
+Дата_Рождения,birth_date
+отчествопокупателя,middle_name
+Фамилия Имя Отчество,full_name
+номер_записи_в_егрип,ogrnip
+birthdate,birth_date
+pfr,snils
+кпп,kpp
+usermiddlename,middle_name
+Identification_Number,inn
+inn,inn
+дата_рождения,birth_date
+имя,first_name
+okpo_code,okpo
+contact_number,phone
+номерпфр,snils
+taxpayerid,inn
+Taxpayer_Id,inn
+Ogrnip_Number,ogrnip
+patronymic,middle_name
+customer_name,full_name
+имя_клиента,first_name
+Фамилия_Пользователя,last_name
+surname,last_name
+full,full_name
+др,birth_date
+contactnumber,phone
+birthdata,birth_date
+отчество,middle_name
+номерснилс,snils
+snils_number,snils
+fathers_name,middle_name
+имя_пользователя,first_name
+FAMILY,last_name
+окпо,okpo
+birth,birth_date
+insurance_number,snils
+COMPLETE_NAME,full_name
+Phone_Num,phone
+ogrncode,ogrn
+FAMILY,last_name
+классификатор_предприятий,okpo
+dob,birth_date
+ЕДИНЫЙ ГОСРЕЕСТР,ogrn
+username,first_name
+пфр_номер,snils
+person_name,first_name
+Last Name,last_name
+Основной Гос Номер,ogrn
+код организации в окпо,okpo
+фамилия клиента,last_name
+dateofbirth,birth_date
+PFR,snils
+огрнип,ogrnip
+огрн индивидуального предпринимателя,ogrnip
+датарождения,birth_date
+регистрационный номер,ogrn
+full,full_name
+ОГРНИП,ogrnip
+snils,snils
+МИДДЛНЕЙМ,middle_name
+tax,inn
+user_lastname,last_name
+client_inn,inn
+кпп,kpp
+ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
+имена,first_name
+КПП,kpp
+given_name,first_name
+имена,first_name
+имя,first_name
+OKPO_NUMBER,okpo
+okpocode,okpo
+огрн_индивидуального_предпринимателя,ogrnip
+кпп фирмы,kpp
+birthdate,birth_date
+код причины постановки,kpp
+tax_number,inn
+гос_номер_юрлица,ogrn
+Дата Роджения,birth_date
+TAX,inn
+Инн_Клиента,inn
+num,phone
+user_middlename,middle_name
+Мобильный-телефон,phone
+фамилия-клиента,last_name
+ЕГРИП НОМЕР,ogrnip
+tax_id,inn
+реестр ип,ogrnip
+OKPO_ID,okpo
+мобильныйтелефон,phone
+Общероссийский Классификатор,okpo
+last-name,last_name
+регистрационный_номер_ип,ogrnip
+код причины постановки,kpp
+last name,last_name
+клиент,full_name
+номер_телефона,phone
+Инн,inn
+client_firstname,first_name
+BIRTHDATE,birth_date
+егрип_номер,ogrnip
+ОГРН,ogrn
+kpp_code,kpp
+full_name,full_name
+complete_name,full_name
+кпп,kpp
+inn,inn
+огрн_индивидуального_предпринимателя,ogrnip
+client_name,first_name
+dob,birth_date
+insurance_number,snils
+кпп,kpp
+Тел.,phone
+family_name,last_name
+contact_person,full_name
+Имя_Пользователя,first_name
+whatsapp,phone
+окпо,okpo
+FAMILY_NAME,last_name
+Отч.,middle_name
+firstname,first_name
+мобильныйтел,phone
+ogrnip,ogrnip
+okpo_number,okpo
+налоговый_кпп,kpp
+ГОСРЕГИСТРАЦИЯ,ogrn
+код постановки на учет,kpp
+birth,birth_date
+middle,middle_name
+okpo,okpo
+family_name,last_name
+пфр,snils
+contact_number,phone
+регистрационный_номер_ип,ogrnip
+пенсионное страхование,snils
+usermiddle,middle_name
+Customer_Name,full_name
+СТРАХОВОЙ НОМЕР,snils
+customer_name,full_name
+USER_SURNAME,last_name
+ДЕНЬ РОДЖЕНИЯ,birth_date
+ОГРНИП,ogrnip
+GIVEN_NAME,first_name
+причина постановки,kpp
+fullname,full_name
+snils_number,snils
+КПП,kpp
+кппфирмы,kpp
+TAX,inn
+тел_клиента,phone
+First Name,first_name
+Contact_Number,phone
+first_name,first_name
+КЛИЕНТ,full_name
+tax_number,inn
+cellphone,phone
+основной-гос-номер,ogrn
+окпо,okpo
+Пфр Номер,snils
+second_name,last_name
+client_name,first_name
+кодпостановкинаучет,kpp
+СНИЛС,snils
+Инн,inn
+имя,first_name
+отчество,middle_name
+second_name,last_name
+пфр,snils
+отчество_покупателя,middle_name
+taxpayer_id,inn
+surname,last_name
+огрнип,ogrnip
+телефон,phone
+ogrnip,ogrnip
+тел.,phone
+CONTACT_PERSON,full_name
+фамилия_пользователя,last_name
+inn_code,inn
+ogrnip,ogrnip
+okpocode,okpo
+birthday,birth_date
+ogrn_code,ogrn
+OGRNIP_NUMBER,ogrnip
+отчество,middle_name
+Given_Name,first_name
+contactperson,full_name
+регистрационныйномерип,ogrnip
+userlastname,last_name
+огрнип-код,ogrnip
+family_name,last_name
+огрн,ogrn
+pension_number,snils
+user_middle,middle_name
+отчество_покупателя,middle_name
+birth-day,birth_date
+РЕЕСТР ИП,ogrnip
+дата-рождения,birth_date
+тел.,phone
+family_name,last_name
+ФАМИЛИЯ ИМЯ ОТЧЕСТВО,full_name
+okpo_code,okpo
+OKPO_NUMBER,okpo
+family,last_name
+okpo_number,okpo
+ФИО,full_name
+общероссийский классификатор,okpo
+егрип-номер,ogrnip
+surname,last_name
+кпп компании,kpp
+middle_name,middle_name
+причина-постановки,kpp
+BIRTHDATA,birth_date
+user_lastname,last_name
+ogrn_number,ogrn
+отчество покупателя,middle_name
+Snils,snils
+snils,snils
+Kpp_Number,kpp
+birthdate,birth_date
+единыйгосреестр,ogrn
+РЕГИСТРАЦИОННЫЙ НОМЕР ИП,ogrnip
+код_постановки_на_учет,kpp
+given_name,first_name
+отч.,middle_name
+ИНН,inn
+okpo,okpo
+огрн,ogrn
+okpo_org,okpo
+миддлнейм,middle_name
+кпп,kpp
 Customer_Name,full_name
 client_inn,inn
-фамилия клиента,last_name
-LAST NAME,last_name
-BIRTH,birth_date
-First Name,first_name
-год,year
+клиент,full_name
+дата роджения,birth_date
+гос номер юрлица,ogrn
+middle,middle_name
+ogrnip_code,ogrnip
+отч,middle_name
+Complete_Name,full_name
+номер пфр,snils
+фамилия_клиента,last_name
+fathersname,middle_name
+госрегистрация,ogrn
+client,full_name
+INSURANCE_NUMBER,snils
+ОКПО,okpo
+ТЕЛЕФОН,phone
+ОГРНИП КОД,ogrnip
+FIO,full_name
+номер записи в егрюл,ogrn
+датарождения,birth_date
+Snils,snils
+birthdate,birth_date
+Имя,first_name
+кпп организации,kpp
+middle name,middle_name
+birth,birth_date
+иннклиента,inn
+егрюл-номер,ogrn
+отчествоклиента,middle_name
+phone_num,phone
+USER_SURNAME,last_name
+общероссийский-классификатор,okpo
+фамилияпользователя,last_name
+phonenum,phone
+фамилия_клиента,last_name
+общероссийский классификатор,okpo
+OKPO,okpo
+middle,middle_name
+ФИО,full_name
+client_firstname,first_name
+okpo_company,okpo
+Общероссийский Классификатор,okpo
+KPP_ID,kpp
+СНИЛС,snils
+пфр-номер,snils
+complete_name,full_name
+Client_Tel,phone
+Cellphone,phone
+middle,middle_name
+дата_рождения,birth_date
+огрнип,ogrnip
+Фамилия_Пользователя,last_name
+фамилия,last_name
+fullname,full_name
+налоговый-кпп,kpp
+страховое свидетельство,snils
+Отч.,middle_name
+номер-пфр,snils
+отч,middle_name
+ДЕНЬ РОДЖЕНИЯ,birth_date
+кпп_фирмы,kpp
+kpp_id,kpp
+номер-снилс,snils
+user_lastname,last_name
+огрн,ogrn
+usermiddle,middle_name
+Классификатор Предприятий,okpo
+кпп юрлица,kpp
+кпп-компании,kpp
+ogrnip_code,ogrnip
+Егрип Номер,ogrnip
+номер телефона,phone
+Ogrnip_Code,ogrnip
+РЕЕСТР ИП,ogrnip
+last_name,last_name
+основной-гос-номер,ogrn
+surname,last_name
+middle_name,middle_name
+Дата Роджения,birth_date
+миддлнейм,middle_name
+огрн-индивидуального-предпринимателя,ogrnip
+регистрационный номер,ogrn
+номер-огрн,ogrn
+username,first_name
+second_name,last_name
+миддлнейм,middle_name
+общероссийский-классификатор,okpo
+код окпо,okpo
+dateofbirth,birth_date
+имена,first_name
+CLIENT,full_name
+огрнип_код,ogrnip
+customer_name,full_name
+Given_Name,first_name
+причина постановки,kpp
+имя_пользователя,first_name
+family,last_name
+ИМЯ,first_name
+огрнип,ogrnip
+МОБИЛЬНЫЙ ТЕЛ,phone
+kpp_code,kpp
+Tel,phone
+tel,phone
+mobile_phone,phone
+name,first_name
+общероссийский_классификатор,okpo
+миддлнейм,middle_name
+dob,birth_date
+кпп юрлица,kpp
+ОТЧ.,middle_name
+дата_рождения,birth_date
+гос номер юрлица,ogrn
+регистрационный_номер,ogrn
+имена,first_name
+user_surname,last_name
+birth-day,birth_date
+pfr,snils
+okpocompany,okpo
+ogrnip,ogrnip
+last name,last_name
+огрнип ип,ogrnip
+НАЛОГОВЫЙ КПП,kpp
+кппфирмы,kpp
+CELLPHONE,phone
+Огрн Ип,ogrnip
+birth_day,birth_date
+mobile,phone
+ogrnid,ogrn
+FAMILY_NAME,last_name
+GIVEN_NAME,first_name
+surname,last_name
 first name,first_name
+tax,inn
+пенсионное_страхование,snils
+okpoorg,okpo
+pension_number,snils
+датарождения,birth_date
+регистрационный номер ип,ogrnip
+User_Inn,inn
+client_firstname,first_name
+ogrnip_id,ogrnip
+Okpo_Number,okpo
+number,phone
+номеррегистрации,ogrn
+имена,first_name
+номер-снилс,snils
+given_name,first_name
+Налоговый Кпп,kpp
+окпо,okpo
+ИНН,inn
+ogrn_id,ogrn
+МИДДЛНЕЙМ,middle_name
+окпо,okpo
+общероссийскийклассификатор,okpo
+complete_name,full_name
+Fathers_Name,middle_name
+fio,full_name
+first_name,first_name
+User_Inn,inn
+client_name,first_name
+имена,first_name
+Inn_Code,inn
+Фамилия_Пользователя,last_name
+тел.,phone
+кпп,kpp
+имя_клиента,first_name
+PERSON,full_name
+дата рождения,birth_date
+ИНН,inn
+ТЕЛ.,phone
+окпо,okpo
+РЕГИСТРАЦИОННЫЙ НОМЕР ИП,ogrnip
+firstname,first_name
+НОМЕР ОГРН,ogrn
+lastname,last_name
+ogrnipnumber,ogrnip
+огрнип,ogrnip
+Отч,middle_name
+ИМЯ,first_name
+familyname,last_name
+ИНН_КЛИЕНТА,inn
+BIRTH,birth_date
+Client_Name,first_name
+Огрн Индивидуального Предпринимателя,ogrnip
+ogrnip,ogrnip
+Отч.,middle_name
+Client_Inn,inn
+ФИО,full_name
+лицевой_счет_пфр,snils
+username,first_name
+Миддлнейм,middle_name
+Имя,first_name
+Second_Name,last_name
+налоговый_кпп,kpp
+СНИЛС,snils
+Snils_Number,snils
+регистрационный-номер,ogrn
+taxpayerid,inn
+регистрационныйномерип,ogrnip
+okpo,okpo
+ogrnip_id,ogrnip
+cellphone,phone
+complete_name,full_name
+snils,snils
+user_inn,inn
+ogrn_code,ogrn
+CLIENT,full_name
+birthdate,birth_date
+dateofbirth,birth_date
+основной_гос_номер,ogrn
+отчество,middle_name
+огрн_индивидуального_предпринимателя,ogrnip
+family_name,last_name
+ОГРН,ogrn
+date of birth,birth_date
+SURNAME,last_name
+фамилия-клиента,last_name
+client_inn,inn
+пенсионное_страхование,snils
+фамилия клиента,last_name
+inn,inn
+tax_code,inn
+kpp_number,kpp
+pensionnumber,snils
+Kpp_Number,kpp
+ОГРН ИП,ogrnip
+ИМЯ,first_name
+CONTACT,phone
+ogrn,ogrn
+страховоесвидетельство,snils
+огрнип,ogrnip
+имена,first_name
+окпо,okpo
+Код Окпо,okpo
+КПП ЮРЛИЦА,kpp
+гос-номер-юрлица,ogrn
+snils_number,snils
+tax_number,inn
+user_middle,middle_name
+Инн_Клиента,inn
+client_inn,inn
+код организации в окпо,okpo
+BIRTH DAY,birth_date
+Отч.,middle_name
+страховое свидетельство,snils
+номер-записи-в-егрип,ogrnip
+family,last_name
+pension_number,snils
+единый госреестр,ogrn
+DOB,birth_date
+OKPO_ID,okpo
+регистрационный номер,ogrn
+PERSON_NAME,first_name
+имена,first_name
+birthdate,birth_date
+birthdata,birth_date
+user_inn,inn
+др,birth_date
+FULLNAME,full_name
+user_middle,middle_name
+СНИЛС,snils
+client_firstname,first_name
+реестр ип,ogrnip
+birth,birth_date
+налоговый кпп,kpp
+отчество покупателя,middle_name
+pfr,snils
+кпп,kpp
+пользователь,full_name
+ДР,birth_date
+отч,middle_name
+инн,inn
+user_middle,middle_name
+ИНН,inn
+ОСНОВНОЙ ГОС НОМЕР,ogrn
+birthdata,birth_date
+код-окпо,okpo
+phonenumber,phone
+ОГРНИП,ogrnip
+fullname,full_name
+client_inn,inn
+user_surname,last_name
+ogrnip,ogrnip
+дата_роджения,birth_date
+реестр ип,ogrnip
+tax_code,inn
+номер регистрации,ogrn
+ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
+Клиент,full_name
+birthdate,birth_date
+birthdata,birth_date
+др,birth_date
+регистрационныйномер,ogrn
+огрн,ogrn
+номер-снилс,snils
+birthdata,birth_date
+ogrn_code,ogrn
+егрипномер,ogrnip
+егрюлномер,ogrn
+Person_Name,first_name
+кпп-компании,kpp
+Огрнип Код,ogrnip
+contact,phone
+код организации в окпо,okpo
+ОБЩЕРОССИЙСКИЙ КЛАССИФИКАТОР,okpo
+birth,birth_date
+ФИО,full_name
+birth_date,birth_date
+День Роджения,birth_date
+номер_пфр,snils
+phone,phone
+MIDDLE,middle_name
+ИМЯ КЛИЕНТА,first_name
+Причина Постановки,kpp
+inn,inn
+mobilephone,phone
+имя,first_name
+inn_code,inn
+Егрюл Номер,ogrn
+клиент,full_name
+единыйгосреестр,ogrn
+егрюлномер,ogrn
+Кпп Фирмы,kpp
+отчество,middle_name
+фамилия_пользователя,last_name
+Ogrn_Number,ogrn
+огрнипкод,ogrnip
+birth-day,birth_date
+fio,full_name
+last name,last_name
+BIRTHDATE,birth_date
+ДЕНЬ РОДЖЕНИЯ,birth_date
+страховой номер,snils
+tax_id,inn
+identificationnumber,inn
+егрип_номер,ogrnip
+налоговый_кпп,kpp
+кпп организации,kpp
+основной гос номер,ogrn
+имяпользователя,first_name
+имяклиента,first_name
+SECOND_NAME,last_name
+kpp,kpp
+инн,inn
+КОД ПРИЧИНЫ ПОСТАНОВКИ,kpp
+cellphone,phone
+mobilephone,phone
+family_name,last_name
+кппорганизации,kpp
+госрегистрация,ogrn
+Ogrn,ogrn
+отчество покупателя,middle_name
+completename,full_name
+tax_code,inn
+Number,phone
+NAME,first_name
+snils,snils
+person_name,first_name
+mobile,phone
+name,first_name
+TAX_CODE,inn
+гос номер юрлица,ogrn
+фамилия-клиента,last_name
+FAMILY NAME,last_name
+DATE OF BIRTH,birth_date
+датарождения,birth_date
+НОМЕР ОГРН,ogrn
+НАЛОГОВЫЙ КПП,kpp
+гос_номер_юрлица,ogrn
+TEL,phone
+кодпостановкинаучет,kpp
+fullname,full_name
+огрнип,ogrnip
+surname,last_name
+client_inn,inn
+family_name,last_name
+Кпп Организации,kpp
+PHONE,phone
+Егрип Номер,ogrnip
+PATRONYMIC,middle_name
+givenname,first_name
+birth_date,birth_date
+Mobile,phone
+familyname,last_name
+номер снилс,snils
+номер записи в егрюл,ogrn
+отчество покупателя,middle_name
+СНИЛС,snils
+Кпп Компании,kpp
+USER_SURNAME,last_name
+огрн_ип,ogrnip
+taxpayer_id,inn
+пользователь,full_name
+inn_code,inn
+КЛАССИФИКАТОР ПРЕДПРИЯТИЙ,okpo
+номер-записи-в-егрип,ogrnip
+фамилия_пользователя,last_name
+snils_number,snils
+bdate,birth_date
+Snils,snils
+пользователь,full_name
+whatsapp,phone
+инн,inn
+ОГРН,ogrn
+код постановки на учет,kpp
+Единый Госреестр,ogrn
+kpp,kpp
+taxpayer_id,inn
+birthdate,birth_date
+inn,inn
+ogrnip_number,ogrnip
+номер-пфр,snils
+client_firstname,first_name
+Миддлнейм,middle_name
+день рождения,birth_date
+OKPO,okpo
+inn,inn
+ФИО,full_name
+mobile_phone,phone
+ogrn_code,ogrn
+num,phone
+номерогрн,ogrn
+ПРИЧИНА ПОСТАНОВКИ,kpp
+FAMILY_NAME,last_name
+middle,middle_name
+страховойномер,snils
+классификатор_предприятий,okpo
+ogrnip_id,ogrnip
+Фамилия Клиента,last_name
+kpp,kpp
+кпп компании,kpp
+номер телефона,phone
+Complete_Name,full_name
+др,birth_date
+ОТЧ.,middle_name
+ОГРНИП КОД,ogrnip
+код постановки на учет,kpp
+страховойномер,snils
+отчество,middle_name
+TAX_NUMBER,inn
+Госрегистрация,ogrn
+Регистрационный Номер,ogrn
+ОКПО,okpo
+MIDDLE_NAME,middle_name
+ОТЧ.,middle_name
+contact,phone
+contact,phone
+отчество-покупателя,middle_name
+отч.,middle_name
+огрнип,ogrnip
+кпп-юрлица,kpp
+кодорганизациивокпо,okpo
+middlename,middle_name
+причина постановки,kpp
+егрип-номер,ogrnip
+фамилия клиента,last_name
+день рождения,birth_date
+Ogrnip,ogrnip
+familyname,last_name
+ДЕНЬ РОДЖЕНИЯ,birth_date
+фамилия,last_name
+Lastname,last_name
+номер-окпо,okpo
+пфр,snils
+ogrn_id,ogrn
+тел.,phone
+КПП,kpp
+tax_code,inn
+client_tel,phone
+usermiddle,middle_name
+имя_клиента,first_name
+кппкомпании,kpp
+Birthdate,birth_date
+огрнип,ogrnip
+телклиента,phone
+bdate,birth_date
+ИНН,inn
+отчество,middle_name
+OGRN_ID,ogrn
+pensionnumber,snils
+Name,first_name
+окпо,okpo
+Whatsapp,phone
+Client,full_name
+firstname,first_name
+страховоесвидетельство,snils
+OKPO_ORG,okpo
+full_name,full_name
+фамилия,last_name
+Мобильный Тел,phone
+dob,birth_date
+client_inn,inn
+ИМЕНА,first_name
+пфр_номер,snils
+Birthdate,birth_date
+миддлнейм,middle_name
+классификатор-предприятий,okpo
+Регистрационный Номер,ogrn
+okpocompany,okpo
+pensionnumber,snils
+пфр,snils
+основнойгосномер,ogrn
+Фамилия-Имя-Отчество,full_name
+OKPO_CODE,okpo
+пенсионное страхование,snils
+фамилияимяотчество,full_name
+Birthdata,birth_date
+Код Постановки На Учет,kpp
+номер телефона,phone
+общероссийский_классификатор,okpo
+инн,inn
+middle_name,middle_name
+phone,phone
+страховойномер,snils
+ФИО,full_name
+num,phone
+ОГРНИП КОД,ogrnip
+OGRNIP_ID,ogrnip
+customer_name,full_name
+client_firstname,first_name
+инн,inn
+общероссийский_классификатор,okpo
+ЕГРИП НОМЕР,ogrnip
+fathers_name,middle_name
+госрегистрация,ogrn
+день-роджения,birth_date
+dateofbirth,birth_date
+Код Постановки На Учет,kpp
+Отч.,middle_name
+огрнип ип,ogrnip
+кппорганизации,kpp
+фамилияпользователя,last_name
+ЛИЦЕВОЙ СЧЕТ ПФР,snils
+USER_MIDDLENAME,middle_name
+patronymic,middle_name
+регистрационный номер,ogrn
+клиент,full_name
+Фио,full_name
+contact_person,full_name
+дата_рождения,birth_date
+first_name,first_name
+ОГРН,ogrn
+fio,full_name
+пфр_номер,snils
+дата_роджения,birth_date
+num,phone
+surname,last_name
+Birthdate,birth_date
+fathers_name,middle_name
+Family Name,last_name
+okpo,okpo
+Ogrnip_Number,ogrnip
+датароджения,birth_date
+ИМЕНА,first_name
+contact,phone
+страховой_номер,snils
+день рождения,birth_date
+Имена,first_name
+кодорганизациивокпо,okpo
+CONTACT,phone
+отчество клиента,middle_name
+огрн индивидуального предпринимателя,ogrnip
+phone_number,phone
+Код Причины Постановки,kpp
+clienttel,phone
+Ogrnip_Number,ogrnip
+ИНН,inn
+birthdate,birth_date
+snils_number,snils
+Bdate,birth_date
+ЕГРЮЛ НОМЕР,ogrn
+fullname,full_name
+okpo_company,okpo
+имена,first_name
+Имя_Пользователя,first_name
+ogrnip,ogrnip
+датарождения,birth_date
+ИМЕНА,first_name
+okpo_company,okpo
+регистрационный-номер-ип,ogrnip
+Единый Госреестр,ogrn
+номер окпо,okpo
+CONTACT_PERSON,full_name
+tax_number,inn
+usermiddlename,middle_name
+BDATE,birth_date
+снилс,snils
+LAST NAME,last_name
+кодокпо,okpo
+ГОСРЕГИСТРАЦИЯ,ogrn
+имена,first_name
+client_inn,inn
+ПФР НОМЕР,snils
+ogrnipcode,ogrnip
+kpp_code,kpp
+okpo_id,okpo
+ПОЛЬЗОВАТЕЛЬ,full_name
+OKPO_NUMBER,okpo
+mobile,phone
+pfr,snils
+Middle,middle_name
+USER_SURNAME,last_name
+Person,full_name
+Okpo_Org,okpo
+kpp_number,kpp
+кпп организации,kpp
+реестр ип,ogrnip
+имя_пользователя,first_name
+реестр ип,ogrnip
+Tax,inn
+insurance_number,snils
+регистрационный_номер,ogrn
+fathers_name,middle_name
+Client_Inn,inn
+OKPO_ORG,okpo
+kpp_code,kpp
+огрнип код,ogrnip
+окпо,okpo
+user_middle,middle_name
+Kpp_Number,kpp
+tax,inn
+username,first_name
+usersurname,last_name
+taxpayer_id,inn
+огрниндивидуальногопредпринимателя,ogrnip
+tax_code,inn
+client_name,first_name
+cellphone,phone
+contact_person,full_name
+full,full_name
+middle,middle_name
+tel,phone
+реестр_ип,ogrnip
+complete_name,full_name
+user_middlename,middle_name
+ogrnip_id,ogrnip
+okpo_number,okpo
+Ogrnip_Id,ogrnip
+inn_number,inn
+код-постановки-на-учет,kpp
+фамилия_пользователя,last_name
+TAX,inn
+dateofbirth,birth_date
+реестр-ип,ogrnip
+person,full_name
+госрегистрация,ogrn
+GIVEN_NAME,first_name
+Family,last_name
+дата-рождения,birth_date
+огрн,ogrn
+usermiddlename,middle_name
+ogrnip_id,ogrnip
+dateofbirth,birth_date
+фамилия,last_name
+отч.,middle_name
+фамилияпользователя,last_name
+НОМЕР ОКПО,okpo
+пфр,snils
+snils_number,snils
+user_surname,last_name
+егрюл номер,ogrn
+ogrnip_code,ogrnip
+middlename,middle_name
+Отч.,middle_name
+Birth Day,birth_date
+kpp_number,kpp
+family name,last_name
+ИМЯ,first_name
+дата роджения,birth_date
+CUSTOMER_NAME,full_name
+ogrn_number,ogrn
+Инн,inn
+Snils,snils
+mobilephone,phone
+фамилия_пользователя,last_name
+identification_number,inn
+family,last_name
+Okpo_Code,okpo
+okpoid,okpo
+огрнип-код,ogrnip
+ПФР,snils
+имена,first_name
+Код Окпо,okpo
+Дата_Рождения,birth_date
+user_name,first_name
+identification_number,inn
+ОТЧЕСТВО КЛИЕНТА,middle_name
+кпп юрлица,kpp
+номеррегистрации,ogrn
+birth date,birth_date
+Snils,snils
+ЛИЦЕВОЙ СЧЕТ ПФР,snils
+огрнип,ogrnip
+инн_клиента,inn
+Номер Окпо,okpo
+snilsnumber,snils
+номерогрн,ogrn
+secondname,last_name
+пфр,snils
+огрнип код,ogrnip
+отчество,middle_name
+регистрационный_номер_ип,ogrnip
+имя,first_name
+КПП КОМПАНИИ,kpp
+егрип номер,ogrnip
+номер_записи_в_егрип,ogrnip
+Гос Номер Юрлица,ogrn
+taxpayer_id,inn
+Insurance_Number,snils
+ogrnip_id,ogrnip
+lastname,last_name
+identificationnumber,inn
+middle_name,middle_name
+инн,inn
+ПРИЧИНА ПОСТАНОВКИ,kpp
+Егрип Номер,ogrnip
+birth_date,birth_date
+ogrn,ogrn
+inn_code,inn
+КОД ПОСТАНОВКИ НА УЧЕТ,kpp
+inn,inn
+основной-гос-номер,ogrn
+кпп,kpp
+лицевой-счет-пфр,snils
+код-организации-в-окпо,okpo
+НОМЕР ТЕЛЕФОНА,phone
+Клиент,full_name
+фамилия клиента,last_name
+whatsapp,phone
+дата роджения,birth_date
+Kpp_Id,kpp
+общероссийскийклассификатор,okpo
+мобильныйтелефон,phone
+Name,first_name
+код организации в окпо,okpo
+ОТЧ.,middle_name
+пользователь,full_name
+dob,birth_date
+телефон,phone
+ogrnip,ogrnip
+пользователь,full_name
+КПП,kpp
+ФАМИЛИЯ ИМЯ ОТЧЕСТВО,full_name
+FULL,full_name
+okpo_company,okpo
+иннклиента,inn
+birth_date,birth_date
+фамилия,last_name
+pension_number,snils
+phone_num,phone
+ФИО,full_name
+огрнип,ogrnip
+единый госреестр,ogrn
+СНИЛС,snils
+contact,phone
+okpo_code,okpo
+ДАТА_РОЖДЕНИЯ,birth_date
+фамилия_пользователя,last_name
+customer_name,full_name
+инн,inn
+contact,phone
+Middle_Name,middle_name
+IDENTIFICATION_NUMBER,inn
+номер огрнип,ogrnip
+MIDDLE NAME,middle_name
+User_Name,first_name
+ogrn,ogrn
+identification_number,inn
+MIDDLE,middle_name
+страховой-номер,snils
+ogrn_id,ogrn
+User_Middle,middle_name
+whatsapp,phone
+КПП ФИРМЫ,kpp
+окпо,okpo
+кпп-фирмы,kpp
+НОМЕР РЕГИСТРАЦИИ,ogrn
+full,full_name
+CLIENT_FIRSTNAME,first_name
+Surname,last_name
+ФИО,full_name
+birthdate,birth_date
+user_inn,inn
+okpo,okpo
+client_name,first_name
+Inn_Number,inn
+User_Middlename,middle_name
+ОГРНИП,ogrnip
+ФИО,full_name
+код организации в окпо,okpo
+общероссийскийклассификатор,okpo
+OGRNIP_ID,ogrnip
+PERSON_NAME,first_name
+OKPO_ID,okpo
+ОГРН,ogrn
+user_lastname,last_name
+num,phone
+телефон,phone
+МОБИЛЬНЫЙ ТЕЛ,phone
+birthdate,birth_date
+username,first_name
+отч,middle_name
+user_lastname,last_name
+tax,inn
+окпо,okpo
+Number,phone
+PENSION_NUMBER,snils
+номер телефона,phone
+Client_Tel,phone
+пфр номер,snils
+fathers_name,middle_name
+ОГРНИП,ogrnip
+ogrnip_id,ogrnip
+NAME,first_name
+ТЕЛЕФОН,phone
+mobile_phone,phone
+client,full_name
+снилс,snils
+НОМЕР ОГРН,ogrn
+лицевой-счет-пфр,snils
+КОД ОРГАНИЗАЦИИ В ОКПО,okpo
+огрнипип,ogrnip
+username,first_name
+full,full_name
+основной_гос_номер,ogrn
+пфр,snils
+Kpp,kpp
+person,full_name
+код_постановки_на_учет,kpp
+User_Middlename,middle_name
+Fullname,full_name
+pensionnumber,snils
+окпо,okpo
+pfr,snils
+okpo_number,okpo
+user_middlename,middle_name
+ОКПО,okpo
+ogrn_code,ogrn
+кпп_компании,kpp
+Отч.,middle_name
+mobile,phone
+Tax,inn
+номерпфр,snils
+фамилия_пользователя,last_name
+mobilephone,phone
+okpo_id,okpo
+номер_снилс,snils
+okpocode,okpo
+person,full_name
+customer_name,full_name
+Миддлнейм,middle_name
+tax,inn
+contact_number,phone
+Taxpayer_Id,inn
+классификатор_предприятий,okpo
+okpo_number,okpo
+okpo_company,okpo
+CONTACT_NAME,first_name
+кпп,kpp
+ogrn_number,ogrn
+Last Name,last_name
+огрнип-код,ogrnip
+okpo,okpo
+user_inn,inn
+Client_Name,first_name
+код причины постановки,kpp
+mobile_phone,phone
+НОМЕР ЗАПИСИ В ЕГРЮЛ,ogrn
+fathers_name,middle_name
+ogrn_id,ogrn
+last name,last_name
+fathers_name,middle_name
+Отчество_клиента,middle_name
+пфр,snils
+OKPO_ID,okpo
+tax,inn
+страховоесвидетельство,snils
+surname,last_name
+Мобильный-телефон,phone
+причинапостановки,kpp
+Number,phone
+Ogrnip_Id,ogrnip
+second_name,last_name
+ogrnipnumber,ogrnip
+клиент,full_name
+date of birth,birth_date
+пфр,snils
+номер-огрнип,ogrnip
+username,first_name
+middle_name,middle_name
+tax,inn
+NUM,phone
+пфр,snils
+inn_code,inn
+имена,first_name
+страховой_номер,snils
+second_name,last_name
+огрнип,ogrnip
+Number,phone
+Client_Inn,inn
+patronymic,middle_name
+номер_записи_в_егрип,ogrnip
+Bdate,birth_date
+familyname,last_name
+ИНН,inn
+contact_number,phone
+ogrncode,ogrn
+ИНН,inn
+КПП,kpp
+contactnumber,phone
+ОГРНИП,ogrnip
+number,phone
+contactperson,full_name
+PENSION_NUMBER,snils
+ФАМИЛИЯ КЛИЕНТА,last_name
+complete_name,full_name
+num,phone
+taxpayer_id,inn
+name,first_name
+insurancenumber,snils
+birth_day,birth_date
+customer_name,full_name
+ogrncode,ogrn
+Birthdate,birth_date
+contact_person,full_name
+username,first_name
+имя,first_name
+birthdate,birth_date
+clientfirstname,first_name
+USER_LASTNAME,last_name
+реестрип,ogrnip
+usersurname,last_name
+Kpp_Number,kpp
+огрн_индивидуального_предпринимателя,ogrnip
+MIDDLE_NAME,middle_name
+КПП ЮРЛИЦА,kpp
+Код Постановки На Учет,kpp
+Инн,inn
+имена,first_name
+CLIENT_INN,inn
+fullname,full_name
+birthdata,birth_date
+Dob,birth_date
+Инн,inn
+номер телефона,phone
+день_рождения,birth_date
+ogrn_number,ogrn
+мобильныйтел,phone
+пользователь,full_name
+дата_рождения,birth_date
+client_inn,inn
+middle_name,middle_name
+username,first_name
+ПОЛЬЗОВАТЕЛЬ,full_name
+номер снилс,snils
+birth,birth_date
+taxpayer_id,inn
+FULL_NAME,full_name
+okpo_company,okpo
+Страховой Номер,snils
+fio,full_name
+мобильныйтел,phone
+окпо,okpo
+birth_date,birth_date
+отч,middle_name
+date of birth,birth_date
+phone_number,phone
+mobile,phone
+ogrnip_id,ogrnip
+KPP_CODE,kpp
+классификатор_предприятий,okpo
+familyname,last_name
+middle,middle_name
+мобильный тел,phone
+огрнип-ип,ogrnip
+Инн_Клиента,inn
+ogrnip_code,ogrnip
+snils_number,snils
+mobile_phone,phone
+fio,full_name
+kpp_code,kpp
+огрн,ogrn
+имя,first_name
+WHATSAPP,phone
+фио,full_name
+Единый Госреестр,ogrn
+middle,middle_name
+огрн,ogrn
+СНИЛС,snils
+номер снилс,snils
+ОТЧЕСТВО КЛИЕНТА,middle_name
+инн,inn
+Реестр Ип,ogrnip
+номер_окпо,okpo
+общероссийскийклассификатор,okpo
+user_inn,inn
+FULL_NAME,full_name
+ПФР,snils
+kpp_code,kpp
+OKPO,okpo
+inn_code,inn
+Customer_Name,full_name
+номер-записи-в-егрип,ogrnip
+firstname,first_name
+пользователь,full_name
+Код Организации В Окпо,okpo
+NUMBER,phone
+User_Middle,middle_name
+кпп_юрлица,kpp
+person,full_name
+secondname,last_name
 ФАМИЛИЯ_ПОЛЬЗОВАТЕЛЯ,last_name
-yyyy,year
+снилс,snils
+birth,birth_date
+фамилия-клиента,last_name
+номер-регистрации,ogrn
+OKPO,okpo
+ОГРН,ogrn
+TAXPAYER_ID,inn
+Классификатор Предприятий,okpo
+егрюлномер,ogrn
+пользователь,full_name
+identification_number,inn
+user_surname,last_name
+clientname,first_name
+отчество покупателя,middle_name
+номертелефона,phone
+огрнип,ogrnip
+given_name,first_name
+номер огрн,ogrn
+код организации в окпо,okpo
+NAME,first_name
+отч,middle_name
+Отчество_клиента,middle_name
+пфр_номер,snils
+personname,first_name
+phone_num,phone
+WHATSAPP,phone
+датарождения,birth_date
+имена,first_name
+middle_name,middle_name
+num,phone
+fullname,full_name
+отч,middle_name
+кппкомпании,kpp
+ПОЛЬЗОВАТЕЛЬ,full_name
+ОГРН,ogrn
+кпп,kpp
+дата_рождения,birth_date
+name,first_name
+bdate,birth_date
+clientinn,inn
+госрегистрация,ogrn
+ogrn_code,ogrn
+Middle,middle_name
+FATHERS_NAME,middle_name
+фамилияклиента,last_name
+full,full_name
+огрниндивидуальногопредпринимателя,ogrnip
+госномерюрлица,ogrn
+tax_code,inn
+ogrnip_number,ogrnip
+birthdata,birth_date
+имяклиента,first_name
+SECOND_NAME,last_name
+основнойгосномер,ogrn
+okpo_number,okpo
+Дата Роджения,birth_date
+username,first_name
+Contact_Person,full_name
+НОМЕР РЕГИСТРАЦИИ,ogrn
+пользователь,full_name
+firstname,first_name
+client_inn,inn
+общероссийский классификатор,okpo
+датарождения,birth_date
+номер_записи_в_егрюл,ogrn
+код-окпо,okpo
+insurance_number,snils
+middle_name,middle_name
+usersurname,last_name
+гос номер юрлица,ogrn
+пфрномер,snils
+User_Name,first_name
+КПП КОМПАНИИ,kpp
+НОМЕР ЗАПИСИ В ЕГРЮЛ,ogrn
+ОТЧЕСТВО,middle_name
+КПП,kpp
+имя клиента,first_name
+KPP_ID,kpp
+PENSION_NUMBER,snils
+код_организации_в_окпо,okpo
+номер записи в егрюл,ogrn
+family,last_name
+okpo_number,okpo
+инн,inn
+birthdate,birth_date
+KPP,kpp
+person_name,first_name
+ogrn_number,ogrn
+имя-клиента,first_name
+USER_LASTNAME,last_name
+огрнип,ogrnip
+Номер Записи В Егрюл,ogrn
+классификатор-предприятий,okpo
+Family,last_name
+Client_Name,first_name
+username,first_name
+КПП,kpp
+гос номер юрлица,ogrn
+kpp,kpp
+ogrn,ogrn
+ОКПО,okpo
+номерпфр,snils
+user_lastname,last_name
+ЛИЦЕВОЙ СЧЕТ ПФР,snils
+birth date,birth_date
+СНИЛС,snils
+кпп-организации,kpp
+Date Of Birth,birth_date
+firstname,first_name
+Имя_Пользователя,first_name
+pensionnumber,snils
+егрюлномер,ogrn
+middle_name,middle_name
+Kpp,kpp
+dob,birth_date
+customer_name,full_name
+pension_number,snils
+username,first_name
+имя_пользователя,first_name
+usermiddle,middle_name
+family,last_name
+user_inn,inn
+миддлнейм,middle_name
+date of birth,birth_date
+госрегистрация,ogrn
+phonenumber,phone
+ОГРН ИП,ogrnip
+Др,birth_date
+номерокпо,okpo
+кпп_организации,kpp
+ogrnipid,ogrnip
+страховой_номер,snils
+огрн_индивидуального_предпринимателя,ogrnip
+dateofbirth,birth_date
+Отчество Покупателя,middle_name
+middle name,middle_name
+регистрационный номер ип,ogrnip
+snils,snils
+User_Middlename,middle_name
+Contact_Person,full_name
+birthdate,birth_date
+пенсионное страхование,snils
+отчество,middle_name
+PERSON,full_name
+bdate,birth_date
+okpocode,okpo
+pfr,snils
+OGRN_ID,ogrn
+user_phone,phone
+ИМЯ КЛИЕНТА,first_name
+middle-name,middle_name
+номеррегистрации,ogrn
+ГОСРЕГИСТРАЦИЯ,ogrn
+причина постановки,kpp
+mobile,phone
+Пенсионное Страхование,snils
+Kpp_Number,kpp
+inn,inn
+okpo_id,okpo
+Имя,first_name
+kpp,kpp
+Отчество-клиента,middle_name
+okpo,okpo
+Фамилия Клиента,last_name
+кппфирмы,kpp
+Код Организации В Окпо,okpo
+pensionnumber,snils
+pfr,snils
+WHATSAPP,phone
+BIRTHDATE,birth_date
+birthdate,birth_date
+tel,phone
+огрн индивидуального предпринимателя,ogrnip
+гос_номер_юрлица,ogrn
+ИНН,inn
+tel,phone
+Код Постановки На Учет,kpp
+ogrn_code,ogrn
+dob,birth_date
+Фамилия-Имя-Отчество,full_name
+middle_name,middle_name
+user_middle,middle_name
+фио,full_name
+Client,full_name
+Okpo,okpo
+Кпп Юрлица,kpp
+Снилс,snils
+ogrn_code,ogrn
+дата_рождения,birth_date
+датарождения,birth_date
+contact_number,phone
+birthdate,birth_date
+birth_date,birth_date
+Дата_Рождения,birth_date
+госрегистрация,ogrn
+Client_Firstname,first_name
+snils_number,snils
+birth_day,birth_date
+огрн ип,ogrnip
+егрюл_номер,ogrn
+snils,snils
+огрн-ип,ogrnip
+TAX_NUMBER,inn
+birthdate,birth_date
+классификатор-предприятий,okpo
+Классификатор Предприятий,okpo
+СТРАХОВОЕ СВИДЕТЕЛЬСТВО,snils
+INN_NUMBER,inn
+Номер Записи В Егрюл,ogrn
+ОБЩЕРОССИЙСКИЙ КЛАССИФИКАТОР,okpo
+contact,phone
+full,full_name
+гос номер юрлица,ogrn
+USER_SURNAME,last_name
+Full_Name,full_name
+inn_code,inn
+okpo_org,okpo
+birth-date,birth_date
+tax,inn
+кпп_организации,kpp
+CONTACT_NAME,first_name
+Ogrnip_Code,ogrnip
+Kpp_Code,kpp
+номер-огрн,ogrn
+kpp_id,kpp
+fathers_name,middle_name
+регистрационный номер ип,ogrnip
+Tax_Id,inn
+ФАМИЛИЯ,last_name
+НОМЕР ПФР,snils
+ogrnip,ogrnip
+contact_number,phone
+tax,inn
+okpo_company,okpo
+миддлнейм,middle_name
+отчество,middle_name
+FAMILY_NAME,last_name
+inn_code,inn
+full,full_name
+middle_name,middle_name
+дата-роджения,birth_date
+гос номер юрлица,ogrn
+ИМЕНА,first_name
+Family_Name,last_name
+family name,last_name
+number,phone
+номер регистрации,ogrn
+family_name,last_name
+единый госреестр,ogrn
+кпп юрлица,kpp
+full_name,full_name
+user_name,first_name
+ОГРНИП,ogrnip
+Whatsapp,phone
+phone_num,phone
+phone,phone
+кпп,kpp
+имя,first_name
+Отчество-клиента,middle_name
+имя-клиента,first_name
+клиент,full_name
+okpo_code,okpo
+okpo_id,okpo
+Отчество-клиента,middle_name
+огрн индивидуального предпринимателя,ogrnip
+Классификатор Предприятий,okpo
+ИНН,inn
+Ogrn_Code,ogrn
+Фамилия Имя Отчество,full_name
+givenname,first_name
+Family Name,last_name
+middle,middle_name
+Family Name,last_name
+birth,birth_date
+тел.,phone
+ogrnip_id,ogrnip
+ФАМИЛИЯ ИМЯ ОТЧЕСТВО,full_name
+user_lastname,last_name
+фамилия,last_name
+last name,last_name
+регистрационный-номер-ип,ogrnip
+огрнип-код,ogrnip
+pfr,snils
+Инн,inn
+ogrnip,ogrnip
+ДАТА РОДЖЕНИЯ,birth_date
+user_lastname,last_name
+ОТЧЕСТВО ПОКУПАТЕЛЯ,middle_name
+Kpp_Code,kpp
+number,phone
+Код Окпо,okpo
+отчество-покупателя,middle_name
+Отчество-клиента,middle_name
+ДАТА РОДЖЕНИЯ,birth_date
+Ogrn_Id,ogrn
+whatsapp,phone
+Основной Гос Номер,ogrn
+отчество,middle_name
+кпп,kpp
+единый-госреестр,ogrn
+Отч.,middle_name
+регистрационный номер ип,ogrnip

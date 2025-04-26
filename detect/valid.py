@@ -3,15 +3,41 @@ from pandas.api.types import is_numeric_dtype
 
 from natasha import (
     NamesExtractor,
-    MorphVocab,
-    DatesExtractor,
-    Doc
+    MorphVocab
 )
 
 morph_vocab = MorphVocab()
-names_extractor = NamesExtractor(morph_vocab)
-dates_extractor = DatesExtractor(morph_vocab)
+extractor = NamesExtractor(morph_vocab)
 
+
+def is_name(text, key):
+    """
+    Проверяет, является ли строка именем указанного типа.
+
+    Параметры:
+        text (str): Строка для проверки
+        key (str): Тип имени ('first_name', 'last_name', 'middle_name', 'full_name')
+
+    Возвращает:
+        bool: True если строка соответствует указанному типу имени
+    """
+    matches = list(extractor(text))
+    if not matches:
+        return False
+
+    # Берем первое совпадение
+    match = matches[0].fact
+
+    if key == 'first_name':
+        return bool(match.first)
+    elif key == 'last_name':
+        return bool(match.last)
+    elif key == 'middle_name':
+        return bool(match.middle)
+    elif key == 'full_name':
+        return bool(match.first and match.last)
+    else:
+        raise ValueError("Неподдерживаемый ключ. Используйте: 'first_name', 'last_name', 'middle_name', 'full_name'")
 
 def validate_inn(inn_str):
     """Проверка ИНН по контрольным суммам согласно правилам РФ"""
@@ -90,32 +116,6 @@ def validate_snils(snils_str):
 
     return computed_control == control
 
-def validate_with_natasha(text, field_type):
-    doc = Doc(text)
-
-    if field_type in ['first_name', 'last_name', 'middle_name', 'full_name']:
-        doc.segment(names_extractor)
-        if not doc.spans:
-            return False
-
-        span = doc.spans[0]
-        if field_type == 'full_name':
-            # Проверяем, что извлечено полное имя (хотя бы имя и фамилия)
-            return hasattr(span, 'first') and hasattr(span, 'last')
-        elif field_type == 'first_name':
-            return hasattr(span, 'first')
-        elif field_type == 'last_name':
-            return hasattr(span, 'last')
-        elif field_type == 'middle_name':
-            return hasattr(span, 'middle')
-
-    elif field_type == 'birth_date':
-        doc.segment(dates_extractor)
-        return len(doc.spans) > 0  # Дата успешно распознана
-
-    return False
-
-
 def validate_column_data(column_data, column_type):
     samples = column_data.head(5).dropna().astype(str).tolist()
 
@@ -131,7 +131,7 @@ def validate_column_data(column_data, column_type):
                     re.fullmatch(r'^\d{4}/\d{2}/\d{2}$', x.strip()) or
                     re.fullmatch(r'^\d{8}$', x.strip()) or
                     re.fullmatch(r'^\d{4} год$', x.strip()) or
-                    validate_with_natasha(x, 'birth_date')
+                    is_name(x, 'birth_date')
             ),
             'description': 'дата в формате ГГГГ-ММ-ДД, ДД.ММ.ГГГГ, YYYYMMDD или текст (например, "12 мая 1990")'
         },
@@ -148,19 +148,19 @@ def validate_column_data(column_data, column_type):
             'description': '7-20 цифр с возможными +, (), -'
         },
         'first_name': {
-            'check': lambda x: validate_with_natasha(x, 'first_name'),
+            'check': lambda x: is_name(x, 'first_name'),
             'description': 'корректное имя (например, "Иван")'
         },
         'last_name': {
-            'check': lambda x: validate_with_natasha(x, 'last_name'),
+            'check': lambda x: is_name(x, 'last_name'),
             'description': 'корректная фамилия (например, "Иванов")'
         },
         'middle_name': {
-            'check': lambda x: validate_with_natasha(x, 'middle_name'),
+            'check': lambda x: is_name(x, 'middle_name'),
             'description': 'корректное отчество (например, "Иванович")'
         },
         'full_name': {
-            'check': lambda x: validate_with_natasha(x, 'full_name'),
+            'check': lambda x: is_name(x, 'full_name'),
             'description': 'полное ФИО (например, "Иванов Иван Иванович")'
         }
     }

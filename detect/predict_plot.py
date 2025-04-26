@@ -87,8 +87,15 @@ def run_and_save_test_cases(artifacts, confidence_threshold=0.5):
         "user_inn", "client_inn", "inn_number", "tax_id", "inn_code",
         "first_name", "user_name", "name", "given_name", "clientname",
         "lastname", "family_name", "surname", "user_surname", "second_name",
-        "phone", "mobile", "telephone", "contact_number", "phone_num",
-        "user_phone", "client_tel", "cellphone", "phone_code", "whatsapp_num",
+        "phone", "mobile", "telephone", "contact_number", "phone_num", "user_phone", "client_tel", "cellphone", "phone_code", "whatsapp_num",
+        "middle_name", "отчество", "отчество клиента", "отч.",
+        "fullname", "Фамилия имя отчество", "ФИО", "ФИО клиента",
+        "birth_date", "дата рождения", "date of birth", "др", "birth day", "день рождения", "birthdate", "birth date", "дата_рождения", "birthdata", "день роджения", "birth",
+        "СНИЛС", "snils", "номер снилс", "страховой номер",
+        "kpp", "КПП", "код причины постановки", "kpp_code", "налоговый кпп", "кпп организации", "kpp_number", "кпп юрлица", "причина постановки", "kpp_id"
+        "огрн", "ogrn", "ОГРН", "основной гос номер", "ogrn_number", "регистрационный номер","номер огрн", "гос номер юрлица", "ogrn_code", "единый госреестр", "ogrn_id",
+        "okpo", "окпо", "okpo", "ОКПО", "общероссийский классификатор", "okpo_code", "номер окпо", "классификатор предприятий", "okpo_id",
+        "огрнип", "ogrnip", "ОГРНИП", "огрн ип", "ogrnip_number", "огрн индивидуального предпринимателя", "огрнип код", "ogrnip_code",
         "ненужная информация", "неподходящая  информация", "идентификатор"
     ]
 

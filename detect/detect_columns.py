@@ -18,10 +18,7 @@ def load_model_artifacts(model_path='../detect/res/best_model.h5',
 
 
 def predict_column_type(column_name, artifacts, confidence_threshold=0.6):
-    """
-    Предсказание типа колонки
-    Возвращает (тип, уверенность)
-    """
+    """Предсказание типа колонки"""
     seq = artifacts['tokenizer'].texts_to_sequences([column_name])
     pad = pad_sequences(seq, maxlen=20)
     pred_proba = artifacts['model'].predict(pad, verbose=0)[0]
@@ -32,11 +29,9 @@ def predict_column_type(column_name, artifacts, confidence_threshold=0.6):
     return artifacts['encoder'].classes_[np.argmax(pred_proba)], max_proba
 
 
-def get_confidential_data_map(csv_path, confidence_threshold=0.6):
-    """
-    Анализ CSV файла и создание карты конфиденциальных данных
-    """
-    df = pd.read_csv(csv_path)
+def get_confidential_data_map(csv_path, encoding='utf-8', confidence_threshold=0.6):
+    """Анализ CSV файла и создание карты конфиденциальных данных"""
+    df = pd.read_csv(csv_path, encoding=encoding)
     artifacts = load_model_artifacts()
 
     confidential_types = ['inn', 'phone', 'first_name', 'last_name', 'middle_name', 'full_name', "year", "birth_date"]
@@ -52,9 +47,8 @@ def get_confidential_data_map(csv_path, confidence_threshold=0.6):
             if is_confidential:
                 try:
                     validation = validate_column_data(df[col], pred_type)
-                    # Если валидация не пройдена, но уверенность высокая - помечаем как подозрительный
                     status = "CONFIRMED" if validation.get('is_valid', False) else \
-                        "SUSPICIOUS" if confidence > 0.7 else "REJECTED"
+                             "SUSPICIOUS" if confidence > 0.7 else "REJECTED"
                 except Exception as e:
                     validation = {
                         'is_valid': False,
@@ -90,13 +84,11 @@ def get_confidential_data_map(csv_path, confidence_threshold=0.6):
     return confidential_map, pd.DataFrame(results)
 
 
-def analyze_data(csv_path):
-    """
-    Полный анализ данных с валидацией
-    """
+def analyze_data(csv_path, encoding='utf-8'):
+    """Полный анализ данных с валидацией"""
     try:
-        df = pd.read_csv(csv_path)
-        confidential_map, columns_info = get_confidential_data_map(csv_path)
+        df = pd.read_csv(csv_path, encoding=encoding)
+        confidential_map, columns_info = get_confidential_data_map(csv_path, encoding=encoding)
         non_conf_indices = [idx for idx in range(len(df.columns)) if idx not in confidential_map]
         corr_matrix = analyze_correlations(df, non_conf_indices)
 
@@ -108,7 +100,6 @@ def analyze_data(csv_path):
         }
     except Exception as e:
         print(f"Error in analyze_data: {str(e)}")
-        # Return an empty structure instead of None
         return {
             'confidential_data_map': {},
             'columns_info': pd.DataFrame(),
@@ -120,8 +111,10 @@ def analyze_data(csv_path):
 THRESHOLD = 0.6
 
 
-def get_list_result(csv_path):
-    analysis_results = analyze_data(csv_path)
+def get_list_result(csv_path, encoding='utf-8'):
+
+    analysis_results = analyze_data(csv_path, encoding=encoding)
+    print(analysis_results)
     result_list = []
 
     if analysis_results and analysis_results['confidential_data_map']:
@@ -140,19 +133,26 @@ def get_list_result(csv_path):
 
 
 if __name__ == "__main__":
-    # Устанавливаем параметры отображения для Pandas
+    import chardet
+
     pd.set_option('display.max_rows', None)
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
     pd.set_option('display.max_colwidth', None)
 
-    csv_path = 'Global_AI_Content_Impact_Dataset.csv'
-    results, corr = get_list_result(csv_path)
+    csv_path = '../mask/Книга1.csv'
+
+    # --- Новое: определяем кодировку ---
+    with open(csv_path, 'rb') as f:
+        rawdata = f.read(10000)
+        encoding = chardet.detect(rawdata)['encoding']
+    print(f"Определена кодировка файла: {encoding}")
+
+    results, corr = get_list_result(csv_path, encoding=encoding)
     print(results)
 
     for item in results:
-        print(*item)  # Распечатает тип, индекс, значение
+        print(*item)
 
-    # Выводим матрицу корреляций полностью
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):
         print(corr)
