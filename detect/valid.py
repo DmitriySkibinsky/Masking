@@ -1,6 +1,8 @@
 import re
 from pandas.api.types import is_numeric_dtype
 
+TOP_FIELD = 5
+
 from natasha import (
     NamesExtractor,
     MorphVocab
@@ -117,7 +119,7 @@ def validate_snils(snils_str):
     return computed_control == control
 
 def validate_column_data(column_data, column_type):
-    samples = column_data.head(5).dropna().astype(str).tolist()
+    samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
     validation_rules = {
         'year': {
