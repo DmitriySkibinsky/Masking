@@ -15,7 +15,7 @@ consistency = {
     "okpo": lambda: generate_identifiers(mode="okpo"),
     "ogrnip": lambda: generate_identifiers(mode="ogrnip"),
 
-    "phone": lambda: generate_phone_number(),  # Make this a lambda
+    "phone": lambda: generate_phone_number(),
 
     "birth_date": generate_birth_date,
 }
