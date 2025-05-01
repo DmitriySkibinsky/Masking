@@ -17,6 +17,8 @@ consistency = {
 
     "phone": lambda: generate_phone_number(),
 
+    "email": lambda: generate_email(),
+
     "birth_date": generate_birth_date,
 }
 

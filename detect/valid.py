@@ -1,5 +1,6 @@
 import re
 from pandas.api.types import is_numeric_dtype
+from email_validator import validate_email, EmailNotValidError
 
 TOP_FIELD = 5
 
@@ -78,6 +79,88 @@ def validate_inn(inn_str):
     return False
 
 
+def validate_ogrn(ogrn_str):
+    """Проверка ОГРН (Основной государственный регистрационный номер)"""
+    ogrn = re.sub(r'[^\d]', '', ogrn_str)
+
+    if len(ogrn) != 13 or not ogrn.isdigit():
+        return False
+
+    num = int(ogrn[:-1])
+    control = int(ogrn[-1])
+    return num % 11 % 10 == control
+
+
+def validate_ogrnip(ogrnip_str):
+    """Проверка ОГРНИП (ОГРН для ИП)"""
+    ogrnip = re.sub(r'[^\d]', '', ogrnip_str)
+
+    if len(ogrnip) != 15 or not ogrnip.isdigit():
+        return False
+
+    num = int(ogrnip[:-1])
+    control = int(ogrnip[-1])
+    return num % 13 % 10 == control
+
+
+def validate_kpp(kpp_str):
+    """Проверка КПП (Код причины постановки на учет)"""
+    kpp = re.sub(r'[^\d]', '', kpp_str)
+
+    if len(kpp) != 9 or not kpp.isdigit():
+        return False
+
+    # Первые 4 цифры - код налогового органа
+    # 5-6 цифры - причина постановки (должны быть в допустимом диапазоне)
+    reason_code = int(kpp[4:6])
+    valid_reasons = [1, 2, 3, 4, 5, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+                     52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76,
+                     77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+
+    return reason_code in valid_reasons
+
+
+def validate_okpo(okpo_str):
+    """Проверка ОКПО (Общероссийский классификатор предприятий и организаций)"""
+    okpo = re.sub(r'[^\d]', '', okpo_str)
+
+    if len(okpo) not in (8, 10) or not okpo.isdigit():
+        return False
+
+    digits = [int(c) for c in okpo]
+
+    # Для 8-значных номеров (юридические лица)
+    if len(digits) == 8:
+        weights = [1, 2, 3, 4, 5, 6, 7]
+        control_sum = sum(d * w for d, w in zip(digits[:-1], weights)) % 11 % 10
+        return control_sum == digits[-1]
+
+    # Для 10-значных номеров (ИП)
+    elif len(digits) == 10:
+        weights = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        control_sum = sum(d * w for d, w in zip(digits[:-1], weights)) % 11 % 10
+        return control_sum == digits[-1]
+
+    return False
+
+def validate_email_address(email_str):
+    """
+    Проверяет валидность email адреса с помощью email-validator
+    и предоставляет альтернативную проверку через regex
+    """
+    email = email_str.strip()
+
+    # Проверка через email-validator (более строгая)
+    try:
+        validate_email(email)
+        return True
+    except EmailNotValidError:
+        pass
+
+    # Альтернативная проверка через regex (менее строгая)
+    regex_pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+    return re.fullmatch(regex_pattern, email) is not None
+
 def validate_snils(snils_str):
     """
     Проверка СНИЛС по контрольной сумме согласно правилам РФ.
@@ -122,10 +205,6 @@ def validate_column_data(column_data, column_type):
     samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
     validation_rules = {
-        'year': {
-            'check': lambda x: re.fullmatch(r'^\d{4}$', x.strip()) is not None,
-            'description': '4 цифры (например: 2023)'
-        },
         'birth_date': {
             'check': lambda x: (
                     re.fullmatch(r'^\d{4}-\d{2}-\d{2}$', x.strip()) or
@@ -136,14 +215,6 @@ def validate_column_data(column_data, column_type):
                     is_name(x, 'birth_date')
             ),
             'description': 'дата в формате ГГГГ-ММ-ДД, ДД.ММ.ГГГГ, YYYYMMDD или текст (например, "12 мая 1990")'
-        },
-        'inn': {
-            'check': lambda x: validate_inn(x),
-            'description': '10 или 12 цифр с корректными контрольными суммами'
-        },
-        'snils': {
-            'check': lambda x: validate_snils(x),
-            'description': '11 цифр (формат XXX-XXX-XXX YY) с корректной контрольной суммой'
         },
         'phone': {
             'check': lambda x: re.fullmatch(r'^[\d\+\(\)\s\-]{7,20}$', x.strip()) is not None,
@@ -164,6 +235,34 @@ def validate_column_data(column_data, column_type):
         'full_name': {
             'check': lambda x: is_name(x, 'full_name'),
             'description': 'полное ФИО (например, "Иванов Иван Иванович")'
+        },
+        'inn': {
+            'check': lambda x: validate_inn(x),
+            'description': '10 или 12 цифр с корректными контрольными суммами'
+        },
+        'snils': {
+            'check': lambda x: validate_snils(x),
+            'description': '11 цифр (формат XXX-XXX-XXX YY) с корректной контрольной суммой'
+        },
+        'ogrn': {
+            'check': lambda x: validate_ogrn(x),
+            'description': '13 цифр с корректной контрольной суммой (для юр. лиц)'
+        },
+        'ogrnip': {
+            'check': lambda x: validate_ogrnip(x),
+            'description': '15 цифр с корректной контрольной суммой (для ИП)'
+        },
+        'kpp': {
+            'check': lambda x: validate_kpp(x),
+            'description': '9 цифр с корректным кодом причины постановки'
+        },
+        'okpo': {
+            'check': lambda x: validate_okpo(x),
+            'description': '8 цифр (юр. лица) или 10 цифр (ИП) с контрольной суммой'
+        },
+        'email': {
+            'check': lambda x: validate_email_address(x),
+            'description': 'корректный email адрес (например, user@example.com)'
         }
     }
 

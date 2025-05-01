@@ -63,6 +63,13 @@ column_types = {
         "огрнип", "ogrnip", "ОГРНИП", "огрн ип", "ogrnip_number", "огрн индивидуального предпринимателя",
         "номер огрнип", "реестр ип", "огрнип код", "ogrnip_code", "номер записи в егрип",
         "егрип номер", "огрнип ип", "ogrnip_id", "регистрационный номер ип"
+    ],
+    "email": [
+        "email", "e-mail", "email адрес", "email address", "адрес почты", "почта", "mail",
+        "электронная почта", "user_email", "email пользователя", "email клиента", "e-mail адрес",
+        "contact email", "user_mail", "electronic mail", "email_пользователя", "client_email",
+        "email_адрес", "email_contact", "login_email", "personal_email",
+        "work_email", "business_email", "corporate_email"
     ]
 }
 
