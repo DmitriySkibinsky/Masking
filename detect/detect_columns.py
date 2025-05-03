@@ -20,7 +20,7 @@ def load_model_artifacts(model_path='../detect/res/best_model.h5',
 def predict_column_type(column_name, artifacts, confidence_threshold=0.6):
     """Предсказание типа колонки"""
     seq = artifacts['tokenizer'].texts_to_sequences([column_name])
-    pad = pad_sequences(seq, maxlen=20)
+    pad = pad_sequences(seq, maxlen=15)
     pred_proba = artifacts['model'].predict(pad, verbose=0)[0]
 
     max_proba = np.max(pred_proba)

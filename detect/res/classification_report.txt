@@ -1,19 +1,19 @@
               precision    recall  f1-score   support
 
-  birth_date       0.08      0.08      0.08       120
-       email       0.10      0.18      0.13       109
-  first_name       0.00      0.00      0.00       123
-   full_name       0.00      0.00      0.00       119
-         inn       0.00      0.00      0.00       128
-         kpp       0.13      0.15      0.14       129
-   last_name       0.00      0.00      0.00       135
- middle_name       0.00      0.00      0.00       128
-        ogrn       0.12      0.11      0.12       124
-      ogrnip       0.19      0.04      0.06       135
-        okpo       0.04      0.06      0.04       124
-       phone       0.00      0.00      0.00       126
-       snils       0.00      0.00      0.00         0
+  birth_date       1.00      1.00      1.00        25
+       email       1.00      1.00      1.00        33
+  first_name       1.00      1.00      1.00        17
+   full_name       1.00      1.00      1.00        26
+         inn       1.00      1.00      1.00        27
+         kpp       1.00      1.00      1.00        21
+   last_name       1.00      1.00      1.00        33
+ middle_name       1.00      1.00      1.00        19
+        ogrn       1.00      0.92      0.96        25
+      ogrnip       0.93      1.00      0.96        25
+        okpo       1.00      1.00      1.00        23
+       phone       1.00      1.00      1.00        28
+       snils       1.00      1.00      1.00        23
 
-    accuracy                           0.05      1500
-   macro avg       0.05      0.05      0.04      1500
-weighted avg       0.05      0.05      0.05      1500
+    accuracy                           0.99       325
+   macro avg       0.99      0.99      0.99       325
+weighted avg       0.99      0.99      0.99       325

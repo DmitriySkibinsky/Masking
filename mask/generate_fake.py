@@ -27,7 +27,7 @@ def detect_file_encoding(csv_path):
         return chardet.detect(rawdata)['encoding']
 
 
-async def fake_confident_columns(csv_path, output_path="fake_data.csv"):
+async def fake_confident_columns(csv_path, output_path="fake_data5.csv"):
     try:
         encoding = detect_file_encoding(csv_path)
         print(f"Определена кодировка файла: {encoding}")

@@ -25,7 +25,7 @@ def predict_column_type(text, artifacts, confidence_threshold=0.5):
     Возвращает "не определено" если уверенность < confidence_threshold
     """
     seq = artifacts['tokenizer'].texts_to_sequences([text])
-    pad = pad_sequences(seq, maxlen=20)
+    pad = pad_sequences(seq, maxlen=15)
     pred_proba = artifacts['model'].predict(pad, verbose=0)[0]
 
     max_proba = np.max(pred_proba)
