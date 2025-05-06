@@ -33,12 +33,6 @@ column_types = {
         "Фамилия Имя Отчество", "fullname", "full_name", "person",
         "contact_person", "customer_name", "complete_name"
     ],
-    "birth_date": [
-        "дата рождения", "birthdate", "birth_date", "date of birth", "др",
-        "дата роджения", "birth day", "день рождения", "birthdate",
-        "birth date", "dob", "дата_рождения", "birthdata", "bdate",
-        "день роджения", "датарождения", "birth", "dateofbirth"
-    ],
     "snils": [
         "снилс", "snils", "СНИЛС", "номер снилс", "snils_number", "страховой номер",
         "пенсионное страхование", "пфр номер", "pfr", "пфр", "страховое свидетельство",
@@ -70,6 +64,27 @@ column_types = {
         "contact email", "user_mail", "electronic mail", "email_пользователя", "client_email",
         "email_адрес", "email_contact", "login_email", "personal_email",
         "work_email", "business_email", "corporate_email"
+    ],
+    "birth_date": [
+        "дата рождения", "birthdate", "birth_date", "date of birth", "др",
+        "дата роджения", "birth day", "день рождения", "birthdate",
+        "birth date", "dob", "дата_рождения", "birthdata", "bdate",
+        "день роджения", "датарождения", "birth", "dateofbirth"
+    ],
+    "passport_number": [
+        "номер паспорта", "passport number", "passport_no", "passport num",
+        "серия и номер паспорта", "паспортные данные", "passport",
+        "passport id", "passport #", "номер_паспорта", "паспорт", "passportid"
+    ],
+    "passport_series": [
+        "серия паспорта", "passport series", "passport_series", "серия", "series", "ser"
+        "passport ser", "passportseries", "серия_паспорта", "seria"
+    ],
+    "international_passport_number": [
+        "номер загранпаспорта", "загран номер", "international passport number",
+        "passport no", "номер заграничного паспорта", "загранпаспорт",
+        "загран номер", "номер паспорта заграничного", "intl passport",
+        "foreign passport number", "passport number", "загран"
     ]
 }
 

@@ -6,18 +6,30 @@ import string
 fake = Faker('ru_RU')
 
 # Номер паспорта
-async def generate_passport_number():
+async def generate_passport_number() -> str:
+    """
+    Генерация номера паспорта РФ в формате: 'XX XX XXXXXX'
+    где первые 4 цифры - серия, последние 6 - номер
+    """
     try:
         series = random.randint(1000, 9999)
         number = random.randint(100000, 999999)
-        
-        # Формирование номера паспорта с дефисом
-        passport = f"{str(series)[:2]} {str(series)[2:]} {number}"
-        
-        return passport
-    
+        return f"{series // 100} {series % 100} {number}"
     except Exception as e:
-        print(f"Произошла ошибка при генерации номера паспорта: {e}")
+        print(f"Ошибка генерации номера паспорта: {e}")
+        return "00 00 000000"
+
+# Серия паспорта
+async def generate_passport_series() -> str:
+    """
+    Генерация серии паспорта (первые 4 цифры)
+    """
+    try:
+        series = random.randint(1000, 9999)
+        return f"{series // 100} {series % 100}"
+    except Exception as e:
+        print(f"Ошибка генерации серии паспорта: {e}")
+        return "00 00"
 
 # Номер загран паспорта
 async def generate_interpass_series_number():

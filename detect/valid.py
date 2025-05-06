@@ -201,6 +201,41 @@ def validate_snils(snils_str):
 
     return computed_control == control
 
+def validate_passport_number(passport_str: str) -> bool:
+    """
+    Проверка номера паспорта РФ
+    Должен содержать минимум 6 цифр (может быть с разделителями)
+    """
+    cleaned = re.sub(r'[^\d]', '', passport_str)
+    return len(cleaned) >= 6 and cleaned.isdigit()
+
+def validate_passport_series(series_str: str) -> bool:
+    """
+    Проверка серии паспорта РФ
+    Должна содержать ровно 4 цифры (может быть с разделителями)
+    """
+    cleaned = re.sub(r'[^\d]', '', series_str)
+    return len(cleaned) == 4 and cleaned.isdigit()
+
+def validate_international_passport_number(passport_str: str) -> bool:
+    """
+    Проверка номера загранпаспорта РФ
+    Должен содержать 2 буквы и 6 цифр (может быть с разделителями)
+    """
+    cleaned = re.sub(r'[^\w]', '', passport_str).upper()
+    if len(cleaned) != 8:
+        return False
+
+    letters_part = cleaned[:2]
+    digits_part = cleaned[2:]
+
+    # Проверяем что первые 2 символа - русские буквы из допустимого набора
+    valid_letters = {'А', 'В', 'Е', 'К', 'М', 'Н', 'О', 'Р', 'С', 'Т', 'У', 'Х'}
+    if not all(c in valid_letters for c in letters_part):
+        return False
+
+    return digits_part.isdigit() and len(digits_part) == 6
+
 def validate_column_data(column_data, column_type):
     samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
@@ -259,6 +294,18 @@ def validate_column_data(column_data, column_type):
         'okpo': {
             'check': lambda x: validate_okpo(x),
             'description': '8 цифр (юр. лица) или 10 цифр (ИП) с контрольной суммой'
+        },
+        'passport_number': {
+            'check': lambda x: validate_passport_number(x),
+            'description': 'корректный номер паспорта (содержит от 6 цифр)'
+        },
+        'passport_series': {
+            'check': lambda x: validate_passport_series(x),
+            'description': 'корректный серия паспорта (4 цифры)'
+        },
+        'international_passport_number':{
+            'check': lambda x: validate_international_passport_number(x),
+            'description': 'корректный номер загран. паспорта (содержит 2 буквы и 6 цифр)'
         },
         'email': {
             'check': lambda x: validate_email_address(x),

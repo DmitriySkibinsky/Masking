@@ -19,6 +19,10 @@ consistency = {
 
     "email": lambda: generate_email(),
 
+    "passport_number": lambda: generate_passport_number(),
+    "passport_series": lambda: generate_passport_series(),
+    "international_passport_number": lambda: generate_interpass_series_number(),
+
     "birth_date": generate_birth_date,
 }
 
