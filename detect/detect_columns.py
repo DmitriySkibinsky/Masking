@@ -3,6 +3,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from detect.correlation import analyze_correlations
+from detect.gender import detect_gender
 from detect.valid import validate_column_data  # Импорт новой функции
 
 
@@ -34,7 +35,8 @@ def get_confidential_data_map(csv_path, encoding='utf-8', confidence_threshold=0
     df = pd.read_csv(csv_path, encoding=encoding)
     artifacts = load_model_artifacts()
 
-    confidential_types = ['inn', 'phone', 'first_name', 'last_name', 'middle_name', 'full_name', "year", "birth_date"]
+    confidential_types = ['first_name', 'last_name', 'inn', 'phone', 'middle_name', 'full_name', "snils",
+                          "ogrn", "kpp", "okpo", "ogrnip", "email", "birth_date", "passport_number", "passport_series", "international_passport_number"]
     confidential_map = {}
     results = []
 
@@ -48,7 +50,7 @@ def get_confidential_data_map(csv_path, encoding='utf-8', confidence_threshold=0
                 try:
                     validation = validate_column_data(df[col], pred_type)
                     status = "CONFIRMED" if validation.get('is_valid', False) else \
-                             "SUSPICIOUS" if confidence > 0.7 else "REJECTED"
+                             "SUSPICIOUS" if confidence > 0.5 else "REJECTED"
                 except Exception as e:
                     validation = {
                         'is_valid': False,
@@ -108,13 +110,13 @@ def analyze_data(csv_path, encoding='utf-8'):
         }
 
 
-THRESHOLD = 0.6
+THRESHOLD = 0.1
 
 
 def get_list_result(csv_path, encoding='utf-8'):
 
     analysis_results = analyze_data(csv_path, encoding=encoding)
-    print(analysis_results)
+    #print(analysis_results)
     result_list = []
 
     if analysis_results and analysis_results['confidential_data_map']:
@@ -131,28 +133,29 @@ def get_list_result(csv_path, encoding='utf-8'):
 
     return result_list, analysis_results.get('correlation_analysis', None)
 
-
-if __name__ == "__main__":
+def column_detect(csv_path, encoding='utf-8'):
     import chardet
 
     pd.set_option('display.max_rows', None)
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
     pd.set_option('display.max_colwidth', None)
-
-    csv_path = '../mask/Книга1.csv'
-
-    # --- Новое: определяем кодировку ---
     with open(csv_path, 'rb') as f:
         rawdata = f.read(10000)
         encoding = chardet.detect(rawdata)['encoding']
     print(f"Определена кодировка файла: {encoding}")
-
     results, corr = get_list_result(csv_path, encoding=encoding)
+    gender_rel = detect_gender(results, csv_path)
     print(results)
+    print("------")
+    print(gender_rel)
 
-    for item in results:
-        print(*item)
+    return results, corr, gender_rel
 
-    with pd.option_context('display.max_rows', None, 'display.max_columns', None):
-        print(corr)
+
+
+if __name__ == "__main__":
+
+
+    csv_path = '../mask/fake_data.csv'
+    column_detect(csv_path)

@@ -10,7 +10,7 @@ column_types = {
     "last_name": [
         "фамилия", "lastname", "last name", "фамилия клиента", "user_lastname",
         "фамилия_пользователя", "surname", "family name", "family", "user_surname",
-        "second_name", "family_name"
+        "second_name", "family_name", "фамилии"
     ],
     "inn": [
         "инн", "inn", "ИНН", "user_inn", "инн_клиента", "client_inn", "tax",

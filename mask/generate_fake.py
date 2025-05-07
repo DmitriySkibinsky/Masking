@@ -2,7 +2,7 @@ from consistency import consistency
 import pandas as pd
 import asyncio
 import chardet
-from detect.detect_columns import get_list_result
+from detect.detect_columns import column_detect
 
 
 async def generate_fake_data(data_type, count):
@@ -35,7 +35,8 @@ async def fake_confident_columns(csv_path, output_path="fake_data5.csv"):
         df = pd.read_csv(csv_path, encoding=encoding)
         print(f"Успешно прочитано {len(df)} строк")
 
-        confidential_columns, _ = get_list_result(csv_path, encoding=encoding)
+        confidential_columns, _ , gender_rel = column_detect(csv_path, encoding=encoding)
+        #print(gender_rel)
         print(f"Найдено конфиденциальных колонок: {len(confidential_columns)}")
 
         if not confidential_columns:
