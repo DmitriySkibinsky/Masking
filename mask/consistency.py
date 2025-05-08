@@ -3,10 +3,10 @@ import asyncio
 
 # Словарь генераторов, где каждый генератор - это функция
 consistency = {
-    "first_name": lambda: generate_full_name(mode="first_name"),
-    "last_name": lambda: generate_full_name(mode="last_name"),
-    "middle_name": lambda: generate_full_name(mode="middle_name"),
-    "full_name": lambda: generate_full_name(mode="all"),
+    "first_name": lambda gender=None: generate_full_name(mode="first_name", gender=gender),
+    "last_name": lambda gender=None: generate_full_name(mode="last_name", gender=gender),
+    "middle_name": lambda gender=None: generate_full_name(mode="middle_name", gender=gender),
+    "full_name": lambda gender=None: generate_full_name(mode="all", gender=gender),
 
     "snils": lambda: generate_identifiers(mode="snils"),
     "inn": lambda: generate_identifiers(mode="inn"),
@@ -22,6 +22,8 @@ consistency = {
     "passport_number": lambda: generate_passport_number(),
     "passport_series": lambda: generate_passport_series(),
     "international_passport_number": lambda: generate_interpass_series_number(),
+    "military_ticket_num": lambda: generate_military_ticket_number(),
+    "sailor_ticket_num": lambda: generate_military_ticket_number(),
 
     "birth_date": generate_birth_date,
 }

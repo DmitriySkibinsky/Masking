@@ -2,6 +2,8 @@ import csv
 import numpy as np
 import chardet
 from natasha import MorphVocab, NamesExtractor
+import random
+from collections import defaultdict
 
 # Глобальные переменные с результатами анализа
 analysis_results = {}  # Будет хранить результаты в формате {row_num: {'type': result}}
@@ -153,34 +155,60 @@ def analyze_file(file_path, analysis_commands, skip_header=True):
 
 
 def get_final_verdicts(weights):
-    """Возвращает словарь с финальными вердиктами для всех строк"""
+    """Заменяет 'unknown' на 'male' или 'female', учитывая текущую пропорцию полов."""
     global analysis_results
     final_results = {}
-    has_definite_results = False
+
+    # Сначала собираем статистику по уже определённым полу
+    gender_counts = defaultdict(int)
 
     for row_num, results in analysis_results.items():
-        if isinstance(row_num, int):  # Пропускаем записи об ошибках
+        if isinstance(row_num, int):
+            for field_type, result in results.items():
+                if result in ('male', 'female'):
+                    gender_counts[result] += 1
+
+    # Если нет статистики (все unknown), то 50/50
+    total_known = gender_counts['male'] + gender_counts['female']
+    if total_known == 0:
+        male_prob = 0.5
+        female_prob = 0.5
+    else:
+        male_prob = gender_counts['male'] / total_known
+        female_prob = gender_counts['female'] / total_known
+
+    # Теперь обрабатываем все строки, заменяя unknown с учётом пропорции
+    for row_num, results in analysis_results.items():
+        if isinstance(row_num, int):
             male_score = 0
             female_score = 0
 
             for field_type, result in results.items():
                 weight = weights.get(field_type, 0)
 
-                if result == 'male':
+                # Если поле 'unknown', выбираем пол по пропорции
+                if result == 'unknown':
+                    resolved_result = random.choices(
+                        ['male', 'female'],
+                        weights=[male_prob, female_prob]
+                    )[0]
+                else:
+                    resolved_result = result
+
+                # Считаем веса
+                if resolved_result == 'male':
                     male_score += weight
-                    has_definite_results = True
-                elif result == 'female':
+                elif resolved_result == 'female':
                     female_score += weight
-                    has_definite_results = True
 
-            if male_score > female_score:
-                final_results[row_num] = 'male'
-            elif female_score > male_score:
-                final_results[row_num] = 'female'
-            else:
-                final_results[row_num] = 'unknown'
+            # Определяем итоговый пол
+            final_results[row_num] = (
+                'male' if male_score > female_score
+                else 'female' if female_score > male_score
+                else random.choice(['male', 'female'])  # 50/50 при равенстве
+            )
 
-    return final_results if has_definite_results else {}
+    return final_results
 
 
 def detect_gender(config, file_path):

@@ -4,9 +4,8 @@ from faker import Faker
 
 async def generate_full_name(mode='all', gender=None, locale='ru_RU'):
     try:
+        print(gender)
         fake = Faker(locale)
-
-        # Если gender не указан, генерируем случайный пол
         if gender is None:
             gender = 'male' if fake.random_int(0, 1) == 0 else 'female'
 
@@ -20,6 +19,7 @@ async def generate_full_name(mode='all', gender=None, locale='ru_RU'):
             return f"{last_name} {first_name} {middle_name}"
 
         elif mode == 'first_name':
+
             return fake.first_name_male() if gender == 'male' else fake.first_name_female()
 
         elif mode == 'last_name':

@@ -236,6 +236,21 @@ def validate_international_passport_number(passport_str: str) -> bool:
 
     return digits_part.isdigit() and len(digits_part) == 6
 
+
+def validate_military_ticket_number(ticket_str):
+    """
+    Простая проверка номера военного билета
+    Формат: 2 любые русские буквы + 7 цифр (пробелы не учитываются)
+    """
+    if not isinstance(ticket_str, str):
+        return False
+
+    # Удаляем все пробелы и приводим к верхнему регистру
+    cleaned = re.sub(r'\s', '', ticket_str).upper()
+
+    # Проверяем формат: 2 буквы + 7 цифр
+    return bool(re.fullmatch(r'^[А-ЯЁ]{2}\d{7}$', cleaned))
+
 def validate_column_data(column_data, column_type):
     samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
@@ -306,6 +321,14 @@ def validate_column_data(column_data, column_type):
         'international_passport_number':{
             'check': lambda x: validate_international_passport_number(x),
             'description': 'корректный номер загран. паспорта (содержит 2 буквы и 6 цифр)'
+        },
+        'military_ticket_num':{
+            'check': lambda x: validate_military_ticket_number(x),
+            'description': 'корректный номер военного билета (содержит 2 буквы и 7 цифр)'
+        },
+        'sailor_ticket_num':{
+            'check': lambda x: validate_military_ticket_number(x),
+            'description': 'корректный номер билета моряка (содержит 2 буквы и 7 цифр)'
         },
         'email': {
             'check': lambda x: validate_email_address(x),

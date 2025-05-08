@@ -1,19 +1,23 @@
-              precision    recall  f1-score   support
+                               precision    recall  f1-score   support
 
-  birth_date       1.00      1.00      1.00        25
-       email       1.00      1.00      1.00        33
-  first_name       1.00      1.00      1.00        17
-   full_name       1.00      1.00      1.00        26
-         inn       1.00      1.00      1.00        27
-         kpp       1.00      1.00      1.00        21
-   last_name       1.00      1.00      1.00        33
- middle_name       1.00      1.00      1.00        19
-        ogrn       1.00      0.92      0.96        25
-      ogrnip       0.93      1.00      0.96        25
-        okpo       1.00      1.00      1.00        23
-       phone       1.00      1.00      1.00        28
-       snils       1.00      1.00      1.00        23
+                   birth_date       1.00      1.00      1.00        23
+                        email       1.00      1.00      1.00        30
+                   first_name       1.00      1.00      1.00        27
+                    full_name       1.00      1.00      1.00        23
+                          inn       1.00      1.00      1.00        22
+international_passport_number       1.00      0.82      0.90        28
+                          kpp       1.00      1.00      1.00        25
+                    last_name       1.00      1.00      1.00        21
+                  middle_name       1.00      1.00      1.00        31
+          military_ticket_num       1.00      1.00      1.00        30
+                         ogrn       0.89      1.00      0.94        17
+                       ogrnip       1.00      0.92      0.96        24
+                         okpo       1.00      1.00      1.00        21
+              passport_number       0.85      1.00      0.92        28
+              passport_series       1.00      1.00      1.00        22
+                        phone       1.00      1.00      1.00        23
+                        snils       1.00      1.00      1.00        30
 
-    accuracy                           0.99       325
-   macro avg       0.99      0.99      0.99       325
-weighted avg       0.99      0.99      0.99       325
+                     accuracy                           0.98       425
+                    macro avg       0.98      0.98      0.98       425
+                 weighted avg       0.99      0.98      0.98       425
