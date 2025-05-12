@@ -65,12 +65,6 @@ column_types = {
         "email_адрес", "email_contact", "login_email", "personal_email",
         "work_email", "business_email", "corporate_email"
     ],
-    "birth_date": [
-        "дата рождения", "birthdate", "birth_date", "date of birth", "др",
-        "дата роджения", "birth day", "день рождения", "birthdate",
-        "birth date", "dob", "дата_рождения", "birthdata", "bdate",
-        "день роджения", "датарождения", "birth", "dateofbirth"
-    ],
     "passport_number": [
         "номер паспорта", "passport number", "passport_no", "passport num",
         "серия и номер паспорта", "паспортные данные", "passport",
@@ -100,6 +94,36 @@ column_types = {
         "морское удостоверение", "паспорт моряка номер", "номер паспорта моряка",
         "seaman ticket", "морской билет", "удостоверение личности моряка",
         "моряцкий билет", "морское свидетельство", "документ моряка"
+    ],
+    "birth_certificate_num": [
+        "свидетельство о рождении", "номер свидетельства о рождении",
+        "номер св-ва о рождении", "номер св-во о рождении",
+        "серия свидетельства о рождении", "серия и номер свидетельства о рождении",
+        "номер св. о рождении", "дата и место рождения (из свидетельства)",
+        "birth certificate", "birth cert", "birth cert number",
+        "birth document", "certificate of birth", "birth registration number",
+        "birth record", "registration of birth", "birth certificate id",
+        "номер акта о рождении", "номер записи акта о рождении"
+    ],
+    "work_book_num": [
+        "трудовая книжка", "номер трудовой книжки", "серия трудовой книжки",
+        "трудовая", "трудовая кн", "номер трудовой", "номер трудовой кн",
+        "номер и серия трудовой", "трудовая книжка номер", "трудовая кн номер",
+        "work book", "labour book", "employment record book", "labor card",
+        "work record", "employment book", "employment history", "work book id",
+        "employment document", "серия и номер трудовой", "номер документа о трудоустройстве"
+    ],
+    "vehicle_number": [
+        "госномер", "гос номер", "номер автомобиля", "регистрационный номер", "автомобиль",
+        "номер машины", "гос. номер", "автомобильный номер", "госрегномер", "машина"
+        "license plate", "car number", "vehicle plate", "plate number",
+        "registration number", "vehicle reg. number", "car reg. number"
+    ],
+    "birth_date": [
+        "дата рождения", "birthdate", "birth_date", "date of birth", "др",
+        "дата роджения", "birth day", "день рождения", "birthdate",
+        "birth date", "dob", "дата_рождения", "birthdata", "bdate",
+        "день роджения", "датарождения", "birth", "dateofbirth"
     ]
 }
 

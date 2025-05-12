@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XLSX File Upload</title>
+    <title>ИИ Маскирование данных</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Upload XLSX File</h1>
+    <header class="hero">
+        <h1>ИИ Маскирование данных</h1>
+        <p>Найдите и замаскируйте конфиденциальную информацию в Excel-файлах всего за пару кликов.</p>
+        <img src="{{ url_for('static', filename='masking_illustration.png') }}" alt="AI Masking Illustration">
+    </header>
 
-        <!-- Вывод flash-сообщений -->
+    <section class="features">
+        <h2>Как это работает?</h2>
+        <ul>
+            <li>📁 Загрузите файл .xlsx</li>
+            <li>🧠 ИИ найдет и заменит конфиденциальные данные</li>
+            <li>🔒 Ваши данные останутся в безопасности</li>
+        </ul>
+        <img src="{{ url_for('static', filename='secure_data.png') }}" alt="Secure Data">
+    </section>
+
+    <section class="upload-section">
+        <!-- Flash сообщения -->
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -20,11 +34,15 @@
         {% endwith %}
 
         <form class="upload-form" method="POST" enctype="multipart/form-data">
-            <p>Select an XLSX file to upload:</p>
+            <p>Выберите файл .xlsx:</p>
             <input type="file" name="file" accept=".xlsx" required>
             <br>
-            <input type="submit" value="Upload">
+            <input type="submit" value="Загрузить">
         </form>
-    </div>
+    </section>
+
+    <footer>
+        <p>© 2025 ИИ Маскирование данных. Все права защищены.</p>
+    </footer>
 </body>
 </html>

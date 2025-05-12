@@ -24,6 +24,9 @@ consistency = {
     "international_passport_number": lambda: generate_interpass_series_number(),
     "military_ticket_num": lambda: generate_military_ticket_number(),
     "sailor_ticket_num": lambda: generate_military_ticket_number(),
+    "birth_certificate_num": lambda: generate_birth_certificate_number(),
+    "work_book_num": lambda: generate_work_book_number(),
+    "vehicle_number": lambda: generate_car_license(),
 
     "birth_date": generate_birth_date,
 }

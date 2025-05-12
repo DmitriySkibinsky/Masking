@@ -37,7 +37,8 @@ def get_confidential_data_map(csv_path, encoding='utf-8', confidence_threshold=0
 
     confidential_types = ['first_name', 'last_name', 'inn', 'phone', 'middle_name', 'full_name', "snils",
                           "ogrn", "kpp", "okpo", "ogrnip", "email", "birth_date", "passport_number", "passport_series",
-                          "international_passport_number", "military_ticket_num", "sailor_ticket_num"]
+                          "international_passport_number", "military_ticket_num", "sailor_ticket_num", "birth_certificate_num",
+                          "work_book_num", "vehicle_number"]
     confidential_map = {}
     results = []
 

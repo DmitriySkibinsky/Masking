@@ -251,6 +251,31 @@ def validate_military_ticket_number(ticket_str):
     # Проверяем формат: 2 буквы + 7 цифр
     return bool(re.fullmatch(r'^[А-ЯЁ]{2}\d{7}$', cleaned))
 
+def validate_birth_certificate_number_simple(value: str) -> bool:
+    """
+    Возвращает True, если строка содержит 2 заглавные кириллические буквы и 6 цифр.
+    Иначе — False.
+    """
+    pattern = r'[А-ЯЁ]{2}.*\d{6}'
+    return bool(re.search(pattern, value.strip()))
+
+def validate_work_book_number(value: str) -> bool:
+    """
+    Возвращает True, если строка содержит 6 цифр подряд.
+    Иначе — False.
+    """
+    pattern = r'\d{6}'
+    return bool(re.search(pattern, value.strip()))
+
+def validate_vehicle_number(value: str) -> bool:
+    """
+    Возвращает True, если строка содержит хотя бы 3 цифры и 2 кириллические буквы.
+    Иначе — False.
+    """
+    has_digits = re.search(r'\d{3}', value)
+    has_letters = re.search(r'[А-ЯЁ]{2}', value.upper())
+    return bool(has_digits and has_letters)
+
 def validate_column_data(column_data, column_type):
     samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
@@ -329,6 +354,18 @@ def validate_column_data(column_data, column_type):
         'sailor_ticket_num':{
             'check': lambda x: validate_military_ticket_number(x),
             'description': 'корректный номер билета моряка (содержит 2 буквы и 7 цифр)'
+        },
+        'birth_certificate_num':{
+            'check': lambda x: validate_birth_certificate_number_simple(x),
+            'description': 'корректное свидетельство о рождении (содержит 2 буквы и 6 цифр)'
+        },
+        'work_book_num':{
+            'check': lambda x: validate_work_book_number(x),
+            'description': 'корректная трудовая книга (содержит 6 цифр)'
+        },
+        'vehicle_number':{
+            'check': lambda x: validate_vehicle_number(x),
+            'description': 'корректный номер автомобиля (3 цифры и хотя бы 2 буквы)'
         },
         'email': {
             'check': lambda x: validate_email_address(x),

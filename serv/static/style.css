@@ -1,22 +1,61 @@
-/* Общие стили */
+/* Основной стиль */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f2f4f8;
+    color: #333;
 }
 
-.container {
+/* Шапка */
+.hero {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero img {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Секция преимуществ */
+.features {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.features img {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+/* Загрузка */
+.upload-section {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-/* Стили для flash-сообщений */
+/* Flash-сообщения */
 .flash-message {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 4px;
+    font-weight: bold;
 }
 
 .success {
@@ -31,51 +70,60 @@ body {
     border: 1px solid #f5c6cb;
 }
 
-/* Стили формы загрузки */
+/* Форма загрузки */
 .upload-form {
-    border: 2px dashed #ccc;
-    padding: 20px;
+    background-color: #ffffff;
+    border: 2px dashed #4a90e2;
+    padding: 30px;
+    border-radius: 10px;
     text-align: center;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 .upload-form p {
     margin-bottom: 15px;
-    color: #555;
+    font-size: 16px;
 }
 
 .upload-form input[type="file"] {
-    margin: 10px 0;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
     width: 80%;
+    margin-bottom: 20px;
 }
 
 .upload-form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #4a90e2;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 6px;
     font-size: 16px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .upload-form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #357ABD;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
 }
 
 /* Адаптивность */
 @media (max-width: 600px) {
-    .container {
-        padding: 10px;
+    .upload-form input[type="file"] {
+        width: 100%;
     }
 
-    .upload-form input[type="file"] {
-        width: 95%;
+    .hero img, .features img {
+        width: 100%;
+        height: auto;
     }
 }
