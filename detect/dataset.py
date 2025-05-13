@@ -41,7 +41,7 @@ column_types = {
     "ogrn": [
         "огрн", "ogrn", "ОГРН", "основной гос номер", "ogrn_number", "регистрационный номер",
         "номер огрн", "гос номер юрлица", "ogrn_code", "номер записи в егрюл", "егрюл номер",
-        "единый госреестр", "госрегистрация", "номер регистрации", "ogrn_id"
+        "единый госреестр", "госрегистрация", "номер регистрации", "ogrn_id", "регистрационный номер"
     ],
     "kpp": [
         "кпп", "kpp", "КПП", "код причины постановки", "kpp_code", "налоговый кпп",
@@ -63,12 +63,12 @@ column_types = {
         "электронная почта", "user_email", "email пользователя", "email клиента", "e-mail адрес",
         "contact email", "user_mail", "electronic mail", "email_пользователя", "client_email",
         "email_адрес", "email_contact", "login_email", "personal_email",
-        "work_email", "business_email", "corporate_email"
+        "work_email", "business_email", "corporate_email", "почта пользователя"
     ],
     "passport_number": [
         "номер паспорта", "passport number", "passport_no", "passport num",
         "серия и номер паспорта", "паспортные данные", "passport",
-        "passport id", "passport #", "номер_паспорта", "паспорт", "passportid"
+        "passport id", "passport #", "номер_паспорта", "паспорт", "passportid", "Номер паспорта"
     ],
     "passport_series": [
         "серия паспорта", "passport series", "passport_series", "серия", "series", "ser"
@@ -100,7 +100,7 @@ column_types = {
         "номер св-ва о рождении", "номер св-во о рождении",
         "серия свидетельства о рождении", "серия и номер свидетельства о рождении",
         "номер св. о рождении", "дата и место рождения (из свидетельства)",
-        "birth certificate", "birth cert", "birth cert number",
+        "birth certificate", "birth cert", "свидетельство о рождении","birth cert number",
         "birth document", "certificate of birth", "birth registration number",
         "birth record", "registration of birth", "birth certificate id",
         "номер акта о рождении", "номер записи акта о рождении"
@@ -110,20 +110,20 @@ column_types = {
         "трудовая", "трудовая кн", "номер трудовой", "номер трудовой кн",
         "номер и серия трудовой", "трудовая книжка номер", "трудовая кн номер",
         "work book", "labour book", "employment record book", "labor card",
-        "work record", "employment book", "employment history", "work book id",
+        "work record", "employment book", "employment history", "work book id", "трудовые книги",
         "employment document", "серия и номер трудовой", "номер документа о трудоустройстве"
     ],
     "vehicle_number": [
         "госномер", "гос номер", "номер автомобиля", "регистрационный номер", "автомобиль",
-        "номер машины", "гос. номер", "автомобильный номер", "госрегномер", "машина"
+        "номер машины", "гос. номер", "автомобильный номер","номера автомобилей", "госрегномер", "машина"
         "license plate", "car number", "vehicle plate", "plate number",
         "registration number", "vehicle reg. number", "car reg. number"
     ],
     "birth_date": [
-        "дата рождения", "birthdate", "birth_date", "date of birth", "др",
+        "дата рождения", "birthdate", "birth_date","birth", "date of birth", "др",
         "дата роджения", "birth day", "день рождения", "birthdate",
         "birth date", "dob", "дата_рождения", "birthdata", "bdate",
-        "день роджения", "датарождения", "birth", "dateofbirth"
+        "день роджения", "датарождения", "birth", "dateofbirth", "дни рождения"
     ]
 }
 
