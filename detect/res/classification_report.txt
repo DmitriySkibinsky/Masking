@@ -1,27 +1,30 @@
                                precision    recall  f1-score   support
 
-        birth_certificate_num       1.00      1.00      1.00        15
-                   birth_date       1.00      1.00      1.00        18
-                        email       1.00      1.00      1.00        28
-                   first_name       1.00      1.00      1.00        12
-                    full_name       1.00      1.00      1.00        37
-                          inn       1.00      1.00      1.00        21
-international_passport_number       0.95      0.84      0.89        25
-                          kpp       1.00      1.00      1.00        31
-                    last_name       1.00      1.00      1.00        24
-                  middle_name       1.00      1.00      1.00        30
-          military_ticket_num       1.00      1.00      1.00        29
-                         ogrn       0.67      0.95      0.78        19
-                       ogrnip       0.96      0.82      0.88        28
-                         okpo       1.00      1.00      1.00        34
-              passport_number       0.86      0.96      0.91        25
-              passport_series       1.00      1.00      1.00        25
-                        phone       1.00      1.00      1.00        27
-            sailor_ticket_num       1.00      1.00      1.00        24
-                        snils       1.00      1.00      1.00        20
-               vehicle_number       1.00      0.81      0.89        21
-                work_book_num       1.00      1.00      1.00        32
+        birth_certificate_num       1.00      1.00      1.00        60
+                   birth_date       1.00      1.00      1.00        51
+                        email       1.00      1.00      1.00        54
+                   first_name       1.00      1.00      1.00        41
+                    full_name       1.00      1.00      1.00        53
+                          inn       1.00      1.00      1.00        58
+international_passport_number       1.00      0.92      0.96        38
+                          kpp       1.00      1.00      1.00        51
+                    last_name       1.00      1.00      1.00        59
+                  middle_name       1.00      1.00      1.00        66
+          military_ticket_num       1.00      1.00      1.00        49
+             nr_bank_contract       1.00      1.00      1.00        46
+            nr_credit_account       1.00      1.00      1.00        42
+              nr_dep_contract       1.00      1.00      1.00        35
+                         ogrn       0.84      1.00      0.91        37
+                       ogrnip       1.00      0.92      0.96        53
+                         okpo       1.00      1.00      1.00        65
+              passport_number       0.94      1.00      0.97        46
+              passport_series       1.00      1.00      1.00        59
+                        phone       1.00      1.00      1.00        36
+            sailor_ticket_num       1.00      1.00      1.00        48
+                        snils       1.00      1.00      1.00        50
+               vehicle_number       1.00      0.94      0.97        48
+                work_book_num       1.00      1.00      1.00        55
 
-                     accuracy                           0.97       525
-                    macro avg       0.97      0.97      0.97       525
-                 weighted avg       0.98      0.97      0.97       525
+                     accuracy                           0.99      1200
+                    macro avg       0.99      0.99      0.99      1200
+                 weighted avg       0.99      0.99      0.99      1200

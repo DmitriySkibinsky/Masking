@@ -17,7 +17,7 @@ def form(csv, data):
         missing_columns = [col for col in all_columns if col not in present_columns]
 
         missing_indices = [all_columns.index(col) + 1 for col in missing_columns]
-        used_indices = [item[1] + 1 for item in data]  # Увеличиваем на 1, чтобы индексы начинались с 1
+        used_indices = [item[1] + 1 for item in data]  
         unused_indices = [index for index in range(1, len(all_columns) + 1) if index not in used_indices]
 
         print("Индексы отсутствующих колонок:", missing_indices)

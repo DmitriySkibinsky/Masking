@@ -28,6 +28,11 @@ consistency = {
     "work_book_num": lambda: generate_work_book_number(),
     "vehicle_number": lambda: generate_car_license(),
 
+    "nr_credit_account": lambda: generate_credit_agreement_number(),
+    "nr_bank_contract": lambda: generate_bank_contract_number(),
+    "nr_dep_contract": lambda: generate_depository_contract_number(),
+    "card_number": lambda: generate_valid_card_number(),
+
     "birth_date": generate_birth_date,
 }
 

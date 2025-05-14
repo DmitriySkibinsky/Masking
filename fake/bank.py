@@ -41,7 +41,7 @@ async def generate_depository_contract_number(agreement_type='ФЛ'):
     except Exception as e:
         print(f"Произошла ошибка при генерации номера депозитарного договора: {e}")
 
-async def generate_valid_card_number(bin: str = "4", length: int = 16) -> str:
+async def generate_valid_card_number(bin: str = "2200", length: int = 16) -> str:
     """Генерация валидного номера карты"""
     try:
         if not bin.isdigit():
@@ -118,29 +118,29 @@ def generate_investor_code() -> str:
     except Exception as e:
         raise ValueError(f"Ошибка генерации кода инвестора: {e}")
 
-# async def main():
+#async def main():
 #     """Основная функция для демонстрации генерации номеров"""
 #     credit_number = await generate_credit_agreement_number('ФЛ')
 #     print(f"Номер кредитного договора: {credit_number}")
-    
+
 #     bank_contract_number = await generate_bank_contract_number('ЮЛ')
 #     print(f"Номер банковского договора: {bank_contract_number}")
-    
+
 #     depository_contract_number = await generate_depository_contract_number('ФЛ')
 #     print(f"Номер депозитарного договора: {depository_contract_number}")
-    
-#     card_number = await generate_valid_card_number(bin="4", length=16)
+
+#     card_number = await generate_valid_card_number(bin="2200", length=16)
 #     print(f"Номер карты: {card_number}")
-    
+
 #     bank_account_number = generate_bank_account_number('ФЛ')
 #     print(f"Номер банковского счета (ФЛ): {bank_account_number}")
-    
+
 #     bank_account_number_yl = generate_bank_account_number('ЮЛ')
 #     print(f"Номер банковского счета (ЮЛ): {bank_account_number_yl}")
-    
+
 #     investor_code = generate_investor_code()
 #     print(f"Код инвестора (ФЛ): {investor_code}")
 
 # # Запуск основной функции
-# if __name__ == "__main__":
+#if __name__ == "__main__":
 #     asyncio.run(main())

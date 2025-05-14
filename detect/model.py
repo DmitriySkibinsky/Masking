@@ -52,7 +52,7 @@ df['label_enc'] = le.fit_transform(df['label'])
 tokenizer = Tokenizer(char_level=True, oov_token='<OOV>')
 tokenizer.fit_on_texts(df['column_name'])
 X_seq = tokenizer.texts_to_sequences(df['column_name'])
-max_len = 15
+max_len = 20
 X_pad = pad_sequences(X_seq, maxlen=max_len, padding='post', truncating='post')
 
 # Разделение
@@ -63,7 +63,6 @@ X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.5, r
 class_weights = class_weight.compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
 class_weights = dict(enumerate(class_weights))
 
-# === Новая модель без кастомных слоев ===
 vocab_size = len(tokenizer.word_index) + 1
 num_classes = len(le.classes_)
 

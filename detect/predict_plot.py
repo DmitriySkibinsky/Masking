@@ -25,7 +25,7 @@ def predict_column_type(text, artifacts, confidence_threshold=0.5):
     Возвращает "не определено" если уверенность < confidence_threshold
     """
     seq = artifacts['tokenizer'].texts_to_sequences([text])
-    pad = pad_sequences(seq, maxlen=15)
+    pad = pad_sequences(seq, maxlen=20)
     pred_proba = artifacts['model'].predict(pad, verbose=0)[0]
 
     max_proba = np.max(pred_proba)
@@ -105,6 +105,10 @@ def run_and_save_test_cases(artifacts, confidence_threshold=0.5):
         "свидетельство о рождении", "номер свидетельства о рождении", "документ о рождении", "birthday record",
         "трудовая книга", "номер трудовой книги", "номер трудовой", "трудовая кн",
         "гос номер", "номер автомобиля", "номер автомобиля", "car number", "автомобильный номер", "автомобиль",
+        "номер кредитного договора", "номер кредитного счета", "кредитный договор номер", "кредитный договор №", "credit account number", "кредитный номер", "кредитный договор", "credit agreement number",
+        "номер банковского договора", "номер договора с банком", "банковский договор номер", "банковский договор №", "bank contract number", "bank agreement number",
+        "номер депозитарного договора", "номер договора депозита", "депозитарный договор номер", "депозитарный договор №", "номер депозитного договора", "deposit contract number", "deposit agreement number", "депозитный номер договора",
+        "номер карты", "депозитная карта", "карта банка", "card number", "номер карточки", "карта"
         "ненужная информация", "неподходящая  информация", "идентификатор"
     ]
 

@@ -21,7 +21,7 @@ def load_model_artifacts(model_path='../detect/res/best_model.h5',
 def predict_column_type(column_name, artifacts, confidence_threshold=0.6):
     """Предсказание типа колонки"""
     seq = artifacts['tokenizer'].texts_to_sequences([column_name])
-    pad = pad_sequences(seq, maxlen=15)
+    pad = pad_sequences(seq, maxlen=20)
     pred_proba = artifacts['model'].predict(pad, verbose=0)[0]
 
     max_proba = np.max(pred_proba)
@@ -38,7 +38,8 @@ def get_confidential_data_map(csv_path, encoding='utf-8', confidence_threshold=0
     confidential_types = ['first_name', 'last_name', 'inn', 'phone', 'middle_name', 'full_name', "snils",
                           "ogrn", "kpp", "okpo", "ogrnip", "email", "birth_date", "passport_number", "passport_series",
                           "international_passport_number", "military_ticket_num", "sailor_ticket_num", "birth_certificate_num",
-                          "work_book_num", "vehicle_number"]
+                          "work_book_num", "vehicle_number", "nr_credit_account", "nr_bank_contract", "nr_dep_contract",
+                          "card_number"]
     confidential_map = {}
     results = []
 

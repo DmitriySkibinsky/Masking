@@ -276,6 +276,24 @@ def validate_vehicle_number(value: str) -> bool:
     has_letters = re.search(r'[А-ЯЁ]{2}', value.upper())
     return bool(has_digits and has_letters)
 
+def validate_credit_agreement(value: str) -> bool:
+    """
+    Возвращает True, если строка содержит хотя бы 6 цифры и 2 кириллические буквы.
+    Иначе — False.
+    """
+    has_digits = re.search(r'\d{6}', value)
+    has_letters = re.search(r'[А-ЯЁ]{2}', value.upper())
+    return bool(has_digits and has_letters)
+
+def validate_card_number(value: str) -> bool:
+    """
+    Проверяет, содержит ли строка номер карты (16+ цифр).
+    Возвращает True если условие выполняется, иначе False.
+    """
+    # Ищем последовательность из 16+ цифр, возможно с разделителями
+    pattern = r'(?:\d[ -]?){16,}'
+    return bool(re.fullmatch(pattern, value))
+
 def validate_column_data(column_data, column_type):
     samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
@@ -370,6 +388,22 @@ def validate_column_data(column_data, column_type):
         'email': {
             'check': lambda x: validate_email_address(x),
             'description': 'корректный email адрес (например, user@example.com)'
+        },
+        'nr_credit_account': {
+            'check': lambda x: validate_credit_agreement(x),
+            'description': 'корректный номер кредитного договора (2 буквы, 6 цифр)'
+        },
+        'nr_bank_contract': {
+            'check': lambda x: validate_credit_agreement(x),
+            'description': 'корректный номер банковского договора (2 буквы, 6 цифр)'
+        },
+        'nr_dep_contract': {
+            'check': lambda x: validate_credit_agreement(x),
+            'description': 'корректный номер депозитарного договора (2 буквы, 6 цифр)'
+        },
+        'card_number': {
+            'check': lambda x: validate_card_number(x),
+            'description': 'корректный номер карты (от 16 цифр)'
         }
     }
 
