@@ -65,7 +65,7 @@ async def fake_confident_columns(csv_path, output_path="fake_data5.csv"):
 
         df.to_csv(output_path, index=False, encoding='utf-8')
         print(f"Файл успешно сохранен: {output_path}")
-        return df
+        return df, confidential_columns
 
     except Exception as e:
         print(f"Критическая ошибка: {str(e)}")
@@ -75,7 +75,7 @@ async def fake_confident_columns(csv_path, output_path="fake_data5.csv"):
 async def main():
     csv_path = 'Книга1.csv'
     print(f"Начало обработки файла: {csv_path}")
-    fake_df = await fake_confident_columns(csv_path)
+    fake_df, conf = await fake_confident_columns(csv_path)
     if fake_df is not None:
         print("Обработка завершена успешно")
     else:

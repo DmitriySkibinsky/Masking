@@ -32,6 +32,8 @@ consistency = {
     "nr_bank_contract": lambda: generate_bank_contract_number(),
     "nr_dep_contract": lambda: generate_depository_contract_number(),
     "card_number": lambda: generate_valid_card_number(),
+    "bank_account_number": lambda: generate_bank_account_number(),
+    "investor_code": lambda: generate_investor_code(),
 
     "birth_date": generate_birth_date,
 }

@@ -2,7 +2,7 @@ import re
 from pandas.api.types import is_numeric_dtype
 from email_validator import validate_email, EmailNotValidError
 
-TOP_FIELD = 5
+TOP_FIELD = 20
 
 from natasha import (
     NamesExtractor,
@@ -294,6 +294,23 @@ def validate_card_number(value: str) -> bool:
     pattern = r'(?:\d[ -]?){16,}'
     return bool(re.fullmatch(pattern, value))
 
+def validate_account_number(value: str) -> bool:
+    """
+    Проверяет, содержит ли строка номер счета (20+ цифр).
+    Возвращает True если условие выполняется, иначе False.
+    """
+    # Ищем последовательность из 20+ цифр, возможно с разделителями
+    pattern = r'(?:\d[ -]?){16,}'
+    return bool(re.fullmatch(pattern, value))
+
+def validate_investor_code(value: str) -> bool:
+    """
+    Проверяет, содержит ли строка код инвестора (6+ цифр).
+    Возвращает True если условие выполняется, иначе False.
+    """
+    pattern = r'(?:\d[ -]?{6,})'
+    return bool(re.fullmatch(pattern, value))
+
 def validate_column_data(column_data, column_type):
     samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
@@ -404,6 +421,14 @@ def validate_column_data(column_data, column_type):
         'card_number': {
             'check': lambda x: validate_card_number(x),
             'description': 'корректный номер карты (от 16 цифр)'
+        },
+        'bank_account_number': {
+            'check': lambda x: validate_account_number(x),
+            'description': 'корректный номер банковского счета (от 20 цифр)'
+        },
+        'investor_code': {
+            'check': lambda x: validate_investor_code(x),
+            'description': 'корректный код инвестора (от 6 цифр)'
         }
     }
 

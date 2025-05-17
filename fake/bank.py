@@ -23,21 +23,21 @@ async def generate_contract_number(prefix, agreement_type):
 async def generate_credit_agreement_number(agreement_type='ФЛ'):
     """Генерация номера кредитного договора"""
     try:
-        return generate_contract_number('КД', agreement_type)
+        return await generate_contract_number('КД', agreement_type)
     except Exception as e:
         print(f"Произошла ошибка при генерации номера кредитного договора: {e}")
 
 async def generate_bank_contract_number(agreement_type='ФЛ'):
     """Генерация номера договора банковского обслуживания"""
     try:
-        return generate_contract_number('НБ', agreement_type)
+        return await generate_contract_number('НБ', agreement_type)
     except Exception as e:
         print(f"Произошла ошибка при генерации номера банковского договора: {e}")
 
 async def generate_depository_contract_number(agreement_type='ФЛ'):
     """Генерация номера депозитарного договора"""
     try:
-        return generate_contract_number('НД', agreement_type)
+        return await generate_contract_number('НД', agreement_type)
     except Exception as e:
         print(f"Произошла ошибка при генерации номера депозитарного договора: {e}")
 
@@ -72,10 +72,10 @@ async def generate_valid_card_number(bin: str = "2200", length: int = 16) -> str
     except Exception as e:
         raise ValueError(f"Ошибка генерации номера карты: {e}")
 
-def generate_bank_account_number(agreement_type='ФЛ') -> str:
+async def generate_bank_account_number(agreement_type='ФЛ') -> str:
     """Генерация номера банковского счета в формате IBAN (по законам РФ)"""
     try:
-        validate_agreement_type(agreement_type)
+        await validate_agreement_type(agreement_type)  # Добавлено await
 
         # Код страны
         country_code = "RU"
@@ -135,7 +135,7 @@ def generate_investor_code() -> str:
 #     bank_account_number = generate_bank_account_number('ФЛ')
 #     print(f"Номер банковского счета (ФЛ): {bank_account_number}")
 
-#     bank_account_number_yl = generate_bank_account_number('ЮЛ')
+#     bank_account_number_yl = await generate_bank_account_number('ФЛ')
 #     print(f"Номер банковского счета (ЮЛ): {bank_account_number_yl}")
 
 #     investor_code = generate_investor_code()

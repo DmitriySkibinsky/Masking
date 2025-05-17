@@ -8,6 +8,69 @@ import io
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import LabelEncoder
 
+def trailing_zeros(n: int) -> int:
+    s = str(abs(int(n)))
+    return len(s) - len(s.rstrip('0'))
+
+def generate_all_data_consistent_with_regression(df: pd.DataFrame) -> pd.DataFrame:
+    df_result = df.copy()
+    df_encoded = df.copy()
+
+    label_encoders = {}
+    string_columns = []
+    numeric_columns = []
+
+    # 1. Кодируем строковые колонки и сохраняем LabelEncoders
+    for col in df.columns:
+        if pd.api.types.is_string_dtype(df[col]) or df[col].dtype == object:
+            le = LabelEncoder()
+            df_encoded[col] = le.fit_transform(df[col].astype(str))
+            label_encoders[col] = le
+            string_columns.append(col)
+        elif pd.api.types.is_numeric_dtype(df[col]):
+            numeric_columns.append(col)
+
+    # 2. Генерация строковых данных по вероятностному распределению
+    for col in string_columns:
+        value_counts = df[col].value_counts(normalize=True)
+        unique_values = value_counts.index.tolist()
+        probabilities = value_counts.values.tolist()
+
+        masked_values = np.random.choice(unique_values, size=len(df), p=probabilities)
+        np.random.shuffle(masked_values)  # перемешиваем
+        df_result[col] = masked_values
+
+        # обновляем закодированное значение после маскировки
+        le = label_encoders[col]
+        df_encoded[col] = le.transform(df_result[col].astype(str))
+
+    # 3. Генерация числовых данных на основе регрессии
+    for target_col in numeric_columns:
+        features = df_encoded.drop(columns=[target_col])
+        target = df_encoded[target_col]
+
+        if features.shape[1] == 0:
+            continue
+
+        model = LinearRegression()
+        model.fit(features, target)
+
+        predicted = model.predict(features)
+
+        noise_scale = np.std(target) * 0.1 if np.std(target) > 0 else 1
+        noise = np.random.normal(scale=noise_scale, size=len(predicted))
+        generated = predicted + noise
+
+        # Приведение к нужному типу
+        if pd.api.types.is_integer_dtype(df[target_col]):
+            generated = np.clip(np.round(generated), df[target_col].min(), df[target_col].max())
+            df_result[target_col] = generated.astype(int)
+        elif pd.api.types.is_float_dtype(df[target_col]):
+            generated = np.clip(generated, df[target_col].min(), df[target_col].max())
+            decimal_places = max(1, -int(np.floor(np.log10(noise_scale))) + 1)
+            df_result[target_col] = np.round(generated, decimal_places)
+
+    return df_result
 
 # Кодирование строковых данных
 def encode_strings(df: pd.DataFrame) -> pd.DataFrame:
@@ -115,6 +178,44 @@ async def mask_string_data(series: pd.Series) -> pd.Series:
         print(f"Ошибка маскировки строковых данных: {str(e)}")
         return series
 
+async def mask_rounded_integer_data(series: pd.Series) -> pd.Series:
+    try:
+        series_non_null = series.dropna().astype(int)
+        if series_non_null.empty:
+            return series
+
+        # Определим минимальное количество конечных нулей
+        min_zeros = min(trailing_zeros(val) for val in series_non_null)
+        round_to = -min_zeros if min_zeros > 0 else 0
+
+        col_min = series.min()
+        col_max = series.max()
+        col_median = series.median()
+
+        # Случайные значения
+        random_values = np.random.randint(col_min, col_max + 1, size=len(series))
+        current_median = np.median(random_values)
+        adjustment = int(col_median - current_median)
+        masked = random_values + adjustment
+
+        # Округляем до нужного количества нулей
+        masked = np.round(masked, round_to)
+
+        # Гарантируем диапазон
+        masked = np.clip(masked, col_min, col_max)
+
+        return pd.Series(masked.astype(int), index=series.index, name=series.name)
+    except Exception as e:
+        print(f"Ошибка маскировки 'круглых' чисел: {str(e)}")
+        return series
+
+def is_rounded_series(series: pd.Series, threshold: float = 0.8) -> bool:
+    # Возвращает True, если больше threshold значений заканчиваются хотя бы на 2 нуля
+    series_non_null = series.dropna().astype(int)
+    if len(series_non_null) == 0:
+        return False
+    rounded_count = sum(trailing_zeros(val) >= 2 for val in series_non_null)
+    return (rounded_count / len(series_non_null)) >= threshold
 
 # Маскировка целочисленных данных (включая float, которые выглядят как целые)
 async def mask_integer_data(series: pd.Series) -> pd.Series:
@@ -180,7 +281,10 @@ async def mask_float_data(series: pd.Series) -> pd.Series:
 # Основная маскировка данных, выбор метода в зависимости от типа
 async def mask_column(series: pd.Series) -> pd.Series:
     if await is_integer_column(series):
-        return await mask_integer_data(series)
+        if is_rounded_series(series):
+            return await mask_rounded_integer_data(series)
+        else:
+            return await mask_integer_data(series)
     elif await is_float_column(series):
         return await mask_float_data(series)
     elif await is_string_column(series):
@@ -188,6 +292,7 @@ async def mask_column(series: pd.Series) -> pd.Series:
     else:
         print(f"Предупреждение: неизвестный тип данных для колонки '{series.name}', пропускаем")
         return series
+
 
 
 # Маскировка выбранных столбцов
@@ -199,22 +304,20 @@ async def mask_selected_columns(df: pd.DataFrame, columns_to_mask: List[int]) ->
         masked_df = df.copy()
         tasks = []
 
-        for col_num in sorted(set(columns_to_mask)):
-            if col_num < 1 or col_num > len(masked_df.columns):
-                print(f"Предупреждение: номер столбца {col_num} вне диапазона (1-{len(masked_df.columns)}), пропускаем")
+        for col_idx in sorted(set(columns_to_mask)):
+            if col_idx < 0 or col_idx >= len(masked_df.columns):
+                print(f"Предупреждение: номер столбца {col_idx} вне диапазона (0-{len(masked_df.columns) - 1}), пропускаем")
                 continue
 
-            col_idx = col_num - 1
             column_name = masked_df.columns[col_idx]
-            print(f"Маскируем колонку #{col_num} ('{column_name}')...")
+            print(f"Маскируем колонку #{col_idx} ('{column_name}')...")
             tasks.append(mask_column(masked_df[column_name]))
 
         masked_columns = await asyncio.gather(*tasks)
 
-        for col_num, masked_series in zip(sorted(set(columns_to_mask)), masked_columns):
-            if col_num < 1 or col_num > len(masked_df.columns):
+        for col_idx, masked_series in zip(sorted(set(columns_to_mask)), masked_columns):
+            if col_idx < 0 or col_idx >= len(masked_df.columns):
                 continue
-            col_idx = col_num - 1
             masked_df.iloc[:, col_idx] = masked_series
 
         print("Данные после маскировки:")
@@ -240,7 +343,7 @@ async def process_masking_and_regression(input_csv: str, output_csv: str, column
             if col_num >= 1 and col_num <= len(df_masked.columns)
                and pd.api.types.is_numeric_dtype(df_masked.iloc[:, col_num - 1])
         ]
-        df_final = generate_numeric_via_regression(df_masked, numeric_columns)
+        df_final = generate_all_data_consistent_with_regression(df)
 
         df_final.to_csv(output_csv, index=False)
         print(f"Файл сохранён как {output_csv}")
@@ -252,7 +355,7 @@ async def process_masking_and_regression(input_csv: str, output_csv: str, column
 async def main():
     input_file = 'Книга1.csv'
     output_file = 'fake_data2.csv'
-    columns_to_process = [1, 2, 3, 4]  # только эти столбцы маскируем
+    columns_to_process = [0, 1, 2, 3]  # только эти столбцы маскируем
 
     await process_masking_and_regression(input_file, output_file, columns_to_process)
 
