@@ -11,9 +11,9 @@ async def router(csv_path, mode):
     filename = os.path.basename(csv_path)
     name, ext = os.path.splitext(filename)
 
-    fake_filename = f'fake_{name}{ext}'
-    mixed_filename = f'fake_mix_{name}{ext}'
-    noised_filename = f'fake_noised_{name}{ext}'
+    fake_filename = f'./serv/uploads/fake_{name}{ext}'
+    mixed_filename = f'./serv/uploads/fake_mix_{name}{ext}'
+    noised_filename = f'./serv/uploads/fake_noised_{name}{ext}'
 
     fake_df, conf = await fake_confident_columns(csv_path, fake_filename)
     unconf_column = forma(csv_path, conf)

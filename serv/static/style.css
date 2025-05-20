@@ -107,6 +107,29 @@ body {
 .upload-form input[type="submit"]:hover {
     background-color: #357ABD;
 }
+.mode-selector {
+    margin: 20px 0;
+    text-align: left;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.mode-selector p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mode-selector label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.mode-selector input[type="radio"] {
+    margin-right: 10px;
+}
+
 
 /* Подвал */
 footer {

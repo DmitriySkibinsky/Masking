@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from detect.correlation import analyze_correlations
@@ -7,9 +8,9 @@ from detect.gender import detect_gender
 from detect.valid import validate_column_data  # Импорт новой функции
 
 
-def load_model_artifacts(model_path='../detect/res/best_model.h5',
-                         tokenizer_path='../detect/res/tokenizer.pkl',
-                         encoder_path='../detect/res/label_encoder.pkl'):
+def load_model_artifacts(model_path='./detect/res/best_model.h5',
+                         tokenizer_path='./detect/res/tokenizer.pkl',
+                         encoder_path='./detect/res/label_encoder.pkl'):
     """Загрузка артефактов модели"""
     return {
         'model': load_model(model_path),
@@ -30,10 +31,13 @@ def predict_column_type(column_name, artifacts, confidence_threshold=0.6):
     return artifacts['encoder'].classes_[np.argmax(pred_proba)], max_proba
 
 
-def get_confidential_data_map(csv_path, encoding='utf-8', confidence_threshold=0.6):
+def get_confidential_data_map(csv_path, model, token, encoder, encoding='utf-8', confidence_threshold=0.6):
+
     """Анализ CSV файла и создание карты конфиденциальных данных"""
     df = pd.read_csv(csv_path, encoding=encoding)
-    artifacts = load_model_artifacts()
+    print(f"Обрабатываем файл по пути: {csv_path}")  # Добавьте эту строку
+    print(f"Файл существует: {os.path.exists(csv_path)}")  # Проверка существования файла
+    artifacts = load_model_artifacts(model, token, encoder)
 
     confidential_types = ['first_name', 'last_name', 'inn', 'phone', 'middle_name', 'full_name', "snils",
                           "ogrn", "kpp", "okpo", "ogrnip", "email", "birth_date", "passport_number", "passport_series",
@@ -89,11 +93,11 @@ def get_confidential_data_map(csv_path, encoding='utf-8', confidence_threshold=0
     return confidential_map, pd.DataFrame(results)
 
 
-def analyze_data(csv_path, encoding='utf-8'):
+def analyze_data(csv_path, model, token, encoder, encoding='utf-8'):
     """Полный анализ данных с валидацией"""
     try:
         df = pd.read_csv(csv_path, encoding=encoding)
-        confidential_map, columns_info = get_confidential_data_map(csv_path, encoding=encoding)
+        confidential_map, columns_info = get_confidential_data_map(csv_path,model, token, encoder, encoding=encoding)
         non_conf_indices = [idx for idx in range(len(df.columns)) if idx not in confidential_map]
         corr_matrix = analyze_correlations(df, non_conf_indices)
 
@@ -116,9 +120,9 @@ def analyze_data(csv_path, encoding='utf-8'):
 THRESHOLD = 0.1
 
 
-def get_list_result(csv_path, encoding='utf-8'):
+def get_list_result(csv_path, model_path ,token, enconder, encoding='utf-8'):
 
-    analysis_results = analyze_data(csv_path, encoding=encoding)
+    analysis_results = analyze_data(csv_path, model_path ,token, enconder, encoding=encoding)
     #print(analysis_results)
     result_list = []
 
@@ -136,7 +140,9 @@ def get_list_result(csv_path, encoding='utf-8'):
 
     return result_list, analysis_results.get('correlation_analysis', None)
 
-def column_detect(csv_path, encoding='utf-8'):
+def column_detect(csv_path, encoding='utf-8',model_path='./detect/res/best_model.h5',
+                         tokenizer_path='./detect/res/tokenizer.pkl',
+                         encoder_path='./detect/res/label_encoder.pkl'):
     import chardet
 
     pd.set_option('display.max_rows', None)
@@ -147,7 +153,8 @@ def column_detect(csv_path, encoding='utf-8'):
         rawdata = f.read(10000)
         encoding = chardet.detect(rawdata)['encoding']
     print(f"Определена кодировка файла: {encoding}")
-    results, corr = get_list_result(csv_path, encoding=encoding)
+    results, corr = get_list_result(csv_path, model_path=model_path, token=tokenizer_path, enconder=encoder_path, encoding=encoding)
+
     gender_rel = detect_gender(results, csv_path)
     print(results)
     print("------")

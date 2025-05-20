@@ -24,7 +24,6 @@
     </section>
 
     <section class="upload-section">
-        <!-- Flash сообщения -->
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -34,10 +33,24 @@
         {% endwith %}
 
         <form class="upload-form" method="POST" enctype="multipart/form-data">
-            <p>Выберите файл .xlsx:</p>
+            <p>Выберите файл .xlsx или .csv:</p>
             <input type="file" name="file" accept=".xlsx,.csv" required>
+
+            <div class="mode-selector">
+                <p>Выберите режим обработки:</p>
+                <label>
+                    <input type="radio" name="mode" value="no" checked> Без изменений
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="fake"> Замена данных (Fake)
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="noise"> Добавление шума (Noise)
+                </label>
+            </div>
+
             <br>
-            <input type="submit" value="Загрузить">
+            <input type="submit" value="Загрузить и обработать">
         </form>
     </section>
 

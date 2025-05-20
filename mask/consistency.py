@@ -39,5 +39,6 @@ consistency = {
 }
 
 def get_generator(data_type):
+    print(data_type)
     """Возвращает функцию-генератор для указанного типа данных"""
     return consistency.get(data_type)

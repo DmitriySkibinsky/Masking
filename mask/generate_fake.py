@@ -1,4 +1,4 @@
-from consistency import consistency
+from mask.consistency import consistency
 import pandas as pd
 import asyncio
 import chardet
