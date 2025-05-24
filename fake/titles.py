@@ -29,7 +29,7 @@ async def generate_legal_entity(local='ru_RU', opfs=None):
         print(f"Произошла ошибка при генерации имя ЮЛ: {e}")
 
 
-async def generate_address(local='ru_RU', mode='all'):
+async def generate_address(mode='all', local='ru_RU'):
     """
     Генерирует фейковые адресные данные с поддержкой регионов и населенных пунктов
 

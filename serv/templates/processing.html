@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка файла</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function checkFile() {
+            fetch(`/check-file?filename={{ result_filename }}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.exists) {
+                        document.getElementById('loading').style.display = 'none';
+                        document.getElementById('download-section').style.display = 'block';
+                    } else {
+                        setTimeout(checkFile, 1000);
+                    }
+                });
+        }
+
+        window.onload = function() {
+            checkFile();
+        };
+    </script>
+</head>
+<body>
+    <header class="hero">
+        <h1>Обработка файла</h1>
+        <p>Пожалуйста, подождите, ваш файл обрабатывается...</p>
+    </header>
+
+    <section class="upload-section">
+        <div id="loading">
+            <div class="loader"></div>
+            <p>Обработка файла "{{ original_filename }}" в режиме {{ mode }}...</p>
+        </div>
+
+        <div id="download-section" style="display: none;">
+            <div class="flash-message success">
+                Файл успешно обработан!
+            </div>
+            <a href="{{ url_for('download_file', filename=result_filename) }}" class="download-btn">
+                Скачать обработанный файл
+            </a>
+            <br><br>
+            <a href="{{ url_for('upload_file') }}" class="back-btn">Загрузить другой файл</a>
+        </div>
+    </section>
+</body>
+</html>

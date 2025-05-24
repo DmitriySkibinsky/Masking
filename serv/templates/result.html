@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файл обработан</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="hero">
+        <h1>Файл успешно обработан!</h1>
+        <p>Ваш файл "{{ original_filename }}" готов к скачиванию.</p>
+    </header>
+
+    <section class="result-section">
+        <div id="processing">
+            <p>Идет обработка файла...</p>
+            <div class="loader"></div>
+        </div>
+
+        <div id="download-section" style="display: none;">
+            {% if file_exists %}
+                <h3>Обработанный файл:</h3>
+                <a href="{{ url_for('download_file', filename=processed_filename) }}" class="download-btn">
+                    Скачать "{{ processed_filename }}"
+                </a>
+                <br><br>
+            {% endif %}
+
+            <h3>Все доступные файлы:</h3>
+            <div id="all-files-list">
+                {% for file in all_files %}
+                    <a href="{{ url_for('download_file', filename=file) }}" class="file-link">
+                        {{ file }}
+                    </a><br>
+                {% endfor %}
+            </div>
+            <br>
+            <a href="{{ url_for('upload_file') }}" class="back-btn">Загрузить другой файл</a>
+        </div>
+
+        <div id="error-section" style="display: none; color: red;">
+            <p>Произошла ошибка при обработке файла.</p>
+            <a href="{{ url_for('upload_file') }}" class="back-btn">Попробовать снова</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 ИИ Маскирование данных. Все права защищены.</p>
+    </footer>
+
+    <script>
+    function checkFileReady() {
+        fetch("{{ url_for('check_file', filename=processed_filename) }}")
+            .then(response => response.json())
+            .then(data => {
+                if (data.exists) {
+                    document.getElementById('processing').style.display = 'none';
+                    document.getElementById('download-section').style.display = 'block';
+
+                    // Обновляем список файлов после обработки
+                    fetch("{{ url_for('list_files') }}")
+                        .then(response => response.json())
+                        .then(files => {
+                            const filesList = document.getElementById('all-files-list');
+                            filesList.innerHTML = '';
+                            files.forEach(file => {
+                                const link = document.createElement('a');
+                                link.href = file.url;
+                                link.className = 'file-link';
+                                link.textContent = file.name;
+                                filesList.appendChild(link);
+                                filesList.appendChild(document.createElement('br'));
+                            });
+                        });
+                } else {
+                    setTimeout(checkFileReady, 500);
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка:', error);
+                document.getElementById('processing').style.display = 'none';
+                document.getElementById('error-section').style.display = 'block';
+            });
+    }
+    checkFileReady();
+    </script>
+</body>
+</html>

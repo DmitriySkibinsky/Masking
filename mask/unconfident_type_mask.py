@@ -120,9 +120,22 @@ def generate_numeric_via_regression(df: pd.DataFrame, target_columns: List[str])
 # Загрузка данных асинхронно
 async def load_data(csv_file: str) -> pd.DataFrame:
     try:
-        async with aiofiles.open(csv_file, mode='r') as f:
+        # Вариант 1: Чтение с указанием кодировки (для синхронного чтения)
+        # return pd.read_csv(csv_file, encoding='utf-8')  # или 'cp1251', 'latin1'
+
+        # Вариант 2: Асинхронное чтение с правильной кодировкой
+        async with aiofiles.open(csv_file, mode='r', encoding='utf-8') as f:
             content = await f.read()
         return pd.read_csv(io.StringIO(content))
+
+    except UnicodeDecodeError:
+        # Попробуем альтернативные кодировки
+        try:
+            async with aiofiles.open(csv_file, mode='r', encoding='cp1251') as f:
+                content = await f.read()
+            return pd.read_csv(io.StringIO(content))
+        except Exception as e:
+            raise Exception(f"Не удалось прочитать файл {csv_file} ни в utf-8, ни в cp1251: {str(e)}")
     except Exception as e:
         raise Exception(f"Ошибка загрузки файла {csv_file}: {str(e)}")
 

@@ -176,6 +176,31 @@ column_types = {
         "инвесторский код", "идентификатор инвестора", "инвестиционный номер",
         "код для инвестирования", "инвесторский идентификатор", "номер инвестора",
         "код для клиента", "идентификационный код инвестора", "инвесторский номер"
+    ],
+    "address": [
+        "адрес", "адресс", "address_line", "addressline", "адрес клиента",
+        "адрес_пользователя", "client_address", "location", "user_address",
+        "postal_address", "physical_address", "street_address", "адрес доставки",
+        "delivery_address", "billing_address", "местонахождение", "адрес проживания",
+        "residence", "адресная строка", "full_address", "адрес регистрации",
+        "registered_address", "юридический адрес", "legal_address", "mailing_address"
+    ],
+    "login": [
+        "логин", "login_id", "user_login", "username", "user_name",
+        "account_name", "userid", "user_id", "client_login", "auth_login",
+        "имя пользователя", "учетная запись", "nickname", "nick", "логин_пользователя",
+        "signin_name", "email_login", "логин для входа", "login_name", "identifier"
+    ],
+    "ip": [
+        "ip", "ip_address", "ipaddr", "ip-адрес", "айпи", "client_ip",
+        "user_ip", "remote_ip", "host_ip", "source_ip", "destination_ip",
+        "public_ip", "private_ip", "ipv4", "ipv6", "сетевой адрес",
+        "internet_protocol", "адрес хоста", "ip_пользователя", "ip_клиента"
+    ],
+    "uri": [
+        "uri", "url", "link", "адрес", "путь", "uniform_resource_identifier",
+        "web_address", "endpoint", "api_endpoint", "request_uri", "path", "href", "site_url", "page_url", "resource_locator",
+        "api_url", "query_string", "полный путь", "веб-ссылка", "строка запроса"
     ]
 
 }

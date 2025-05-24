@@ -43,7 +43,7 @@ def get_confidential_data_map(csv_path, model, token, encoder, encoding='utf-8',
                           "ogrn", "kpp", "okpo", "ogrnip", "email", "birth_date", "passport_number", "passport_series",
                           "international_passport_number", "military_ticket_num", "sailor_ticket_num", "birth_certificate_num",
                           "work_book_num", "vehicle_number", "nr_credit_account", "nr_bank_contract", "nr_dep_contract",
-                          "card_number", "bank_account_number", "investor_code"]
+                          "card_number", "bank_account_number", "investor_code", "address", "login", "ip", "uri"]
     confidential_map = {}
     results = []
 

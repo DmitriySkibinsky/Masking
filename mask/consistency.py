@@ -35,7 +35,13 @@ consistency = {
     "bank_account_number": lambda: generate_bank_account_number(),
     "investor_code": lambda: generate_investor_code(),
 
-    "birth_date": generate_birth_date,
+    "birth_date": lambda: generate_birth_date,
+
+    "login": lambda: generate_login(),
+    "address": lambda: generate_address(mode='all'),
+    "ip": lambda: generate_ip(),
+    "uri": lambda: generate_uri(),
+
 }
 
 def get_generator(data_type):

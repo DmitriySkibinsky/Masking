@@ -6,7 +6,8 @@ TOP_FIELD = 20
 
 from natasha import (
     NamesExtractor,
-    MorphVocab
+    MorphVocab,
+    AddrExtractor
 )
 
 morph_vocab = MorphVocab()
@@ -311,6 +312,59 @@ def validate_investor_code(value: str) -> bool:
     pattern = r'(?:\d[ -]?{6,})'
     return bool(re.fullmatch(pattern, value))
 
+
+def validate_address(text: str) -> bool:
+    """
+    Проверяет, содержит ли строка адрес (возвращает True/False)
+
+    Args:
+        text: строка для анализа
+
+    Returns:
+        bool: True если строка содержит адрес, иначе False
+    """
+    morph_vocab = MorphVocab()
+    addr_extractor = AddrExtractor(morph_vocab)
+
+    matches = list(addr_extractor(text))
+    return len(matches) > 0
+
+def validate_login(value: str) -> bool:
+    """
+    Проверяет, соответствует ли строка формату логина (3+ символов: буквы, цифры, _-.).
+    Возвращает True, если условие выполняется, иначе False.
+    """
+    pattern = r'^[a-zA-Z0-9_\-.]{3,}$'
+    return bool(re.fullmatch(pattern, value))
+
+
+def validate_ip(value: str) -> bool:
+    """
+    Проверяет, является ли строка IPv4 или IPv6 адресом.
+    Возвращает True, если условие выполняется, иначе False.
+    """
+    # IPv4 (e.g., 192.168.1.1)
+    ipv4_pattern = r'^((25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?)$'
+    # IPv6 (упрощенная проверка)
+    ipv6_pattern = r'^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$'
+
+    return bool(re.fullmatch(ipv4_pattern, value) or re.fullmatch(ipv6_pattern, value))
+
+
+def validate_domain(value: str) -> bool:
+    """
+    Проверяет, является ли строка корректным доменным именем (с точкой и зоной).
+    Примеры валидных:
+    - example.ru
+    - sub.domain.com
+    - site.ua
+    - localhost.local
+
+    Возвращает True, если соответствует формату, иначе False.
+    """
+    pattern = r'^[a-zA-Z0-9\-]+(\.[a-zA-Z0-9\-]+)+$'
+    return bool(re.fullmatch(pattern, value))
+
 def validate_column_data(column_data, column_type):
     samples = column_data.head(TOP_FIELD).dropna().astype(str).tolist()
 
@@ -429,6 +483,22 @@ def validate_column_data(column_data, column_type):
         'investor_code': {
             'check': lambda x: validate_investor_code(x),
             'description': 'корректный код инвестора (от 6 цифр)'
+        },
+        'address': {
+            'check': lambda x: validate_address(x),
+            'description': 'корректный адрес'
+        },
+        'login': {
+            'check': lambda x: validate_login(x),
+            'description': 'корректный логин'
+        },
+        'ip': {
+            'check': lambda x: validate_ip(x),
+            'description': 'корректный IP (является IPv4 или IPv6)'
+        },
+        'uri': {
+            'check': lambda x: validate_domain(x),
+            'description': 'корректный домен (в конце точка и символы)'
         }
     }
 
