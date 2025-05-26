@@ -97,8 +97,10 @@ async def generate_ip(mode='v4'):
         fake = Faker('ru_RU')
         if mode == 'v4':
             ipv4 = fake.ipv4()
+            return ipv4
         elif mode == 'v6':
             ipv6 = fake.ipv6()
+            return ipv6
         else:
             print("Неверный режим для генерации IP")
     except Exception as e:
